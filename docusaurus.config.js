@@ -1,23 +1,23 @@
 module.exports = {
-  title: "My Site",
-  tagline: "The tagline of my site",
+  title: "峰华 - 前端工程师",
+  tagline: "",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "zxuqian", // Usually your GitHub org/user name.
+  projectName: "zxuqian.cn", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "峰华",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg"
+        alt: " 峰华",
+        src: "img/logo.png"
       },
       links: [
-        { to: "docs/doc1", label: "Docs", position: "left" },
-        { to: "blog", label: "Blog", position: "left" },
+        // { to: "docs/doc1", label: "Docs", position: "left" },
+        { to: "blog", label: "Blog", position: "right" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/zxuqian",
           label: "GitHub",
           position: "right"
         }
@@ -26,32 +26,32 @@ module.exports = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Style Guide",
-              to: "docs/doc1"
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2"
-            }
-          ]
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            }
-          ]
-        },
+        // {
+        //   title: "Docs",
+        //   items: [
+        //     {
+        //       label: "Style Guide",
+        //       to: "docs/doc1"
+        //     },
+        //     {
+        //       label: "Second Doc",
+        //       to: "docs/doc2"
+        //     }
+        //   ]
+        // },
+        // {
+        //   title: "Community",
+        //   items: [
+        //     {
+        //       label: "Stack Overflow",
+        //       href: "https://stackoverflow.com/questions/tagged/docusaurus"
+        //     },
+        //     {
+        //       label: "Discord",
+        //       href: "https://discordapp.com/invite/docusaurus"
+        //     }
+        //   ]
+        // },
         {
           title: "Social",
           items: [
@@ -61,16 +61,16 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus"
+              href: "https://github.com/zxuqian"
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus"
+              label: "Bilibili 哔哩哔哩",
+              href: "https://space.bilibili.com/302954484"
             }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus. 冀ICP备14007097号-3`
     }
   },
   presets: [
