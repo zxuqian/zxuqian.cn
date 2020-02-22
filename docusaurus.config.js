@@ -73,6 +73,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus. 冀ICP备14007097号-3`
     },
     prism: {
+      darkTheme: require("prism-react-renderer/themes/vsDark"),
       defaultLanguage: "javascript"
     }
   },
