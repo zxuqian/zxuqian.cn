@@ -4,7 +4,7 @@ title: 第 N 个第一篇博客
 author: 峰华
 author_title: 前端工程师/B 站 UP 主
 author_url: https://github.com/ zxuqian
-author_image_url: https://avatars2.githubusercontent.com/u/2687921?s=60&v=4
+author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 tags: [react, javascript, 前端]
 ---
 
