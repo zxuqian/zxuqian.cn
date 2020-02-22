@@ -71,6 +71,9 @@ module.exports = {
         }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus. 冀ICP备14007097号-3`
+    },
+    prism: {
+      defaultLanguage: "javascript"
     }
   },
   presets: [
@@ -92,5 +95,6 @@ module.exports = {
         }
       }
     ]
-  ]
+  ],
+  themes: ["@docusaurus/theme-live-codeblock"]
 };
