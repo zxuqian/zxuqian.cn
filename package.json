@@ -1,6 +1,6 @@
 {
-  "name": "tutorial-docs",
-  "version": "0.0.0",
+  "name": "zxuqian.cn",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
