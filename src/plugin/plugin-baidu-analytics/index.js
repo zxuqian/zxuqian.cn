@@ -17,6 +17,13 @@ module.exports = function(context, options) {
               s.parentNode.insertBefore(hm, s);
             })();
           `
+          },
+          {
+            tagName: "meta",
+            attributes: {
+              name: "baidu-site-verification",
+              content: "IXU12YQUjF"
+            }
           }
         ]
       };

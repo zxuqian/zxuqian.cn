@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   title: "峰华 - 前端工程师",
   tagline: "",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://zxuqian.cn",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "zxuqian", // Usually your GitHub org/user name.
