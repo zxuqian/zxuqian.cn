@@ -11,13 +11,17 @@ tags: [react, javascript, 前端]
 创建第一个 React Hello World 程序（代码可实时编辑）
 
 ```jsx live
-function App() {
-  return <h1>Hello World</h1>;
-}
-```
 
-```jsx
 function App() {
-  return <h1>Hello World</h1>;
+  const H1 = styled.h1`
+  color: #34ace0;
+`;
+
+  function Greeting() {
+    return <H1>Hello World</H1>;
+  }
+
+  return <Greeting />;
 }
+
 ```
