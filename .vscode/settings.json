@@ -1,0 +1,5 @@
+{
+  "pasteImage.basePath": "/img",
+  "pasteImage.insertPattern": "<img alt=\"\" src={useBaseUrl('img/${currentFileNameWithoutExt}/${imageFileName}')} />",
+  "pasteImage.path": "${projectRoot}/static/img/${currentFileNameWithoutExt}"
+}

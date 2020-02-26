@@ -8,14 +8,15 @@ author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s
 tags: [react, javascript, 前端]
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 创建第一个 React Hello World 程序（代码可实时编辑）
 
 ```jsx live
-
 function App() {
   const H1 = styled.h1`
-  color: #34ace0;
-`;
+    color: #34ace0;
+  `;
 
   function Greeting() {
     return <H1>Hello World</H1>;
@@ -23,5 +24,6 @@ function App() {
 
   return <Greeting />;
 }
-
 ```
+
+<!-- <img alt="" src={useBaseUrl('img/2020-02-22-react-hello-world/2020-02-26-12-33-21.png')} /> -->
