@@ -25,7 +25,6 @@ export default ({
   metastring,
   ...props
 }) => {
-  console.log(children);
   const {
     siteConfig: {
       themeConfig: { prism = {} }
