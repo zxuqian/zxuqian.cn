@@ -1,6 +1,4 @@
 module.exports = function(context, options) {
-  console.log("My plugin...");
-
   return {
     name: "docusaurus-baidu-analytics-plugin",
     injectHtmlTags() {
