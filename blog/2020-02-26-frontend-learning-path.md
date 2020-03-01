@@ -3,7 +3,7 @@ id: front-end-learning-path
 title: 2020年最新前端学习路线
 author: 峰华
 author_title: 前端工程师 / B站UP主
-author_url: https://github.com/ zxuqian
+author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 tags: [前端, 职业]
 ---
@@ -349,3 +349,7 @@ Web Components 是类似 React、Vue 开发的方式，但是是 JS 原生支持
 ## 总结
 
 这篇文章尽可能详细的列举了前端工程师该掌握的技能，但是根据工作要求的不同，一些细节的框架可能没有提到，不过相信咱们在经过这么久的学习、打怪升级之后，那些个小框架都不在话下。有了良好的基础，以后咱们在工作中都能节节高升~走向人生巅峰！
+
+[>> 在 B 站参与讨论](https://t.bilibili.com/361708917169913931)
+
+[>> 在 微博 参与讨论](https://weibo.com/2993970500/IwBUxajC2)
