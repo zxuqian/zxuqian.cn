@@ -28,8 +28,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 核心技能
 
-<img alt="前端学习路线图" src={useBaseUrl('img/2020-02-26-frontend-learning-path/core-skills.svg')} />
-
 好了，相信你已经开始下定决心要成为前端大神了，那咱们第一步就是把前端的核心装备拿下，它们分别是 `html`, `css` 和 `JavaScript`。前端的初衷是开发网页来让其他人看的，可以向全世界分享信息，直到最近几年才诞生了利用这些核心知识去开发移动 APP、小程序等多终端前端应用的工具，学好核心是前端工程师必备的素养。下边就是核心技能的简介：
 
 ### HTML
@@ -99,8 +97,6 @@ CSS 是用来美化 HTML 编写的页面的，通过一些语法选择特定的 
 [HTTP 概述](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Overview)
 
 ## 进阶技能
-
-<img alt="前端学习路线图" src={useBaseUrl('img/2020-02-26-frontend-learning-path/inter-skills.svg')} />
 
 上边核心技能都掌握了的话，你就已经超过一半的前端工程师了，接下来就是成长为更高级一些的前端工程师，这里的目的是除了理解一些高级的概念之外，还要提高开发效率，也就是用到所谓的框架。
 
@@ -203,8 +199,6 @@ SEO 全称是 Search Engine Optimization，搜索引擎优化。咱们常见的�
 [Puppeteer](https://github.com/zhaoqize/puppeteer-api-zh_CN)
 
 ## 高级技能
-
-<img alt="前端学习路线图" src={useBaseUrl('img/2020-02-26-frontend-learning-path/adv-skills.svg')} />
 
 在把编写网页的技能掌握熟练以后，就要从多端开始拓展自己的技能了，另外还要深入已经掌握的技能。
 
