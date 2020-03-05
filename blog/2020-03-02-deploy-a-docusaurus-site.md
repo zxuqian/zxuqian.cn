@@ -10,6 +10,8 @@ tags: [前端, 职业]
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+[B 站视频 - 点击传送](https://www.bilibili.com/video/av93748753/)
+
 ## 历史迷茫
 
 我以前总也找不到一个满意的博客系统，wordpress 这个程序又大，然后配置也不方便。占用的服务器的资源也多。我就想有没有一个又简单又快速的博客平台，后来发现了一些静态的网站生成器，像 `hexo` 这种，但是发现上面的主题又不好看，又懒得自己去写。后来就有一阵子我就直接把博客就发布在了其他的第三方的博客平台上。现在发现了这个 docusaurus, 它的主题跟我之前看到的一个大佬 Dan Abramov，它的 [overreacted.io](https://overreacted.io) 博客，风格是一模一样的，因为他是 react 的作者之一，估计这个他们这个样式都是互相借鉴，它这个主题可以切换暗黑和白天模式，比较好看。安装和部署也特别简单，我的博客也是用它这个搭建的。
@@ -190,6 +192,10 @@ tags: [facebook, hello, docusaurus]
 
 这样第一个博客就完成了，现在是跑在本地上，后边再讲怎么把它部署到服务器上。
 
+[>> 在 B 站参与讨论](https://www.bilibili.com/video/av93748753/)
+
+[>> 在 微博 参与讨论](https://weibo.com/2993970500/IxeMOiDlu)
+
 <!-- ## 部署
 
 ### Zeit
@@ -209,7 +215,3 @@ tags: [facebook, hello, docusaurus]
 #### 配置 github actions
 
 #### 发布博客 -->
-
-<!-- [>> 在 B 站参与讨论](https://t.bilibili.com/362000502504720925?tab=2)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IwJi7CCFS) -->
