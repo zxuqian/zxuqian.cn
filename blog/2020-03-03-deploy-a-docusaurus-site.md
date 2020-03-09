@@ -194,24 +194,4 @@ tags: [facebook, hello, docusaurus]
 
 [>> 在 B 站参与讨论](https://www.bilibili.com/video/av93748753/)
 
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IxeMOiDlu)
-
-<!-- ## 部署
-
-### Zeit
-
-[Zeit](http://zeit.co/)
-
-#### 发布到 github
-
-#### 发布到 zeit
-
-### 自定义
-
-#### 购买域名
-
-#### 购买服务器
-
-#### 配置 github actions
-
-#### 发布博客 -->
+[>> 在 微博 参与讨论](https://m.weibo.cn/2993970500/4480662482316067)
