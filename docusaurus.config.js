@@ -17,7 +17,7 @@ module.exports = {
       },
       links: [
         // { to: "docs/doc1", label: "Docs", position: "left" },
-        { to: "blog", label: "Blog", position: "right" },
+        { to: "/", label: "Blog", position: "right" },
         {
           href: "https://github.com/zxuqian",
           label: "GitHub",
@@ -59,7 +59,7 @@ module.exports = {
           items: [
             {
               label: "Blog",
-              to: "blog"
+              to: "/"
             },
             {
               label: "GitHub",
