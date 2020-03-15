@@ -16,8 +16,12 @@ module.exports = {
         src: "img/logo.png"
       },
       links: [
-        // { to: "docs/doc1", label: "Docs", position: "left" },
         { to: "/", label: "Blog", position: "right" },
+        {
+          to: "docs/react-examples/01-react-props-buttons",
+          label: "React 示例",
+          position: "right"
+        },
         {
           href: "https://github.com/zxuqian",
           label: "GitHub",
@@ -84,11 +88,10 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/edit/master/website/',
-        // },
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs"
+        },
         blog: {
           path: "./blog",
           routeBasePath: "/"

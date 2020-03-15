@@ -1,10 +1,11 @@
 ---
 id: React 简介
-title: 带你走进React的大门 | Reactjs
+title: 带你走进React的大门 - 你为什么应该学React？
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
+description: Hello! 今天来带你走进 React 的大门！我第一次听说 React 是我在美国读研的时候，室友选了 web programming 这节课，然后遇到了关于 react 的好多问题...
 tags: [前端, React]
 ---
 
@@ -13,6 +14,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 [B 站视频 - 点击传送](https://www.bilibili.com/video/av93748753/)
 
 Hello! 今天来带你走进 React 的大门！我第一次听说 React 是我在美国读研的时候，室友选了 web programming 这节课，然后遇到了关于 react 的好多问题，就是总也配置不好。我看他那个时候 React 的配置特别麻烦，要引入一堆依赖，像 bower, babel 等等... 还有文档写的也不清楚。有一次他刚开始做一个作业，问了我一个问题，大概是有一个组件显示不出来，结果看了半天我也不知道是怎么回事啊，因为我也没学过。后来他自己研究出来了，是因为这个组件在使用的时候没有大写。我当时就觉得这个 React 好复杂呀，然后就决定，我可不学他，后来我在暑假里面就学了 vue，但是回国之后呢，因为某些原因我就没有找后端的工作,转向了前端，当时又看这个 react 已经变得特别方便了，有一个 create react app 工具，就能省好多事儿，而且 react 的生态圈又特别的庞大，就决定学了 react。因为我觉得这个 react 开发大型的前端应用特别方便，尤其是它出了 hooks 之后。所以呢，我今天想给你分享一下。这个 react 到底是什么东西？它有什么好处？
+
+<!-- truncate -->
 
 ## React 的前世今生
 

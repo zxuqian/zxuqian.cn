@@ -6,9 +6,9 @@
  */
 
 module.exports = {
-  // someSidebar: {
-  //   Docusaurus: ["doc1", "doc2", "doc3"],
-  //   Features: ["mdx"],
-  //   "HTML CSS JS 系列": ["html-css-js/01-fw-corp"]
-  // }
+  docsSidebar: {
+    // Docusaurus: ["doc1", "doc2", "doc3"],
+    // Features: ["mdx"],
+    "React 基础示例": ["react-examples/01-react-props-buttons"]
+  }
 };
