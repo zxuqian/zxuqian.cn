@@ -5,6 +5,6 @@ sidebar_label: 按钮示例（props)
 description: 使用按钮组件展示 React Props 的使用方法
 ---
 
-import ButtonDemo from "../../src/examples/01-React-Props-Button"
+import { ButtonDemo } from "@zxuqian/react-examples";
 
-<ButtonDemo />
+<ButtonDemo style={{width: "auto", height: "auto", padding: "48px"}} />

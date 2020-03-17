@@ -1,6 +1,6 @@
 ---
 id: learn-react-props-buttons
-title: 用一组按钮学会 React 组件 Props 的概念
+title: React Props：组件化开发的第一步
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <!-- [B 站视频 - 点击传送](https://www.bilibili.com/video/av93748753/) -->
 
-你在写 HTML 页面的时候肯定知道，html 标签的属性都是固定的，比如 `a` 标签的 `href`, `input` 里边的 `type` 属性。这些属性都是内置的，不方便扩展。而 react 的 props 就是用来给组件加上一些自定义的属性，然后你自己定义这些属性影响组件的哪些部分。其他组件使用这个组件的时候，可以通过给这些属性传递不同的值来展现这个组件的不同的样式或状态。那今天我就教你定义一个按钮组件，它有默认的背景色、文字颜色、还有实心和边框样式，后边通过属性，props，来控制它是蓝色、红色还是黑色，然后利用另一个属性来控制它是实心的背景还是线框的。好，那咱们开始吧。
+你在写 HTML 页面的时候肯定知道，html 标签的属性都是固定的，比如 `a` 标签的 `href`, `input` 里边的 `type` 属性。这些属性都是内置的，不方便扩展和复用。而用 React 创建组件的话，可以给它定义一些更符合语义和逻辑的属性，比如颜色、尺寸等。这些属性在 React 里边叫做 props，你可以自己定义这些属性将会影响到组件的哪些部分。这样的一个组件，通过给它一个合适的名字，比如 Button，那么所有按钮的展现都可以用它来实现，只需要改变它的属性就可以展示为不同的样式。那今天我就教你定义一个这样的按钮组件，它有默认的背景色、文字颜色、还有实心和线框样式，后边通过属性，props，来控制它是蓝色、红色还是黑色，然后利用另一个属性来控制它是实心的背景还是线框的。好，那咱们开始吧。
 
 ## 你将学到的
 
@@ -25,25 +25,44 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 创建 React 工程
 
-1. create-react-app
-2. 添加`classnames`依赖（稍后解释）
+1. 使用 create-react-app 创建一个工程：
+
+   ```bash
+   yarn create react-app react-button-props
+   ```
+
+   等同于
+
+   ```bash
+   npx create-react-app react-button-props
+   ```
+
+2. 添加`classnames`依赖（稍后解释它的作用）
+
+   ```bash
+   yarn add classnames
+   ```
 
 ## 创建 Button 组件
 
-1. 在 `src` 下边新建一个 `Button` 文件夹。
+1. 在 `src` 下边新建一个 `Button` 文件夹。组件应该有自己独立的文件夹，所有跟这个组件有关的文件，比如 css、hooks 等都放到一起，这样在查看一个组件源码时，相应的文件都会在一块，方便查找。另外也方便和其他人共享这个组件，它是一个独立的整体。
 2. 在 `Button` 文件夹创建 `index.js` 文件，里边放用来定义按钮组件的代码。
-3. 在 `Button` 文件夹下创建 `style.modules.css` 文件，在这里咱们先用普通的 css 来定义按钮的样式，后续的课程里我再给你介绍`styled-components`。
+3. 在 `Button` 文件夹下创建 `style.modules.css` 文件，在这里咱们先用普通的 css 来定义按钮的样式，后续的教程里我再给你介绍`styled-components`。它是一个 css-in-js 的解决方案
 
    :::important CSS modules 的作用
-   这个带 modules 的 css 文件使用了 `css modules` 库，它是 create-react-app 工具里自带的，用来避免全局 class 名字冲突，在普通 css 下，如果两个都同时使用了 `.button` 这样的 class 名，那么后面的就会把前面的覆盖。使用了`css modules`之后，它会自动生成随机的 class 名字。这样这个组件里边定义的 class 就不会被其他组件定义的同名的 class 给覆盖。当然也可以不用它，有些全局的 css 可以直接定义在普通的 css 文件里。
+   这个带 modules 的 css 文件使用了 `css modules` 库，它是 create-react-app 工具里自带的，用来避免全局 class 名字冲突，在普通 css 下，如果不同的样式文件都同时使用了 `.button` 这样的 class 名，那么后面的就会把前面的覆盖。使用了`css modules`之后，它会自动生成随机的 class 名字。这样这个组件里边定义的 class 就不会被其他组件定义的同名的 class 给覆盖。当然你也可以不用它，有些全局的 css 可以直接定义在普通的 css 文件里。
    :::
 
 4. 编写 `button` 组件的代码：
 
    ```jsx
+   import React from "react";
+
    function Button(props) {
      return <button>{props.children}</button>;
    }
+
+   export default Button;
    ```
 
    react 中的组件默认都会被传递一个 `props` 属性，里边会默认包含一个 children 属性，也就是说在使用 `<Button />` 组件时，两个标签中间所有的代码都会当作 children 传递进来。上边的代码，也可以使用 rest 操作符简化：
@@ -103,7 +122,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
    import styles from "./styles.module.css";
    ```
 
-3. 给 Button 组件加上 className 属性，这里可以用 `styles.button` 来访问 css 文件中的 .button 的样式：
+3. 给 Button 组件加上 className 属性，这里可以用 `styles.button` 来访问 css 文件中的 `.button` 的样式：
 
    ```jsx
    <button className={styles.button}>{children}</button>
@@ -113,7 +132,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 用 Props 给 Button 不同的样式
 
-在给 Button 写完默认样式之后，咱们再来定义它几个变体，比如红色、黑色。我可以在 Button 里多添加一个 color 属性，代表其他组件使用它时，可以传递一个 color 属性，Button 会根据它的值显示不同的颜色，这里我假设它有三种，一种是默认的蓝，就是不传 color 的时候的颜色，一种是红色，color 的值为 red 的时候显示，一种是黑色，在 color 为 black 的时候显示。首先咱们先把这两种颜色的 css 样式定义好：
+在给 Button 写完默认样式之后，咱们再来定义它几个变体，比如红色、黑色。你可以在 Button 里多添加一个 color 属性，代表其他组件使用它时，可以传递一个 color 属性，Button 会根据它的值显示不同的颜色，这里我假设它有三种，一种是默认的蓝，就是不传 color 的时候的颜色，一种是红色，color 的值为 red 的时候显示，一种是黑色，在 color 为 black 的时候显示。首先咱们先把这两种颜色的 css 样式定义好：
 
 ```css
 .red {
@@ -127,7 +146,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### classnames 组合样式
 
-在 button 里，如果用多个 className 的话，需要组合一下，还记得你之前安装的 classnames 依赖吗？在这里它就派上用场了，它可以方便的根据条件来组合 className，在咱们这里，可以这样使用：
+在定义完这两个额外的样式之后，需要把它和`.button`定义的样式组合起来。这里可以手动去拼，也可以用之前刚开始安装的 classnames 依赖库。它可以根据条件来组合 className，只有满足一定条件的 class 才会被组合进来，在咱们这里，可以这样使用：
 
 ```jsx
 <button
@@ -248,12 +267,12 @@ main {
 
 - React 组件默认会传递 Props 参数
 - 使用 props 可以传递任何自定义的属性
+- 组件相关的文件都放到一个文件夹里
 - `css modules` - 用来生成随机局部 class 名字
-- `classnames` - 用来组合多个 class 名字
+- `classnames` - 用来组合多个 class
 
 你学会了吗？如果有问题，欢迎通过下方链接参与讨论。
 
-<!--
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/av95815105/)
+[>> 在 B 站参与讨论](https://www.bilibili.com/video/av96612743/)
 
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IyywRowJD) -->
+[>> 在 微博 参与讨论](https://weibo.com/2993970500/Iz3U19CVq)
