@@ -18,7 +18,7 @@ module.exports = {
       links: [
         { to: "/", label: "Blog", position: "right" },
         {
-          to: "docs/react-examples/01-react-props-buttons",
+          to: "docs/react-examples/01-react-props-buttons/index",
           label: "React 示例",
           position: "right"
         },

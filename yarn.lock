@@ -1520,11 +1520,12 @@
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
 "@zxuqian/react-examples@^0.1.4":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@zxuqian/react-examples/-/react-examples-0.1.6.tgz#9b247665acf780ccc95190677a26727ee3eec1e1"
-  integrity sha512-sytZx1cFCAStgaoj1jSfcDe+h1vxVLFKQHaMfW+r1AbeqoQis0bP6UVOAVe1Y8m7Q8m+QQ65tWReo+GcmHFVMw==
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@zxuqian/react-examples/-/react-examples-0.1.7.tgz#f1bd525e93a1621da4fd238927edc6b3ac2674d1"
+  integrity sha512-fS4XIWTy/OHjwbBU1hDbJx9Bh9g6lNK8GoncnPgGHBmgjSq1cIL9svqcMsZGTSvuslqRgniTfLpeF1VYzBA/Kg==
   dependencies:
     classnames "^2.2.6"
+    styled-components "^5.0.1"
 
 abbrev@1:
   version "1.1.1"
