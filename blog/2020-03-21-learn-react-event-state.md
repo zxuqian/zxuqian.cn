@@ -11,8 +11,6 @@ tags: [前端, React]
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<!-- [B 站视频 - 点击传送](https://www.bilibili.com/video/av93748753/) -->
-
 Hello, 今天教你写一个渐变背景生成器。我会用这个例子来解释 react 的 state，状态管理，还有事件处理。
 
 ## 你将学到的
@@ -24,6 +22,8 @@ Hello, 今天教你写一个渐变背景生成器。我会用这个例子来解�
 <img alt="" src={useBaseUrl('img/2020-03-21-learn-react-event-state/demo.gif')} />
 
 [源码：Github - React-Examples](https://github.com/zxuqian/react-examples)
+
+[示例和视频](../docs/react-examples/02-gradient-bg-react-state-event/index)
 
 ## State 简介
 
