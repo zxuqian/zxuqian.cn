@@ -11,7 +11,7 @@ function BVideo({ src, bsrc }) {
         frameBorder="no"
         framespacing={0}
         allowFullScreen={true}
-        style={{ width: "80%", height: "300px" }}
+        style={{ width: "100%", height: "400px" }}
       ></iframe>
       <div>
         <a href={bsrc}>点击跳转到B站进行观看~记得给个三连哦！</a>

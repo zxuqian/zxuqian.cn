@@ -1,11 +1,11 @@
 ---
 id: learn-react-props-buttons
-title: React Props：组件化开发的第一步
+title: 一组美丽的按钮 - React Props 教程
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
-description: Hello! 今天来带你走进 React 的大门！我第一次听说 React 是我在美国读研的时候，室友选了 web programming 这节课，然后遇到了关于 react 的好多问题...
+description: Rect Props 是编写可复用组件的核心，可以利用 Prop 让组件接收不同的参数，然后根据这些参数作出不同的表现，如形状、颜色等。
 tags: [前端, React]
 ---
 

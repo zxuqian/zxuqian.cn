@@ -9,6 +9,9 @@ module.exports = {
   docsSidebar: {
     // Docusaurus: ["doc1", "doc2", "doc3"],
     // Features: ["mdx"],
-    "React 基础示例": ["react-examples/01-react-props-buttons/index"]
+    "React 基础示例": [
+      "react-examples/01-react-props-buttons/index",
+      "react-examples/02-gradient-bg-react-state-event/index"
+    ]
   }
 };
