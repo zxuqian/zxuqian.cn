@@ -1,5 +1,5 @@
 ---
-to: blog/<%= h.date() %>-<%= name %>.md
+to: blog/<%= h.date() %>-<%= name %>.mdx
 ---
 ---
 id: <%= name %>
