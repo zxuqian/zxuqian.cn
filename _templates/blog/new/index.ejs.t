@@ -1,5 +1,5 @@
 ---
-to: blog/<%= h.date() %>-<%= name %>.mdx
+to: blog/<%= h.date() %>-<%= name %>.md
 ---
 ---
 id: <%= name %>
@@ -42,4 +42,3 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 [>> 在 B 站参与讨论]()
 
-[>> 在 微博 参与讨论]()
