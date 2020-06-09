@@ -13,21 +13,21 @@ module.exports = {
       title: "峰华",
       logo: {
         alt: " 峰华",
-        src: "img/logo.png"
+        src: "img/logo.png",
       },
       links: [
         { to: "/", label: "Blog", position: "right" },
         {
           to: "docs/react-examples/01-react-props-buttons/index",
           label: "React 示例",
-          position: "right"
+          position: "right",
         },
         {
           href: "https://github.com/zxuqian",
           label: "GitHub",
-          position: "right"
-        }
-      ]
+          position: "right",
+        },
+      ],
     },
     footer: {
       style: "dark",
@@ -63,26 +63,35 @@ module.exports = {
           items: [
             {
               label: "Blog",
-              to: "/"
+              to: "/",
             },
             {
               label: "GitHub",
-              href: "https://github.com/zxuqian"
+              href: "https://github.com/zxuqian",
             },
             {
               label: "Bilibili 哔哩哔哩",
-              href: "https://space.bilibili.com/302954484"
-            }
-          ]
-        }
+              href: "https://space.bilibili.com/302954484",
+            },
+          ],
+        },
+        {
+          title: "友情链接",
+          items: [
+            {
+              label: "CodeLife",
+              to: "https://yuqing521.github.io/",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus.`,
-      icp: "冀ICP备14007097号-3"
+      icp: "冀ICP备14007097号-3",
     },
     prism: {
       darkTheme: require("prism-react-renderer/themes/vsDark"),
-      defaultLanguage: "javascript"
-    }
+      defaultLanguage: "javascript",
+    },
   },
   presets: [
     [
@@ -90,26 +99,26 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs"
+          editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs",
         },
         blog: {
           path: "./blog",
-          routeBasePath: "/"
+          routeBasePath: "/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
+          customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: {
           cacheTime: 600 * 1000, // 600 sec - cache purge period
           changefreq: "daily",
-          priority: 0.5
-        }
-      }
-    ]
+          priority: 0.5,
+        },
+      },
+    ],
   ],
   themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
     path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
-    path.resolve(__dirname, "./src/plugin/plugin-google-adsense")
-  ]
+    path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
+  ],
 };
