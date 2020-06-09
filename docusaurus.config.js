@@ -79,7 +79,7 @@ module.exports = {
           title: "友情链接",
           items: [
             {
-              label: "CodeLife",
+              label: "yuqing521のblog",
               to: "https://yuqing521.github.io/",
             },
           ],
