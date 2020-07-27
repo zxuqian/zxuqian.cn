@@ -9,13 +9,13 @@ import React from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import BlogPostItem from "@theme/BlogPostItem";
+import BlogPostItem from "../BlogPostItem";
 import BlogListPaginator from "@theme/BlogListPaginator";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
   const {
-    siteConfig: { title: siteTitle }
+    siteConfig: { title: siteTitle },
   } = useDocusaurusContext();
   const isBlogOnlyMode = metadata.permalink === "/";
   const title = isBlogOnlyMode ? siteTitle : "Blog";
