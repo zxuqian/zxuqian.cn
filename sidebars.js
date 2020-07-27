@@ -6,12 +6,14 @@
  */
 
 module.exports = {
-  docsSidebar: {
-    // Docusaurus: ["doc1", "doc2", "doc3"],
+  samples: {
     // Features: ["mdx"],
     "React 基础示例": [
       "react-examples/01-react-props-buttons/index",
-      "react-examples/02-gradient-bg-react-state-event/index"
-    ]
-  }
+      "react-examples/02-gradient-bg-react-state-event/index",
+    ],
+  },
+  tutorials: {
+    CSS: ["css/box-model/box-model", "doc1"],
+  },
 };

@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   title: "峰华 - 前端工程师",
-  tagline: "",
+  tagline: "帮助你提升前端开发技能",
   url: "https://www.zxuqian.cn",
   baseUrl: "/",
   favicon: "img/favicon.ico",
@@ -15,11 +15,16 @@ module.exports = {
         alt: " 峰华",
         src: "img/logo.png",
       },
-      links: [
+      items: [
         { to: "/", label: "Blog", position: "right" },
         {
           to: "docs/react-examples/01-react-props-buttons/index",
           label: "React 示例",
+          position: "right",
+        },
+        {
+          to: "docs/doc2",
+          label: "教程",
           position: "right",
         },
         {
@@ -85,8 +90,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus.`,
-      icp: "冀ICP备14007097号-3",
+      copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus.<p>冀ICP备14007097号-3</p>`,
     },
     prism: {
       darkTheme: require("prism-react-renderer/themes/vsDark"),
