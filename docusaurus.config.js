@@ -23,7 +23,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/doc2",
+          to: "docs/css/box-model/box-model",
           label: "教程",
           position: "right",
         },

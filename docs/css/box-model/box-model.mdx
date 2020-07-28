@@ -47,26 +47,46 @@ _高度的计算方式则是：内容的高度+上下内间距+上下边框的�
 ```
 
 ```css
-.box { 
-  width: 300px; 
-  height: 200px; 
-  padding: 10px; 
+.box {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
   border: 5px solid lightblue;
-  margin: 20px; 
+  margin: 20px;
 }
 ```
+
+运行效果：
+
+export const Box = ({ style, ...props }) => (
+  <div
+    style={{
+      boxSizing: "content-box",
+      width: "300px",
+      height: "200px",
+      padding: "10px",
+      border: "5px solid lightblue",
+      margin: "20px",
+      ...style,
+    }}
+  ></div>
+);
+
+<Box />
 
 ### border-box
 
 如果把 box-sizing 的值改成 border-box，那么 width 和 height 属性就是分别设置盒子的最终宽度和高度
 
-```html
-.box { box-sizing: border-box; /* ... */ }
+```css
+.box {
+  box-sizing: border-box; /* ... */
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595826349630-4f16330b-0074-4212-81de-8bfca6dcdddd.png#align=left&display=inline&height=404&margin=%5Bobject%20Object%5D&name=image.png&originHeight=808&originWidth=722&size=45283&status=done&style=none&width=361)
-`![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595774160812-929ceaf6-9afe-4c5a-900c-975d31ca2588.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=354&originWidth=474&size=21364&status=done&style=none&width=237)`
-可以看到真实的内容宽度变成了 270，高度变成了 170，加上边框和间距之后，才是设置的 width 和 height 的值
+<Box style={{ boxSizing: "border-box" }} />
+
+可以通过浏览器开发者工具看到真实的内容宽度变成了 270，高度变成了 170，加上边框和间距之后，才是设置的 width 和 height 的值
 
 ### 特殊的盒子-替换元素
 
@@ -79,11 +99,27 @@ css 盒子模型中还有一种特殊的盒子：替换元素。替换元素是�
 />
 ```
 
-```html
-img { width: 300px; height: 300px; object-fit: cover; object-position: center }
+```css
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595827462740-36c10886-5df4-40ea-9477-776b082db43f.png#align=left&display=inline&height=321&margin=%5Bobject%20Object%5D&name=image.png&originHeight=642&originWidth=710&size=439063&status=done&style=none&width=355)
+<!-- ![img](./img/2020-07-28-21-43-10.png) -->
+
+<img
+  src="./img/2020-07-28-21-43-10.png"
+  alt=""
+  style={{
+    width: "300px",
+    height: "300px",
+    objectFit: "cover",
+    objectPosition: "center",
+  }}
+/>
 
 ## 盒子的布局方式
 
@@ -102,7 +138,18 @@ img { width: 300px; height: 300px; object-fit: cover; object-position: center }
 <p>这是另一块级元素</p>
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595772822295-2eea55a4-7f98-4703-a63c-46135a19d99a.png#align=left&display=inline&height=112&margin=%5Bobject%20Object%5D&name=image.png&originHeight=224&originWidth=1750&size=21882&status=done&style=none&width=875)
+import styled, { css } from "styled-components";
+
+export const Container = styled.div`
+  * {
+    outline: 2px solid salmon;
+  }
+`;
+
+<Container>
+  <p>这是块级元素</p>
+  <p>这是另一块级元素</p>
+</Container>
 
 #### 行内盒子
 
@@ -113,7 +160,13 @@ img { width: 300px; height: 300px; object-fit: cover; object-position: center }
 <p>这是另一块级元素</p>
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595772900657-2005374f-3ff9-4f8a-944e-40c82f080e26.png#align=left&display=inline&height=91&margin=%5Bobject%20Object%5D&name=image.png&originHeight=182&originWidth=1862&size=20998&status=done&style=none&width=931)
+<Container>
+  <p>
+    在里边有一个<span>行内</span>元素
+  </p>
+  <p>这是另一块级元素</p>
+</Container>
+
 它们两者的区别是：
 行内盒子无法手动设置宽高，并且垂直方向上的 padding 和 margin 虽然能够设置生效，但并不会挤占其他盒子的空间，会导致重叠。不过水平方向上的则会挤占其他盒子的空间:
 
@@ -122,11 +175,33 @@ img { width: 300px; height: 300px; object-fit: cover; object-position: center }
 <p>这是另一块级元素</p>
 ```
 
-```html
-.inline { width: 100px; height: 100px; margin: 25px; padding: 25px; }
+```css
+.inline {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  padding: 25px;
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595773420482-419fb647-3e37-49aa-b3d1-d19b0b05008d.png#align=left&display=inline&height=114&margin=%5Bobject%20Object%5D&name=image.png&originHeight=228&originWidth=1792&size=22285&status=done&style=none&width=896)
+<Container style={{ padding: "20px 0" }}>
+  <p>
+    在里边有一个
+    <span
+      style={{
+        width: "100px",
+        height: "100px",
+        margin: "25px",
+        padding: "25px",
+      }}
+    >
+      行内
+    </span>
+    元素
+  </p>
+  <p>这是另一块级元素</p>
+</Container>
+
 块级盒子的宽高、padding 和 margin 则都会生效并且挤占空间。
 
 ```html
@@ -139,11 +214,25 @@ p {
   width: 200px;
   height: 30px;
   margin: 24px;
-  padding: 18px;
+  padding: 5px;
 }
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595773549143-b3ab351e-8c36-4834-b588-c5c77e3f3216.png#align=left&display=inline&height=220&margin=%5Bobject%20Object%5D&name=image.png&originHeight=440&originWidth=1792&size=36248&status=done&style=none&width=896)
+export const Demo1 = styled(({ ...props }) => (
+  <Container {...props}>
+    <p>在里边有一个块级元素</p>
+    <p>这是另一块级元素</p>
+  </Container>
+))`
+  p {
+    width: 200px;
+    height: 30px;
+    margin: 24px;
+    padding: 5px;
+  }
+`;
+
+<Demo1 />
 
 ### 内部显示类型
 
@@ -157,11 +246,17 @@ p {
 </div>
 ```
 
-```html
-.container { display: flex; }
+```css
+.container {
+  display: flex;
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595773655131-5dfa9992-0b00-4b65-9350-d172d1c42e19.png#align=left&display=inline&height=89&margin=%5Bobject%20Object%5D&name=image.png&originHeight=178&originWidth=1824&size=16911&status=done&style=none&width=912)
+<Container style={{ display: "flex" }}>
+  <p>在里边有一个块级元素</p>
+  <p>这是另一块级元素</p>
+</Container>
+
 设置为 grid 可以变成栅格布局  ，它们属于非正常的文档流。
 
 ```html
@@ -171,26 +266,52 @@ p {
 </div>
 ```
 
-```html
-.container { display: grid; }
+```css
+.container {
+  display: grid;
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595773725877-ba913958-9a61-4b5b-9aed-23c8c95a9b39.png#align=left&display=inline&height=144&margin=%5Bobject%20Object%5D&name=image.png&originHeight=288&originWidth=1806&size=25190&status=done&style=none&width=903)
+<Container style={{ display: "grid" }}>
+  <p>在里边有一个块级元素</p>
+  <p>这是另一块级元素</p>
+</Container>
 
 ### inline-block 显示类型
 
 如果想让一个盒子的外部类型保持 inline 行内状态，不把后边的盒子挤占到下一行，但是又想同时设置宽高、padding 和 margin，那么可以使用 inline-block  这个显示类型，这样这个盒子就有了宽高，并且无论是水平还是垂直方向上的 padding 和 margin，都可以把周围的盒子的空间挤占掉。
 
 ```html
-<p>在里边有一个块级元素</p>
+<p>在里边有一个<span class="inlineBlock">行内</span>元素</p>
 <p>这是另一块级元素</p>
 ```
 
-```html
-p { display: inline-block; wdith: 300px; padding: 20px; margin: 20px; }
+```css
+.inlineBlock {
+  display: inline-block;
+  wdith: 300px;
+  padding: 20px;
+  margin: 20px;
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595773808606-b5f80738-cd1f-407d-a6b9-9323441dc529.png#align=left&display=inline&height=184&margin=%5Bobject%20Object%5D&name=image.png&originHeight=368&originWidth=1072&size=29827&status=done&style=none&width=536)
+<Container>
+  <p>
+    在里边有一个
+    <span
+      style={{
+        display: "inline-block",
+        wdith: "300px",
+        padding: "20px",
+        margin: "20px",
+      }}
+    >
+      行内
+    </span>
+    元素
+  </p>
+  <p>这是另一块级元素</p>
+</Container>
 
 ## 边距塌陷
 
@@ -200,12 +321,12 @@ CSS 盒子模型中，有一个问题需要特别注意一下，如果给两个�
 
 相邻的盒子之间的边距一般都会有塌陷的情况，比如一个盒子的下边距和下面盒子的上边距：
 
-```typescript
+```html
 <p class="p1">这是块级元素</p>
 <p class="p2">这是另一块级元素</p>
 ```
 
-```typescript
+```css
 .p1 {
   margin-bottom: 20px;
 }
@@ -215,20 +336,25 @@ CSS 盒子模型中，有一个问题需要特别注意一下，如果给两个�
 }
 ```
 
+<Container>
+  <p style={{ marginBottom: "20px" }}>这是块级元素</p>
+  <p style={{ marginTop: "10px" }}>这是另一块级元素</p>
+</Container>
+
 这里虽然给.p2 设置了上边距为 10px，但是他们两个的边距并不是 30px，而是取的两者的最大值 20px。
 
 ### 父子盒子之间
 
 父子盒子的边距也会塌陷，而且塌陷时，边距会放置在父盒子的外边，子盒子和父盒子之间的边距并不会生效：比如这里，.box 和 p1 的上边距塌陷了，使用了 box 设置的值 20px，而不是 30px，并且边距在 box 的外侧，p1 和 box 之间没有边距。
 
-```typescript
+```html
 <div class="box">
   <p class="p1">这是块级元素</p>
   <p class="p2">这是另一块级元素</p>
 </div>
 ```
 
-```typescript
+```css
 .box {
   margin-top: 20px;
 }
@@ -238,18 +364,29 @@ CSS 盒子模型中，有一个问题需要特别注意一下，如果给两个�
 }
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595824612018-5176e1e3-9939-49b6-b310-c7e0f02a8593.png#align=left&display=inline&height=109&margin=%5Bobject%20Object%5D&name=image.png&originHeight=218&originWidth=1792&size=23632&status=done&style=none&width=896)
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595824621420-9f81051c-977a-4a90-ad0e-4a0fbcb5597d.png#align=left&display=inline&height=105&margin=%5Bobject%20Object%5D&name=image.png&originHeight=210&originWidth=1786&size=25971&status=done&style=none&width=893)
+<Container>
+  <div style={{ marginTop: "20px" }}>
+    <p style={{ marginTop: "10px" }}>这是块级元素</p>
+    <p>这是另一块级元素</p>
+  </div>
+</Container>
+
 如果两个盒子之间有 border、padding 或者 BFC 的话，就不会有边距塌陷：
 
-```typescript
+```css
 .box {
   margin-top: 20px;
   padding: 10px;
 }
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595825296688-4c30905f-e638-43cb-9600-8e9c78863fcf.png#align=left&display=inline&height=148&margin=%5Bobject%20Object%5D&name=image.png&originHeight=296&originWidth=1814&size=52155&status=done&style=none&width=907)
+<Container>
+  <div style={{ marginTop: "20px", padding: "10px" }}>
+    <p style={{ marginTop: "10px" }}>这是块级元素</p>
+    <p>这是另一块级元素</p>
+  </div>
+</Container>
+
 下边距塌陷也是一样的，也在父盒子的外侧，这里给 box 和第二段文本设置下边距，可以看到最终下边距是 30px：：
 
 ```html
@@ -270,14 +407,30 @@ CSS 盒子模型中，有一个问题需要特别注意一下，如果给两个�
 }
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595825586771-7491d8e3-8ba8-45b3-b002-eff555fecd1b.png#align=left&display=inline&height=148&margin=%5Bobject%20Object%5D&name=image.png&originHeight=296&originWidth=1814&size=34017&status=done&style=none&width=907)
+<Container>
+  <div style={{ marginBottom: "20px" }}>
+    <p style={{ marginBottom: "30px" }}>这是块级元素</p>
+    <p>这是另一块级元素</p>
+  </div>
+  <p>测试文本</p>
+</Container>
+
 如果下边距塌陷的盒子中间有 border、padding，或者设置了 height、min-height 等属性，就不会有塌陷，这里如果把 box 的高度设置为 150px，那么第二段文本的下边距就不会塌陷了：
 
-```html
-.box { margin-bottom: 20px; height: 150px; }
+```css
+.box {
+  margin-bottom: 20px;
+  height: 150px;
+}
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/1449474/1595825726903-a9ed11e4-5c56-45c0-a093-6cf33414fad4.png#align=left&display=inline&height=230&margin=%5Bobject%20Object%5D&name=image.png&originHeight=460&originWidth=1800&size=39761&status=done&style=none&width=900)
+<Container>
+  <div style={{ marginBottom: "20px", height: "150px" }}>
+    <p style={{ marginBottom: "30px" }}>这是块级元素</p>
+    <p>这是另一块级元素</p>
+  </div>
+  <p>测试文本</p>
+</Container>
 
 ## 总结
 
