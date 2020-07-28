@@ -14,6 +14,8 @@
   --ifm-color-primary-lighter: #c6ebfc;
   --ifm-color-primary-lightest: #f2fbff;
   --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Raleway", "Yuanti SC", "Youyuan", "PingFang SC",
+    "Microsoft Yahei", Helvetica, sans-serif;
 }
 
 .docusaurus-highlight-code-line {

@@ -18,6 +18,7 @@ import ThemeContext from "@theme/ThemeContext";
 
 import styles from "./styles.module.css";
 import { MarkdownSection, StyledBlogItem } from "./style";
+import { withTheme } from "styled-components";
 
 const MONTHS = [
   "January",
@@ -123,11 +124,17 @@ function BlogPostItem(props) {
             {tags.length > 0 && (
               <div className="col">
                 <strong>Tags:</strong>
-                {tags.map(({ label, permalink: tagPermalink }) => (
+                {tags.slice(0, 4).map(({ label, permalink: tagPermalink }) => (
                   <Link
                     key={tagPermalink}
                     className="margin-horiz--sm"
                     to={tagPermalink}
+                    style={{
+                      backgroundColor: "#4ca6f3",
+                      padding: "4px",
+                      borderRadius: "4px",
+                      color: "white",
+                    }}
                   >
                     {label}
                   </Link>
@@ -140,7 +147,7 @@ function BlogPostItem(props) {
                   to={metadata.permalink}
                   aria-label={`Read more about ${title}`}
                 >
-                  <strong>Read More</strong>
+                  <strong className={styles.readMore}>阅读更多</strong>
                 </Link>
               </div>
             )}

@@ -3,20 +3,21 @@ import styled, { css } from "styled-components";
 const light = css`
   h2 {
     font-size: 1.6em;
-    font-weight: 400;
+    color: var(--ifm-link-color);
+    /* border-bottom: 2px solid var(--ifm-link-color); */
+    padding-top: 0.4em;
+    padding-bottom: 0.3em;
   }
 
   h3 {
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1em;
+    color: var(--ifm-link-color);
   }
 
   p,
   li,
   a {
     font-size: 1em;
-    font-weight: 400;
-    color: #5d5d5d;
   }
 `;
 
@@ -29,7 +30,7 @@ export const StyledBlogItem = styled.div`
     > header {
       > h1,
       > h2 {
-        font-size: 2.2em;
+        font-size: 2em;
       }
 
       > div > time {

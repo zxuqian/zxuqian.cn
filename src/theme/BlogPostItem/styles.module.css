@@ -12,3 +12,10 @@
 .blogPostDate {
   font-size: 0.9rem;
 }
+
+.readMore {
+  padding: 12px 30px;
+  background-color: var(--ifm-link-color);
+  color: white;
+  border-radius: 8px;
+}
