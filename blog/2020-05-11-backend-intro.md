@@ -11,14 +11,11 @@ tags: [前端, 后端]
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[B 站视频 - 点击传送](https://www.bilibili.com/video/BV1XV411d7Cg/)
-
-## 简介
-
 前端工程师了解后端的功能和作用之后，能更好的和后端工程师进行沟通，减少沟通成本，另外也有助于向全栈工程师方向发展。在开始之前，先回顾一下应用的构成：
 
 <!-- truncate -->
 
+[B 站视频 - 点击传送](https://www.bilibili.com/video/BV1XV411d7Cg/)
 
 ## 应用的构成
 

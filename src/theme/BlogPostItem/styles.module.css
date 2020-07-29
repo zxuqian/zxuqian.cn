@@ -14,8 +14,8 @@
 }
 
 .readMore {
-  padding: 12px 30px;
-  background-color: var(--ifm-link-color);
-  color: white;
+  margin-top: 1.4em;
+  /* background-color: var(--ifm-link-color);
+  color: white; */
   border-radius: 8px;
 }

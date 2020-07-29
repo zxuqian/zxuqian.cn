@@ -8,10 +8,10 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "zxuqian", // Usually your GitHub org/user name.
   projectName: "zxuqian.cn", // Usually your repo name.
-  stylesheets: ["https://fonts.font.im/css?family=Raleway:500"],
+  stylesheets: ["https://fonts.font.im/css?family=Raleway:500,900"],
   themeConfig: {
     navbar: {
-      title: "峰华",
+      title: "峰华前端工程师",
       logo: {
         alt: " 峰华",
         src: "img/logo.png",

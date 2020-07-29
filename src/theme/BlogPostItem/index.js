@@ -21,7 +21,7 @@ import { MarkdownSection, StyledBlogItem } from "./style";
 import { withTheme } from "styled-components";
 
 const MONTHS = [
-  "January",
+  "",
   "February",
   "March",
   "April",
@@ -56,56 +56,67 @@ function BlogPostItem(props) {
   const theme = useContext(ThemeContext);
   const { isDarkTheme } = theme;
 
+  const match = date.substring(0, 10).split("-");
+  const year = match[0];
+  const month = parseInt(match[1], 10);
+  const day = parseInt(match[2], 10);
+
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? "h1" : "h2";
-    const match = date.substring(0, 10).split("-");
-    const year = match[0];
-    const month = MONTHS[parseInt(match[1], 10) - 1];
-    const day = parseInt(match[2], 10);
 
     return (
       <header>
         <TitleHeading
-          className={clsx("margin-bottom--sm", styles.blogPostTitle)}
+          className={clsx(
+            isBlogPostPage ? "margin-bottom--md" : "margin-vert--md",
+            styles.blogPostTitle,
+            isBlogPostPage ? "text--center" : ""
+          )}
         >
           {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
         </TitleHeading>
-        <div className="margin-vert--md">
+        {/* <div className="margin-vert--md">
           <time dateTime={date} className={styles.blogPostDate}>
             {month} {day}, {year}{" "}
             {readingTime && <> · {Math.ceil(readingTime)} min read</>}
           </time>
-        </div>
-        <div className="avatar margin-vert--md">
-          {authorImageURL && (
-            <a
-              className="avatar__photo-link avatar__photo"
-              href={authorURL}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <img src={authorImageURL} alt={author} />
-            </a>
-          )}
-          <div className="avatar__intro">
-            {author && (
-              <>
-                <h4 className="avatar__name">
-                  <a href={authorURL} target="_blank" rel="noreferrer noopener">
-                    {author}
-                  </a>
-                </h4>
-                <small className="avatar__subtitle">{authorTitle}</small>
-              </>
-            )}
-          </div>
-        </div>
+        </div> */}
       </header>
     );
   };
 
+  const renderTags = () => {
+    return (
+      (tags.length > 0 || truncated) && (
+        <p className="row margin-vert--sm">
+          {tags.length > 0 && (
+            <div className="col">
+              {tags
+                .slice(0, 4)
+                .map(({ label, permalink: tagPermalink }, index) => (
+                  <Link
+                    key={tagPermalink}
+                    className={
+                      index > 0 ? "margin-horiz--md" : "margin-right--md"
+                    }
+                    to={tagPermalink}
+                    style={{ fontSize: "0.875em" }}
+                  >
+                    #{label}
+                  </Link>
+                ))}
+            </div>
+          )}
+        </p>
+      )
+    );
+  };
+
   return (
-    <StyledBlogItem isDark={isDarkTheme}>
+    <StyledBlogItem
+      isDark={isDarkTheme}
+      className={isBlogPostPage ? "margin-top--xl" : ""}
+    >
       <Head>
         {image && <meta property="og:image" content={imageUrl} />}
         {image && <meta property="twitter:image" content={imageUrl} />}
@@ -114,46 +125,56 @@ function BlogPostItem(props) {
         )}
       </Head>
 
-      <article className={!isBlogPostPage ? "margin-bottom--xl" : undefined}>
-        {renderPostHeader()}
-        <MarkdownSection isDark={isDarkTheme} className="markdown">
-          <MDXProvider components={MDXComponents}>{children}</MDXProvider>
-        </MarkdownSection>
-        {(tags.length > 0 || truncated) && (
-          <footer className="row margin-vert--lg">
-            {tags.length > 0 && (
-              <div className="col">
-                <strong>Tags:</strong>
-                {tags.slice(0, 4).map(({ label, permalink: tagPermalink }) => (
-                  <Link
-                    key={tagPermalink}
-                    className="margin-horiz--sm"
-                    to={tagPermalink}
-                    style={{
-                      backgroundColor: "#4ca6f3",
-                      padding: "4px",
-                      borderRadius: "4px",
-                      color: "white",
-                    }}
-                  >
-                    {label}
-                  </Link>
-                ))}
+      <div className="row">
+        {/* 列表页日期 */}
+        {!isBlogPostPage && (
+          <div className="col col--2 ">
+            <div class="post__date margin-top--lg">
+              <div class="post__day">{day}</div>
+              <div class="post__year_month">
+                {year}年{month}月
+              </div>
+            </div>
+          </div>
+        )}
+        <div
+          className={`col ${isBlogPostPage ? `col--12` : `col--10`}`}
+          style={{ paddingLeft: "2em" }}
+        >
+          {/* 列表页标签 */}
+          {!isBlogPostPage && renderTags()}
+          {/* 博文部分 */}
+          <article
+            className={!isBlogPostPage ? "margin-bottom--md" : undefined}
+          >
+            {/* 标题 */}
+            {renderPostHeader()}
+            {/* 发布日期 */}
+            {isBlogPostPage && (
+              <p className={`single-post--date text--center`}>
+                {year}年{month}月{day}日
+              </p>
+            )}
+            {/* 标签 */}
+            {isBlogPostPage && (
+              <div className="text--center margin-bottom--lg padding-bottom--xs">
+                {renderTags()}
               </div>
             )}
+            {/* 正文 */}
+            <MarkdownSection isDark={isDarkTheme} className="markdown">
+              <MDXProvider components={MDXComponents}>{children}</MDXProvider>
+            </MarkdownSection>
+          </article>
+          <footer>
             {truncated && (
-              <div className="col text--right">
-                <Link
-                  to={metadata.permalink}
-                  aria-label={`Read more about ${title}`}
-                >
-                  <strong className={styles.readMore}>阅读更多</strong>
-                </Link>
-              </div>
+              <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
+                <strong className={styles.readMore}>阅读原文</strong>
+              </Link>
             )}
           </footer>
-        )}
-      </article>
+        </div>
+      </div>
     </StyledBlogItem>
   );
 }

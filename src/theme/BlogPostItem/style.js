@@ -3,21 +3,33 @@ import styled, { css } from "styled-components";
 const light = css`
   h2 {
     font-size: 1.6em;
-    color: var(--ifm-link-color);
+
     /* border-bottom: 2px solid var(--ifm-link-color); */
-    padding-top: 0.4em;
-    padding-bottom: 0.3em;
+    /* padding-top: 0.4em;
+    padding-bottom: 0.3em; */
   }
 
   h3 {
     font-size: 1em;
-    color: var(--ifm-link-color);
+    /* color: var(--ifm-link-color); */
+  }
+
+  h2,
+  h3 {
+    color: var(--post-title-color);
   }
 
   p,
   li,
   a {
     font-size: 1em;
+    line-height: 1.8em;
+    /* letter-spacing: 0.04em; */
+  }
+
+  p,
+  li {
+    color: #292929;
   }
 `;
 
@@ -26,15 +38,23 @@ export const MarkdownSection = styled.section`
 `;
 
 export const StyledBlogItem = styled.div`
-  > article {
+  margin-bottom: 5.25em;
+  article {
     > header {
-      > h1,
-      > h2 {
+      > h1 {
         font-size: 2em;
       }
 
+      > h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px !important;
+        a {
+          color: var(--post-title-color);
+        }
+      }
+
       > div > time {
-        color: #8c8c8c;
+        color: var(--post-pub-date-color);
       }
     }
   }

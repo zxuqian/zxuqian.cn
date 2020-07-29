@@ -10,7 +10,7 @@ tags: [前端, 职业]
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[B 站视频 - 点击传送](https://www.bilibili.com/video/av93748753/)
+
 
 如果你看了上期视频的话，那么你应该学会了怎么在本地搭建一个 docusaurus 博客，但是你不能只在本地来看这个博客吧，得让全世界来欣赏你的杰作，所以说咱们得把这个博客部署到服务器上。部署有两种方式：
 
@@ -18,6 +18,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 - 部署在国内，需要自己购买一个域名，还有服务器，大概有个 300 来块钱就差不多了。
 
 <!--truncate-->
+
+[B 站视频 - 点击传送](https://www.bilibili.com/video/av93748753/)
 
 ## 发布到 github
 

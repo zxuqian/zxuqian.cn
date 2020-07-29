@@ -9,19 +9,13 @@ description: HTTP 协议包括客户端和服务端两个实体，客户端发�
 tags: [前端, React]
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
-[B 站视频 - 点击传送](https://www.bilibili.com/video/BV1KV411o7u5/)
-
-## 简介
-
-前后端数据的交换一般是基于 HTTP 协议。
-
-HTTP 协议包括客户端和服务端两个实体，客户端发送请求给服务端，服务端返回响应给客户端。
-
-在 HTTP 中，数据称为资源，可以是 html 文档、图片、也可以是普通文本。资源是通过 URL 进行定位的。
+前后端数据的交换一般是基于 HTTP 协议。HTTP 协议包括客户端和服务端两个实体，客户端发送请求给服务端，服务端返回响应给客户端。在 HTTP 中，数据称为资源，可以是 html 文档、图片、也可以是普通文本。资源是通过 URL 进行定位的。
 
 <!-- truncate -->
+
+[B 站视频 - 点击传送](https://www.bilibili.com/video/BV1KV411o7u5/)
 
 ## URL
 
@@ -63,11 +57,11 @@ Accept-Encoding: gzip, deflate
 
 ```
 
-- 请求方式， 告知服务器要进行的操作，GET是默认请求方式，意思是从服务端获取资源，另外还有几个其他常用的方式：
+- 请求方式， 告知服务器要进行的操作，GET 是默认请求方式，意思是从服务端获取资源，另外还有几个其他常用的方式：
   - POST - 创建资源
   - PUT - 更新资源
   - DELETE - 删除资源
-  - 区别是 GET 和 DELETE 一般没有请求体。而POST 和 PUT 通常带有请求体，用于向服务端发送资源信息。
+  - 区别是 GET 和 DELETE 一般没有请求体。而 POST 和 PUT 通常带有请求体，用于向服务端发送资源信息。
 
 接下来是：
 
@@ -75,7 +69,6 @@ Accept-Encoding: gzip, deflate
 - HTTP 版本
 - 请求头，包含额外的信息来帮助服务器决定如何进行响应，比如使用 accept 设置接收响应资源的类型
 - 请求体，是需要发送给服务器的数据
-
 
 ## 接收响应
 
@@ -120,7 +113,7 @@ HTTP 协议是无状态的，每次客户端发出的请求都被认为是从全
 
 ## HTTP/2
 
-现在 HTTP/2已经可以正式开始使用了，它跟 HTTP 1.1不同的是：
+现在 HTTP/2 已经可以正式开始使用了，它跟 HTTP 1.1 不同的是：
 
 - 数据通过二进制形式传输，不再是文本形式
 - 多路复用 - 建立连接后一次可以发送多个 HTTP 请求
