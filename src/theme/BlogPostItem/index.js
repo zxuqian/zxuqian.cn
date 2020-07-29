@@ -128,7 +128,7 @@ function BlogPostItem(props) {
       <div className="row">
         {/* 列表页日期 */}
         {!isBlogPostPage && (
-          <div className="col col--2 ">
+          <div className="col col--2 padding-right--lg">
             <div class="post__date margin-top--lg">
               <div class="post__day">{day}</div>
               <div class="post__year_month">
@@ -137,10 +137,7 @@ function BlogPostItem(props) {
             </div>
           </div>
         )}
-        <div
-          className={`col ${isBlogPostPage ? `col--12` : `col--10`}`}
-          style={{ paddingLeft: "2em" }}
-        >
+        <div className={`col ${isBlogPostPage ? `col--12` : `col--10`}`}>
           {/* 列表页标签 */}
           {!isBlogPostPage && renderTags()}
           {/* 博文部分 */}
