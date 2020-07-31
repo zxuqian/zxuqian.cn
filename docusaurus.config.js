@@ -110,7 +110,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 峰华 Built with Docusaurus.<p>冀ICP备14007097号-3</p>`,
+      copyright: `Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.<p>冀ICP备14007097号-3</p>`,
     },
     prism: {
       darkTheme: require("prism-react-renderer/themes/vsDark"),
@@ -128,6 +128,11 @@ module.exports = {
         blog: {
           path: "./blog",
           routeBasePath: "/",
+          feedOptions: {
+            type: "all",
+            title: "峰华前端工程师",
+            copyright: `Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.<p>冀ICP备14007097号-3</p>`,
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
