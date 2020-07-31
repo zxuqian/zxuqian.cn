@@ -14,15 +14,11 @@ tags: [前端, React]
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<!-- [B 站视频 - 点击传送]() -->
-
-
-## 简介
-
 <img alt="" src={useBaseUrl('img/2020-03-15-learn-react-props-buttons/2020-03-15-19-02-33.png')} />
 
 <!-- truncate -->
 
+<!-- [B 站视频 - 点击传送]() -->
 
 [源码：Github - React-Examples](https://github.com/zxuqian/react-examples)
 
