@@ -18,6 +18,7 @@
     "Microsoft Yahei", Helvetica, sans-serif;
 
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
+  --ifm-toc-border-color: #f7f7f7;
 }
 
 html {
@@ -30,6 +31,7 @@ html[data-theme="dark"] {
   --post-title-color: white;
   --post-pub-date-color: var(--ifm-color-gray-100);
   --divider-color: #353535;
+  --ifm-toc-border-color: #313131;
 }
 
 /* h1,
