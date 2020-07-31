@@ -146,10 +146,11 @@ function BlogPostItem(props) {
           >
             {/* 标题 */}
             {renderPostHeader()}
-            {/* 发布日期 */}
+            {/* 发布日期与阅读时间 */}
             {isBlogPostPage && (
               <p className={`single-post--date text--center`}>
-                {year}年{month}月{day}日
+                {year}年{month}月{day}日 · 预计阅读时间：
+                {readingTime && <> {Math.ceil(readingTime)} 分钟</>}
               </p>
             )}
             {/* 标签 */}

@@ -29,7 +29,7 @@ const light = css`
 
   p,
   li {
-    color: #292929;
+    color: #545a5f;
   }
 `;
 

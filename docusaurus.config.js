@@ -17,7 +17,21 @@ module.exports = {
         src: "img/logo.png",
       },
       items: [
-        { to: "/", label: "Blog", position: "right" },
+        {
+          to: "/",
+          label: "Blog",
+          position: "right",
+        },
+        {
+          label: "系列课程",
+          position: "right",
+          items: [
+            {
+              label: "React 即时通信 UI 开发实战",
+              to: "docs/course/react-chat-ui/react-chat-ui",
+            },
+          ],
+        },
         {
           to: "docs/react-examples/01-react-props-buttons/index",
           label: "React 示例",
@@ -31,6 +45,11 @@ module.exports = {
         {
           href: "https://github.com/zxuqian",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://support.qq.com/product/179297",
+          label: "社区讨论",
           position: "right",
         },
       ],
