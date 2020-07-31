@@ -20,27 +20,20 @@ import styled from "styled-components";
 
 <Purchase />
 
-export const Purchase = ({ ...props }) => {
+export const Purchase = styled(({ ...props }) => {
   return (
-    <div
-      style={{
-        display: "grid",
-        gap: "20px",
-        gridTemplateColumns: "repeat(3, max-content)",
-      }}
-      {...props}
-    >
+    <div {...props}>
       <a
         href="https://ke.qq.com/course/2839093?tuin=3850fdc6"
         className={`button button--primary`}
       >
-        腾讯课堂购买
+        腾讯课堂
       </a>
       <a
         href="https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128"
         className={`button button--success`}
       >
-        网易云课堂购买
+        网易云课堂
       </a>
       <a
         href="https://chat-ui-course.vercel.app/"
@@ -51,7 +44,14 @@ export const Purchase = ({ ...props }) => {
       </a>
     </div>
   );
-};
+})`
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, min-content);
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+`;
 
 ## 为什么选这门课？
 
