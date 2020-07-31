@@ -19,7 +19,7 @@ module.exports = {
       items: [
         {
           to: "/",
-          label: "Blog",
+          label: "博客",
           position: "right",
         },
         {
