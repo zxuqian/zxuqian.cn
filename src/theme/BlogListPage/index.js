@@ -12,7 +12,12 @@ import Layout from "@theme/Layout";
 import BlogPostItem from "../BlogPostItem";
 import BlogListPaginator from "@theme/BlogListPaginator";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faQq } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faQq,
+  faWeixin,
+} from "@fortawesome/free-brands-svg-icons";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 // import bilibiliIcon from "@site/static/icons/bilibili.svg";
 
@@ -93,9 +98,15 @@ function SocialLinks({ ...props }) {
       <a href="https://github.com/zxuqian">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="https://space.bilibili.com/302954484">
-        <FontAwesomeIcon icon={faQq} />
-      </a>
+      <div class="dropdown dropdown--hoverable">
+        <FontAwesomeIcon icon={faWeixin} color="#07C160" size="lg" />
+        <span>公众号</span>
+        <img
+          width="50%"
+          className="dropdown__menu"
+          src={useBaseUrl("/img/publicQR.png")}
+        />
+      </div>
     </div>
   );
 }

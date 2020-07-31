@@ -66,7 +66,7 @@ h6 {
 }
 
 .bloghome__intro > p {
-  margin: 26px 0px 44px 0;
+  margin: 26px 0px 24px 0;
 }
 
 .content__divider {
@@ -105,13 +105,29 @@ h6 {
 }
 
 .social__links {
-  width: 50%;
+  width: 100%;
   display: flex;
-  max-width: 200px;
+  max-width: 250px;
+  align-items: center;
   justify-content: space-between;
+  padding-bottom: 24px;
 }
 
-.social__links > a,
+.social__links > *,
 .social__links img {
   color: var(--ifm-navbar-link-color);
+}
+
+.social__links .dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.social__links .dropdown span {
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+.social__links .dropdown__menu {
+  max-width: initial;
 }

@@ -87,7 +87,7 @@ module.exports = {
           title: "Social",
           items: [
             {
-              label: "Blog",
+              label: "博客",
               to: "/",
             },
             {
@@ -97,6 +97,15 @@ module.exports = {
             {
               label: "Bilibili 哔哩哔哩",
               href: "https://space.bilibili.com/302954484",
+            },
+            {
+              label: "网易云课堂",
+              href:
+                "https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128",
+            },
+            {
+              label: "腾讯课堂",
+              href: "https://ke.qq.com/course/2839093?tuin=3850fdc6",
             },
           ],
         },
