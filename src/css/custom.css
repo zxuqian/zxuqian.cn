@@ -133,3 +133,8 @@ h6 {
 .social__links .dropdown__menu {
   max-width: initial;
 }
+
+.article__footer {
+  display: flex;
+  justify-content: space-between;
+}

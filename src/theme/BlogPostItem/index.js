@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import clsx from "clsx";
 import { MDXProvider } from "@mdx-js/react";
 
@@ -44,7 +44,7 @@ function BlogPostItem(props) {
     isBlogPostPage = false,
   } = props;
   const { date, permalink, tags, readingTime } = metadata;
-  const { author, title, image } = frontMatter;
+  const { id: postId, author, title, image } = frontMatter;
 
   const authorURL = frontMatter.author_url || frontMatter.authorURL;
   const authorTitle = frontMatter.author_title || frontMatter.authorTitle;
@@ -60,6 +60,30 @@ function BlogPostItem(props) {
   const year = match[0];
   const month = parseInt(match[1], 10);
   const day = parseInt(match[2], 10);
+
+  // 获取阅读数
+  const [viewCount, setViewCount] = useState(0);
+  const getViewCount = async () => {
+    try {
+      const res = await fetch(
+        "https://1377042470463246.cn-beijing.fc.aliyuncs.com/2016-08-15/proxy/zxuqian-cn/webApi/post/views/" +
+          encodeURI(postId),
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const resJSON = await res.json();
+      const { views = 0 } = resJSON;
+      setViewCount(views);
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    getViewCount();
+  }, []);
 
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? "h1" : "h2";
@@ -125,6 +149,9 @@ function BlogPostItem(props) {
         )}
       </Head>
 
+      {/* 统计 */}
+      {isBlogPostPage && <Count postId={postId} />}
+
       <div className="row">
         {/* 列表页日期 */}
         {!isBlogPostPage && (
@@ -159,22 +186,44 @@ function BlogPostItem(props) {
                 {renderTags()}
               </div>
             )}
+
             {/* 正文 */}
             <MarkdownSection isDark={isDarkTheme} className="markdown">
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
           </article>
-          <footer>
+          <footer className="article__footer">
             {truncated && (
               <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
                 <strong className={styles.readMore}>阅读原文</strong>
               </Link>
             )}
+            <span className="footer__read_count">阅读（{viewCount}）</span>
           </footer>
         </div>
       </div>
     </StyledBlogItem>
   );
+}
+
+function Count({ postId, ...post }) {
+  const addViewCount = async () => {
+    await fetch(
+      "https://1377042470463246.cn-beijing.fc.aliyuncs.com/2016-08-15/proxy/zxuqian-cn/webApi/post/increase_view",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ postId }),
+      }
+    );
+  };
+
+  useEffect(() => {
+    addViewCount();
+  }, []);
+  return null;
 }
 
 export default BlogPostItem;
