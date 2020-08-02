@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -25,12 +25,37 @@ import useThemeContext from "@theme/hooks/useThemeContext";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
+
   const {
     siteConfig: { title: siteTitle },
   } = useDocusaurusContext();
   const isBlogOnlyMode = metadata.permalink === "/";
   const title = isBlogOnlyMode ? siteTitle : "Blog";
   const description = `不仅仅是前端工程师，分享React.js, HTML, CSS, JavaScript, Node.js 技术以及个人发展、自我提升相关的心得`;
+
+  // Get all post views
+  const postIds = items.map(({ content }) => {
+    return content?.frontMatter?.id;
+  });
+  const [views, setViews] = useState([]);
+  const getViews = async () => {
+    try {
+      const res = await fetch("https://api.zxuqian.cn/post/views", {
+        method: "POST",
+        body: JSON.stringify(postIds),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const views = await res.json();
+      setViews(views);
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    getViews();
+  }, []);
+
   return (
     <Layout title={title} description={description}>
       <div className="container margin-vert--xl">
@@ -70,6 +95,10 @@ function BlogListPage(props) {
                 frontMatter={BlogPostContent.frontMatter}
                 metadata={BlogPostContent.metadata}
                 truncated={BlogPostContent.metadata.truncated}
+                views={
+                  views.find((v) => v.slug == BlogPostContent.frontMatter.id)
+                    ?.views
+                }
               >
                 <BlogPostContent />
               </BlogPostItem>

@@ -42,6 +42,7 @@ function BlogPostItem(props) {
     metadata,
     truncated,
     isBlogPostPage = false,
+    views,
   } = props;
   const { date, permalink, tags, readingTime } = metadata;
   const { id: postId, author, title, image } = frontMatter;
@@ -60,29 +61,6 @@ function BlogPostItem(props) {
   const year = match[0];
   const month = parseInt(match[1], 10);
   const day = parseInt(match[2], 10);
-
-  // 获取阅读数
-  const [viewCount, setViewCount] = useState(0);
-  const getViewCount = async () => {
-    try {
-      const res = await fetch(
-        "https://api.zxuqian.cn/post/views/" + encodeURI(postId),
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      const resJSON = await res.json();
-      const { views = 0 } = resJSON;
-      setViewCount(views);
-    } catch (error) {}
-  };
-
-  useEffect(() => {
-    getViewCount();
-  }, []);
 
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? "h1" : "h2";
@@ -197,7 +175,7 @@ function BlogPostItem(props) {
                 <strong className={styles.readMore}>阅读原文</strong>
               </Link>
             )}
-            <span className="footer__read_count">阅读（{viewCount}）</span>
+            <span className="footer__read_count">阅读（{views}）</span>
           </footer>
         </div>
       </div>
