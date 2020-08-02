@@ -138,3 +138,7 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+
+.footer__read_count {
+  opacity: 0.8;
+}

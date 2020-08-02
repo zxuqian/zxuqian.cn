@@ -66,8 +66,7 @@ function BlogPostItem(props) {
   const getViewCount = async () => {
     try {
       const res = await fetch(
-        "https://1377042470463246.cn-beijing.fc.aliyuncs.com/2016-08-15/proxy/zxuqian-cn/webApi/post/views/" +
-          encodeURI(postId),
+        "https://api.zxuqian.cn/post/views/" + encodeURI(postId),
         {
           method: "GET",
           headers: {
@@ -208,16 +207,13 @@ function BlogPostItem(props) {
 
 function Count({ postId, ...post }) {
   const addViewCount = async () => {
-    await fetch(
-      "https://1377042470463246.cn-beijing.fc.aliyuncs.com/2016-08-15/proxy/zxuqian-cn/webApi/post/increase_view",
-      {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ postId }),
-      }
-    );
+    await fetch("https://api.zxuqian.cn/post/increase_view", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ postId }),
+    });
   };
 
   useEffect(() => {
