@@ -175,7 +175,9 @@ function BlogPostItem(props) {
                 <strong className={styles.readMore}>阅读原文</strong>
               </Link>
             )}
-            <span className="footer__read_count">阅读（{views}）</span>
+            {!isBlogPostPage && (
+              <span className="footer__read_count">阅读（{views}）</span>
+            )}
           </footer>
         </div>
       </div>
