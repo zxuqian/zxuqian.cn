@@ -1,5 +1,5 @@
 ---
-id: programmer-t-type-career
+slug: programmer-t-type-career
 title: 职业规划：程序员的 T 字形发展攻略
 author: 峰华
 author_title: 前端工程师 / B站UP主

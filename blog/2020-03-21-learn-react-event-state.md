@@ -1,5 +1,5 @@
 ---
-id: learn-react-event-and-state
+slug: learn-react-event-and-state
 title: 制作渐变背景生成器 - React State和Event教程
 author: 峰华
 author_title: 前端工程师 / B站UP主

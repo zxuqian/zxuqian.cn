@@ -1,5 +1,5 @@
 ---
-id: learning-english-for-coders
+slug: learning-english-for-coders
 title: 程序员如何提升英语水平
 author: 峰华
 author_title: 前端工程师 / B站UP主

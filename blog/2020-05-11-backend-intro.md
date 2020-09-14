@@ -1,5 +1,5 @@
 ---
-id: backend-intro
+slug: backend-intro
 title: 给前端工程师看的后端科普
 author: 峰华
 author_title: 前端工程师 / B站UP主

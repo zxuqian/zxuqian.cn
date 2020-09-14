@@ -1,5 +1,5 @@
 ---
-id: css-flex-box-layout
+slug: css-flex-box-layout
 title: CSS Flexbox 布局教程 2020 最新版
 author: 峰华
 author_title: 前端工程师 / B站UP主

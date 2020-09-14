@@ -4,20 +4,20 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import {MDXProvider} from '@mdx-js/react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import renderRoutes from '@docusaurus/renderRoutes';
-import Layout from '@theme/Layout';
-import DocSidebar from '@theme/DocSidebar';
-import MDXComponents from '@theme/MDXComponents';
-import NotFound from '@theme/NotFound';
-import {matchPath} from '@docusaurus/router';
-import styles from './styles.module.css';
+import React from "react";
+import { MDXProvider } from "@mdx-js/react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import renderRoutes from "@docusaurus/renderRoutes";
+import Layout from "@theme/Layout";
+import DocSidebar from "@theme/DocSidebar";
+import MDXComponents from "@theme/MDXComponents";
+import NotFound from "@theme/NotFound";
+import { matchPath } from "@docusaurus/router";
+import styles from "./styles.module.css";
 
-function DocPageContent({currentDocRoute, docsMetadata, children}) {
-  const {siteConfig, isClient} = useDocusaurusContext();
-  const {permalinkToSidebar, docsSidebars, version} = docsMetadata;
+function DocPageContent({ currentDocRoute, versionMetadata, children }) {
+  const { siteConfig, isClient } = useDocusaurusContext();
+  const { permalinkToSidebar, docsSidebars, version } = versionMetadata;
   const sidebarName = permalinkToSidebar[currentDocRoute.path];
   const sidebar = docsSidebars[sidebarName];
   return (
@@ -44,12 +44,12 @@ function DocPageContent({currentDocRoute, docsMetadata, children}) {
 
 function DocPage(props) {
   const {
-    route: {routes: docRoutes},
-    docsMetadata,
+    route: { routes: docRoutes },
+    versionMetadata,
     location,
   } = props;
   const currentDocRoute = docRoutes.find((docRoute) =>
-    matchPath(location.pathname, docRoute),
+    matchPath(location.pathname, docRoute)
   );
 
   if (!currentDocRoute) {
@@ -59,7 +59,8 @@ function DocPage(props) {
   return (
     <DocPageContent
       currentDocRoute={currentDocRoute}
-      docsMetadata={docsMetadata}>
+      versionMetadata={versionMetadata}
+    >
       {renderRoutes(docRoutes)}
     </DocPageContent>
   );

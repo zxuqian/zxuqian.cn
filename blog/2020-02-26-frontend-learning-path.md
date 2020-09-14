@@ -1,5 +1,5 @@
 ---
-id: front-end-learning-path
+slug: front-end-learning-path
 title: 2020年最新前端学习路线
 author: 峰华
 author_title: 前端工程师 / B站UP主

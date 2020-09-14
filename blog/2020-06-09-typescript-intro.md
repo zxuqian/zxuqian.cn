@@ -1,5 +1,5 @@
 ---
-id: typescript-intro
+slug: typescript-intro
 title: 噢！原来这就是 TypeScript
 author: 峰华
 author_title: 前端工程师 / B站UP主

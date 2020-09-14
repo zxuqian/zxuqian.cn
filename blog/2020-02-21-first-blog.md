@@ -1,5 +1,5 @@
 ---
-id: first-blog
+slug: first-blog
 title: 第 N 个第一篇博客
 author: 峰华
 author_title: 前端工程师 / B站UP主

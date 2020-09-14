@@ -1,5 +1,5 @@
 ---
-id: frontend-devs-must-know-websites
+slug: frontend-devs-must-know-websites
 title: 11个前端工程师必备的网站
 author: 峰华
 author_title: 前端工程师 / B站UP主
