@@ -35,7 +35,7 @@ function BlogListPage(props) {
 
   // Get all post views
   const postIds = items.map(({ content }) => {
-    return content?.frontMatter?.id;
+    return content?.frontMatter?.slug;
   });
   const [views, setViews] = useState([]);
   const getViews = async () => {
@@ -96,7 +96,7 @@ function BlogListPage(props) {
                 metadata={BlogPostContent.metadata}
                 truncated={BlogPostContent.metadata.truncated}
                 views={
-                  views.find((v) => v.slug == BlogPostContent.frontMatter.id)
+                  views.find((v) => v.slug == BlogPostContent.frontMatter.slug)
                     ?.views
                 }
               >

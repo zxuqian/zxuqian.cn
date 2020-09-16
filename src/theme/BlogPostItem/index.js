@@ -45,7 +45,7 @@ function BlogPostItem(props) {
     views,
   } = props;
   const { date, permalink, tags, readingTime } = metadata;
-  const { id: postId, author, title, image } = frontMatter;
+  const { slug: postId, author, title, image } = frontMatter;
 
   const authorURL = frontMatter.author_url || frontMatter.authorURL;
   const authorTitle = frontMatter.author_title || frontMatter.authorTitle;
