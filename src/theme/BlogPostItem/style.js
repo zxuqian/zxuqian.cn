@@ -45,7 +45,7 @@ export const StyledBlogItem = styled.div`
         font-size: 2em;
       }
 
-      /* > h2 {
+      > h2 {
         font-size: 1.5em;
         margin-bottom: 20px !important;
         a {
@@ -55,7 +55,7 @@ export const StyledBlogItem = styled.div`
 
       > div > time {
         color: var(--post-pub-date-color);
-      } */
+      }
     }
 
     .markdown > h1 {
