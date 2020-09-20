@@ -6,7 +6,7 @@ author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 使用鸿蒙 JS 框架开发 Todo 应用的 TV 版 UI 界面。
-tags: [前端, React]
+tags: [前端, 鸿蒙, JavaScript]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
