@@ -2,7 +2,7 @@
 to: blog/<%= h.date() %>-<%= name %>.md
 ---
 ---
-id: <%= name %>
+slug: <%= name %>
 title: 
 author: 峰华
 author_title: 前端工程师 / B站UP主
