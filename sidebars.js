@@ -14,6 +14,6 @@ module.exports = {
     ],
   },
   tutorials: {
-    CSS: ["css/box-model/box-model", "doc1"],
+    基础: ["css/box-model/box-model"],
   },
 };

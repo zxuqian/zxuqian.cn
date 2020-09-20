@@ -33,13 +33,18 @@ module.exports = {
           ],
         },
         {
-          to: "docs/react-examples/01-react-props-buttons/index",
-          label: "React 示例",
+          label: "系列教程",
           position: "right",
+          items: [
+            {
+              label: "CSS",
+              to: "docs/css/box-model/box-model",
+            },
+          ],
         },
         {
-          to: "docs/css/box-model/box-model",
-          label: "教程",
+          to: "docs/react-examples/01-react-props-buttons/index",
+          label: "React 示例",
           position: "right",
         },
         {
