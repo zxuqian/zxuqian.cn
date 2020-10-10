@@ -53,7 +53,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://support.qq.com/product/179297",
+          href: "https://github.com/zxuqian/frontend-questions/issues",
           label: "社区讨论",
           position: "right",
         },
