@@ -159,7 +159,7 @@ module.exports = {
       },
     ],
   ],
-  themes: [require.resolve("@docusaurus/theme-live-codeblock")],
+  themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
     path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
     // path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
