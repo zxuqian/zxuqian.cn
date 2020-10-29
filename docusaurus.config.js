@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
   title: "峰华前端工程师",
   tagline: "帮助你提升前端开发技能",
+  titleDelimiter: "-",
   url: "https://www.zxuqian.cn",
   baseUrl: "/",
   favicon: "img/favicon.ico",

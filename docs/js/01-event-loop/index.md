@@ -12,13 +12,9 @@ keywords:
 # image: https://i.imgur.com/mErPwqL.png
 ---
 
-## 视频
-
 import BVideo from "../../../src/components/BVideo";
 
 <BVideo src="//player.bilibili.com/player.html?aid=285227869&bvid=BV1kf4y1U7Ln&cid=177957175&page=1" bsrc="https://www.bilibili.com/video/BV1kf4y1U7Ln/"/>
-
-## 脚本
 
 JavaScript 是一门单线程的语言，它的异步和多线程的实现是通过 Event Loop 事件循环机制来实现的。Event Loop 包括三个概念：调用栈(call stack)、消息队列(Message Queue)和微任务队列(Microtask Queue)。
 
