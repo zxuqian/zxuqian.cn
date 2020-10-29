@@ -23,6 +23,11 @@ module.exports = {
           position: "right",
         },
         {
+          label: "视频系列",
+          position: "right",
+          to: "docs/js/01-event-loop/event-loop",
+        },
+        {
           label: "系列课程",
           position: "right",
           items: [
@@ -36,10 +41,6 @@ module.exports = {
           label: "教程",
           position: "right",
           items: [
-            {
-              label: "视频系列",
-              to: "docs/js/01-event-loop/event-loop",
-            },
             {
               label: "CSS",
               to: "docs/css/box-model/box-model",
