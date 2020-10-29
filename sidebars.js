@@ -8,12 +8,15 @@
 module.exports = {
   samples: {
     // Features: ["mdx"],
-    "React 基础示例": ["react-props-button", "react-state-event-gradient"],
+    "React 基础示例": [
+      "react-examples/01-react-props-buttons/react-props-button",
+      "react-examples/02-gradient-bg-react-state-event/react-state-event-gradient",
+    ],
   },
   css_tutorials: {
-    基础: ["box-model"],
+    基础: ["css/box-model/box-model"],
   },
   videos: {
-    JavaScript: ["event-loop"],
+    JavaScript: ["js/01-event-loop/event-loop"],
   },
 };
