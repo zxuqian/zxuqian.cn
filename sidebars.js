@@ -13,7 +13,10 @@ module.exports = {
       "react-examples/02-gradient-bg-react-state-event/index",
     ],
   },
-  tutorials: {
+  css_tutorials: {
     基础: ["css/box-model/box-model"],
+  },
+  videos: {
+    JavaScript: ["js/01-event-loop/event-loop"],
   },
 };

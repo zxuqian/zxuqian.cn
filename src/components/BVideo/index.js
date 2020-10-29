@@ -22,7 +22,7 @@ function BVideo({ src, bsrc }) {
 
 BVideo.propTypes = {
   src: PropTypes.string.isRequired,
-  bsrc: PropTypes.string
+  bsrc: PropTypes.string,
 };
 
 export default BVideo;

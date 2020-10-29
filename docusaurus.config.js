@@ -33,19 +33,23 @@ module.exports = {
           ],
         },
         {
-          label: "系列教程",
+          label: "教程",
           position: "right",
           items: [
+            {
+              label: "视频系列",
+              to: "docs/js/01-event-loop/event-loop",
+            },
             {
               label: "CSS",
               to: "docs/css/box-model/box-model",
             },
+            {
+              to: "docs/react-examples/01-react-props-buttons/index",
+              label: "React 示例",
+              position: "right",
+            },
           ],
-        },
-        {
-          to: "docs/react-examples/01-react-props-buttons/index",
-          label: "React 示例",
-          position: "right",
         },
         {
           href: "https://github.com/zxuqian",
