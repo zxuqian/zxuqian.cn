@@ -1,4 +1,5 @@
 ---
+id: react-state-event-gradient
 title: 渐变背景生成器 - React State & Event 示例
 sidebar_label: 渐变背景生成器
 description: 用一个渐变背景生成器来演示React State & Event 用法。

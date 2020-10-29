@@ -1,4 +1,5 @@
 ---
+id: react-props-button
 title: React Props - 按钮示例
 sidebar_label: 按钮示例（props)
 description: 使用按钮组件展示 React Props 的使用方法
