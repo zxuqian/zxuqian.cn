@@ -21,7 +21,7 @@ Hello, 今天教你写一个渐变背景生成器。我会用这个例子来解�
 
 [源码：Github - React-Examples](https://github.com/zxuqian/react-examples)
 
-[示例和视频](../docs/react-examples/02-gradient-bg-react-state-event/index)
+[示例和视频](../docs/react-examples/02-gradient-bg-react-state-event/react-state-event-gradient)
 
 ## State 简介
 
