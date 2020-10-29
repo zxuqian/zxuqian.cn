@@ -61,7 +61,7 @@ function BlogListPage(props) {
       <div className="container margin-vert--xl">
         {/* 个人简介 */}
         <div className="row">
-          <div className="col col--10 col--offset-1 bloghome__intro">
+          <div className="col col--12 bloghome__intro">
             <h1>
               Hello! 我是<span className="intro__name">峰华</span>
             </h1>
