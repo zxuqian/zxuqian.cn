@@ -47,7 +47,7 @@ module.exports = {
               to: "docs/css/box-model/box-model",
             },
             {
-              to: "docs/react-examples/01-react-props-buttons/index",
+              to: "dreact-examples/01-react-props-buttons/react-props-button",
               label: "React 示例",
               position: "right",
             },
