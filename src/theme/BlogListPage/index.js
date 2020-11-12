@@ -22,6 +22,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 // import bilibiliIcon from "@site/static/icons/bilibili.svg";
 
 import useThemeContext from "@theme/hooks/useThemeContext";
+import useFollowers from "./useFollowers";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -56,6 +57,8 @@ function BlogListPage(props) {
     getViews();
   }, []);
 
+  const followers = useFollowers();
+
   return (
     <Layout title={title} description={description}>
       <div className="container margin-vert--xl">
@@ -68,6 +71,14 @@ function BlogListPage(props) {
             <p>
               我是一名前端工程师，本名张旭乾，拥有10年左右开发经验，5年从业经验，从事过前端、后端、全栈、移动端的开发工作，并曾在美国史蒂文斯理工学院攻读计算机科学硕士学位，获得云计算专业证书。致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
             </p>
+            <div>
+              <a
+                href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
+                className="bloghome__follow"
+              >
+                + 关注 ({followers})
+              </a>
+            </div>
             <p>QQ 1 群：644722908，QQ 2 群：1004912565</p>
             <SocialLinks />
           </div>

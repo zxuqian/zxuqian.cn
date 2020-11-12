@@ -71,6 +71,19 @@ h6 {
   margin: 26px 0px 24px 0;
 }
 
+.bloghome__follow {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 0.75em 40px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.bloghome__follow:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .content__divider {
   border-bottom: 1px solid var(--divider-color);
   margin-top: 84px;
