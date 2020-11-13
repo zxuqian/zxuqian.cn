@@ -17,6 +17,14 @@ module.exports = {
     基础: ["css/box-model/box-model"],
   },
   videos: {
-    JavaScript: ["js/01-event-loop/event-loop"],
+    JavaScript: ["videos/js/01-event-loop/event-loop"],
+    CSS: [
+      "videos/css/01-grid-layout/grid-layout",
+      "videos/css/02-flex-layout/flex-layout",
+      "videos/css/03-5-tips-master-css/5-tips-master-css",
+    ],
+    HTML: ["videos/html/01-html-basics/html-basics"],
+    Web: [],
+    网络: ["videos/network/01-http-basics/http-basics"],
   },
 };

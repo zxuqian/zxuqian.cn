@@ -26,7 +26,7 @@ module.exports = {
         {
           label: "视频系列",
           position: "right",
-          to: "docs/js/01-event-loop/event-loop",
+          to: "docs/videos/js/01-event-loop/event-loop",
         },
         {
           label: "系列课程",
