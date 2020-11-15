@@ -24,6 +24,7 @@ module.exports = {
       "videos/css/03-5-tips-master-css/5-tips-master-css",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
+    浏览器: ["videos/browser/01-dom/what-is-dom"],
     Web: [],
     网络: ["videos/network/01-http-basics/http-basics"],
   },
