@@ -61,32 +61,35 @@ function BlogListPage(props) {
 
   return (
     <Layout title={title} description={description}>
-      <div className="container margin-vert--xl">
-        {/* 个人简介 */}
-        <div className="row">
-          <div className="col col--12 bloghome__intro">
-            <h1>
-              Hello! 我是<span className="intro__name">峰华</span>
-            </h1>
-            <p>
-              我是一名前端工程师，本名张旭乾，拥有10年左右开发经验，5年从业经验，从事过前端、后端、全栈、移动端的开发工作，并曾在美国史蒂文斯理工学院攻读计算机科学硕士学位，获得云计算专业证书。致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
-            </p>
-            <div>
-              <a
-                href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
-                className="bloghome__follow"
-              >
-                + 关注 ({followers})
-              </a>
-            </div>
-            <p>QQ 1 群：644722908，QQ 2 群：1004912565</p>
-            <SocialLinks />
+      {/* 个人简介 */}
+      <div className="hero">
+        <div className="bloghome__intro">
+          <h1>
+            Hello! 我是<span className="intro__name">峰华</span>
+          </h1>
+          <p>
+            我是一名前端工程师，本名张旭乾，拥有10年左右开发经验，5年从业经验，从事过前端、后端、全栈、移动端的开发工作，并曾在美国史蒂文斯理工学院攻读计算机科学硕士学位，获得云计算专业证书。致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
+          </p>
+          <div>
+            <a
+              href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
+              className="bloghome__follow"
+            >
+              + 关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
+            </a>
           </div>
+          <p>QQ 1 群：644722908，QQ 2 群：1004912565</p>
+          <SocialLinks />
         </div>
+        <div className="bloghome__image">
+          <img src="/img/hero_main.svg" />
+        </div>
+      </div>
+      <div className="container margin-vert--sm">
         <div className="row">
           <div className="col col--12">
-            <div className="content__divider"></div>
-            <p className="blog__section_title">
+            {/* <div className="content__divider"></div> */}
+            <h1 className="blog__section_title">
               最新博客&nbsp;
               <svg
                 width="31"
@@ -100,22 +103,25 @@ function BlogListPage(props) {
                   fill="#4490D6"
                 />
               </svg>
-            </p>
-            {items.map(({ content: BlogPostContent }) => (
-              <BlogPostItem
-                key={BlogPostContent.metadata.permalink}
-                frontMatter={BlogPostContent.frontMatter}
-                metadata={BlogPostContent.metadata}
-                truncated={BlogPostContent.metadata.truncated}
-                views={
-                  views.find((v) => v.slug == BlogPostContent.frontMatter.slug)
-                    ?.views
-                }
-              >
-                <BlogPostContent />
-              </BlogPostItem>
-            ))}
-            <BlogListPaginator metadata={metadata} />
+            </h1>
+            <div className="bloghome__posts">
+              {items.map(({ content: BlogPostContent }) => (
+                <BlogPostItem
+                  key={BlogPostContent.metadata.permalink}
+                  frontMatter={BlogPostContent.frontMatter}
+                  metadata={BlogPostContent.metadata}
+                  truncated={BlogPostContent.metadata.truncated}
+                  views={
+                    views.find(
+                      (v) => v.slug == BlogPostContent.frontMatter.slug
+                    )?.views
+                  }
+                >
+                  <BlogPostContent />
+                </BlogPostItem>
+              ))}
+              <BlogListPaginator metadata={metadata} />
+            </div>
           </div>
         </div>
       </div>
