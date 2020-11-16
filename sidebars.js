@@ -26,6 +26,9 @@ module.exports = {
     HTML: ["videos/html/01-html-basics/html-basics"],
     浏览器: ["videos/browser/01-dom/what-is-dom"],
     Web: [],
-    网络: ["videos/network/01-http-basics/http-basics"],
+    网络: [
+      "videos/network/01-http-basics/http-basics",
+      "videos/network/02-https-basics/https-basics",
+    ],
   },
 };
