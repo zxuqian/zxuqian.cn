@@ -116,7 +116,7 @@ h6 {
 }
 
 .blog__section_title {
-  margin-bottom: 54px;
+  margin: 2em 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,6 +150,11 @@ h6 {
 .post__year_month {
   align-self: start;
   color: var(--post-pub-date-color);
+}
+
+/* 底部 */
+.footer {
+  margin-top: 4em;
 }
 
 .social__links {

@@ -75,10 +75,14 @@ function BlogListPage(props) {
               href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
               className="bloghome__follow"
             >
-              + 关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
+              去B站关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
             </a>
           </div>
-          <p>QQ 1 群：644722908，QQ 2 群：1004912565</p>
+          <p>
+            QQ 1 群：644722908
+            <br />
+            QQ 2 群：1004912565
+          </p>
           <SocialLinks />
         </div>
         <div className="bloghome__image">
