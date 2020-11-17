@@ -176,7 +176,7 @@ function BlogPostItem(props) {
               </Link>
             )}
             {!isBlogPostPage && (
-              <span className="footer__read_count">阅读（{views}）</span>
+              <span className="footer__read_count">阅读数（{views}）</span>
             )}
           </footer>
         </div>

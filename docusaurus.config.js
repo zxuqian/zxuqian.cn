@@ -55,7 +55,7 @@ module.exports = {
           ],
         },
         {
-          href: "https://github.com/zxuqian",
+          href: "https://github.com/zxuqian/zxuqian.cn",
           label: "GitHub",
           position: "right",
         },
@@ -104,7 +104,7 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/zxuqian",
+              href: "https://github.com/zxuqian/zxuqian.cn",
             },
             {
               label: "Bilibili 哔哩哔哩",

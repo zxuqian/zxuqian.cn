@@ -97,10 +97,14 @@ h6 {
 }
 
 .bloghome__follow {
-  background: var(--ifm-color-primary);
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-primary),
+    var(--ifm-color-primary-dark)
+  );
   color: white;
   padding: 0.75em 20px;
-  border-radius: 12px;
+  border-radius: 4px;
   font-weight: 600;
 }
 
@@ -163,12 +167,13 @@ h6 {
   max-width: 250px;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 24px;
+  padding-bottom: 4em;
 }
 
 .social__links > *,
 .social__links img {
   color: var(--ifm-navbar-link-color);
+  transform: scale(1.1);
 }
 
 .social__links .dropdown {
@@ -179,6 +184,7 @@ h6 {
 .social__links .dropdown span {
   margin-left: 6px;
   font-weight: 700;
+  font-size: 0.9em;
 }
 
 .social__links .dropdown__menu {
