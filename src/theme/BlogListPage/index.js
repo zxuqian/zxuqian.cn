@@ -23,6 +23,10 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import useThemeContext from "@theme/hooks/useThemeContext";
 import useFollowers from "./useFollowers";
+import useViews from "./useViews";
+import { useTrail, animated, useSpring } from "react-spring";
+import TransitionGroup from "react-transition-group/TransitionGroup";
+import Fade from "react-reveal/Fade";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -35,58 +39,49 @@ function BlogListPage(props) {
   const description = `不仅仅是前端工程师，分享React.js, HTML, CSS, JavaScript, Node.js 技术以及个人发展、自我提升相关的心得`;
 
   // Get all post views
-  const postIds = items.map(({ content }) => {
-    return content?.frontMatter?.slug;
-  });
-  const [views, setViews] = useState([]);
-  const getViews = async () => {
-    try {
-      const res = await fetch("https://api.zxuqian.cn/post/views", {
-        method: "POST",
-        body: JSON.stringify(postIds),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const views = await res.json();
-      setViews(views);
-    } catch (error) {}
-  };
-
-  useEffect(() => {
-    getViews();
-  }, []);
-
+  const views = useViews(items);
+  // Get followers
   const followers = useFollowers();
+  // animation
+  const animatedTexts = useTrail(5, {
+    from: { opacity: 0, transform: "translateY(3em)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+  });
+  const animatedHero = useSpring({
+    opacity: 1,
+    transform: "translateX(0)",
+    from: { opacity: 0, transform: "translateX(8em)" },
+    config: { mass: 16, tension: 358, friction: 83 },
+  });
 
   return (
     <Layout title={title} description={description}>
       {/* 个人简介 */}
       <div className="hero">
         <div className="bloghome__intro">
-          <h1>
+          <animated.h1 style={animatedTexts[0]}>
             Hello! 我是<span className="intro__name">峰华</span>
-          </h1>
-          <p>
+          </animated.h1>
+          <animated.p style={animatedTexts[1]}>
             致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
-          </p>
-          <div>
+          </animated.p>
+          <animated.div style={animatedTexts[2]}>
             <a
               href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
               className="bloghome__follow"
             >
               去B站关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
             </a>
-          </div>
-          <p>
+          </animated.div>
+          <animated.p style={animatedTexts[3]}>
             QQ 1 群：644722908
             <br />
             QQ 2 群：1004912565
-          </p>
-          <SocialLinks />
+          </animated.p>
+          <SocialLinks animatedProps={animatedTexts[4]} />
         </div>
         <div className="bloghome__image">
-          <img src="/img/hero_main.svg" />
+          <animated.img src="/img/hero_main.svg" style={animatedHero} />
         </div>
       </div>
       <div className="container margin-vert--sm">
@@ -110,19 +105,21 @@ function BlogListPage(props) {
             </h1>
             <div className="bloghome__posts">
               {items.map(({ content: BlogPostContent }) => (
-                <BlogPostItem
-                  key={BlogPostContent.metadata.permalink}
-                  frontMatter={BlogPostContent.frontMatter}
-                  metadata={BlogPostContent.metadata}
-                  truncated={BlogPostContent.metadata.truncated}
-                  views={
-                    views.find(
-                      (v) => v.slug == BlogPostContent.frontMatter.slug
-                    )?.views
-                  }
-                >
-                  <BlogPostContent />
-                </BlogPostItem>
+                <Fade key={BlogPostContent.metadata.permalink}>
+                  <BlogPostItem
+                    key={BlogPostContent.metadata.permalink}
+                    frontMatter={BlogPostContent.frontMatter}
+                    metadata={BlogPostContent.metadata}
+                    truncated={BlogPostContent.metadata.truncated}
+                    views={
+                      views.find(
+                        (v) => v.slug == BlogPostContent.frontMatter.slug
+                      )?.views
+                    }
+                  >
+                    <BlogPostContent />
+                  </BlogPostItem>
+                </Fade>
               ))}
               <BlogListPaginator metadata={metadata} />
             </div>
@@ -133,10 +130,10 @@ function BlogListPage(props) {
   );
 }
 
-function SocialLinks({ ...props }) {
+function SocialLinks({ animatedProps, ...props }) {
   const { isDarkTheme } = useThemeContext();
   return (
-    <div className="social__links">
+    <animated.div className="social__links" style={animatedProps}>
       <a href="https://space.bilibili.com/302954484">
         <img
           src={useBaseUrl(`icons/bilibili${isDarkTheme ? "-dark" : ""}.svg`)}
@@ -158,7 +155,7 @@ function SocialLinks({ ...props }) {
           src={useBaseUrl("/img/publicQR.png")}
         />
       </div>
-    </div>
+    </animated.div>
   );
 }
 

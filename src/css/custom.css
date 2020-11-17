@@ -97,6 +97,8 @@ h6 {
 }
 
 .bloghome__follow {
+  margin: 1em 0;
+  display: inline-block;
   background: linear-gradient(
     90deg,
     var(--ifm-color-primary),
