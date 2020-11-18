@@ -46,12 +46,19 @@ function BlogListPage(props) {
   const animatedTexts = useTrail(5, {
     from: { opacity: 0, transform: "translateY(3em)" },
     to: { opacity: 1, transform: "translateY(0)" },
+    config: {
+      mass: 3,
+      friction: 45,
+      tension: 460,
+    },
+    delay: 200,
   });
   const animatedHero = useSpring({
     opacity: 1,
     transform: "translateX(0)",
     from: { opacity: 0, transform: "translateX(8em)" },
-    config: { mass: 16, tension: 358, friction: 83 },
+    config: { mass: 2, tension: 260, friction: 30 },
+    delay: 600,
   });
 
   return (
