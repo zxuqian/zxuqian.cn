@@ -143,7 +143,7 @@ function SocialLinks({ animatedProps, ...props }) {
     <animated.div className="social__links" style={animatedProps}>
       <a href="https://space.bilibili.com/302954484">
         <img
-          src={`/icons/bilibili${isDarkTheme ? "-dark" : ""}.svg`}
+          src={useBaseUrl(`icons/bilibili${isDarkTheme ? "-dark" : ""}.svg`)}
           alt="bilibili"
         />
       </a>
