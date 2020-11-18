@@ -69,7 +69,11 @@ h6 {
   width: 100vw;
   margin: 0;
   padding: 4em;
-  background-image: linear-gradient(40deg, #ffffff 50%, rgba(0, 132, 255, 0.1)),
+  background-image: linear-gradient(
+      40deg,
+      rgba(255, 255, 255, 0.8) 62%,
+      rgba(0, 132, 255, 0.1)
+    ),
     url("/img/hero.svg");
   background-repeat: no-repeat;
   background-position: right center;
