@@ -25,7 +25,6 @@ import useThemeContext from "@theme/hooks/useThemeContext";
 import useFollowers from "./useFollowers";
 import useViews from "./useViews";
 import { useTrail, animated, useSpring } from "react-spring";
-import TransitionGroup from "react-transition-group/TransitionGroup";
 import Fade from "react-reveal/Fade";
 
 function BlogListPage(props) {
