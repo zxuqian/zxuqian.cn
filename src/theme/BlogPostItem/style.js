@@ -46,7 +46,8 @@ export const StyledBlogItem = styled.div`
       }
 
       > h2 {
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 1.5em;
         margin-bottom: 20px !important;
         a {
           color: var(--post-title-color);

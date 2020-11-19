@@ -20,6 +20,8 @@ import styles from "./styles.module.css";
 import { MarkdownSection, StyledBlogItem } from "./style";
 import { withTheme } from "styled-components";
 
+import Eye from "@site/static/icons/eye.svg";
+
 const MONTHS = [
   "",
   "February",
@@ -89,7 +91,7 @@ function BlogPostItem(props) {
   const renderTags = () => {
     return (
       (tags.length > 0 || truncated) && (
-        <p className="row margin-top--none margin-bottom--md">
+        <p className="row margin-top--none margin-bottom--lg">
           {tags.length > 0 && (
             <div className="col">
               {tags
@@ -101,7 +103,7 @@ function BlogPostItem(props) {
                       index > 0 ? "margin-horiz--sm" : "margin-right--sm"
                     }`}
                     to={tagPermalink}
-                    style={{ fontSize: "0.875em" }}
+                    style={{ fontSize: "0.875em", fontWeight: 500 }}
                   >
                     {label}
                   </Link>
@@ -132,8 +134,8 @@ function BlogPostItem(props) {
       <div className="row">
         {/* 列表页日期 */}
         {!isBlogPostPage && (
-          <div className="col col--2 padding-right--lg">
-            <div class="post__date margin-top--lg">
+          <div className="col col--2 padding-right--lg margin-bottom--lg">
+            <div class="post__date">
               <div class="post__day">{day}</div>
               <div class="post__year_month">
                 {year}年{month}月
@@ -169,14 +171,17 @@ function BlogPostItem(props) {
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
           </article>
-          <footer className="article__footer">
+          <footer className="article__footer margin-top--lg">
             {truncated && (
               <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
                 <strong className={styles.readMore}>阅读原文</strong>
               </Link>
             )}
             {!isBlogPostPage && (
-              <span className="footer__read_count">阅读数（{views}）</span>
+              <span className="footer__read_count">
+                <Eye color="#1e81e3" style={{ verticalAlign: "middle" }} />{" "}
+                {views}
+              </span>
             )}
           </footer>
         </div>

@@ -27,6 +27,8 @@ import useViews from "./useViews";
 import { useTrail, animated, useSpring } from "react-spring";
 import Fade from "react-reveal/Fade";
 
+import ArrowDown from "@site/static/icons/arrow-down.svg";
+
 function BlogListPage(props) {
   const { metadata, items } = props;
 
@@ -60,6 +62,13 @@ function BlogListPage(props) {
     delay: 600,
   });
 
+  // const animatedBackground = useSpring({
+  //   background: "linear-gradient(25deg, #1081ff, #72e1f6, #b185ff)",
+  //   to: {
+  //     background: "linear-gradient(375deg, #1081ff, #72e1f6, #b185ff)",
+  //   },
+  // });
+
   return (
     <Layout title={title} description={description}>
       {/* 个人简介 */}
@@ -89,6 +98,14 @@ function BlogListPage(props) {
         <div className="bloghome__image">
           <animated.img src="/img/hero_main.svg" style={animatedHero} />
         </div>
+        {/* <animated.div
+          className="bloghome__scroll-down"
+          style={animatedBackground}
+        >
+          <button>
+            <ArrowDown />
+          </button>
+        </animated.div> */}
       </div>
       <div className="container margin-vert--sm">
         <div className="row">

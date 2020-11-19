@@ -65,7 +65,7 @@ h6 {
 
 /* hero */
 .hero {
-  height: 100vh;
+  height: calc(100vh - 60px);
   width: 100vw;
   margin: 0;
   padding: 4em;
@@ -80,6 +80,7 @@ h6 {
   background-size: cover;
   display: grid;
   grid-template-columns: 5fr 8fr;
+  position: relative;
 }
 
 html[data-theme="dark"] .hero {
@@ -136,11 +137,39 @@ html[data-theme="dark"] .hero {
 }
 
 .blog__section_title {
-  margin: 2em 0;
+  margin: 0 0 3em 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(1.375rem + 1.5vw);
+}
+
+.bloghome__scroll-down {
+  justify-self: center;
+  align-self: end;
+  grid-column: span 2;
+  position: absolute;
+  bottom: 8em;
+  background: linear-gradient(25deg, #1081ff, #72e1f6, #b185ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bloghome__scroll-down button {
+  border: none;
+  width: 150px;
+  height: 48px;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bloghome__scroll-down button svg {
+  stroke: #7f7f7f;
 }
 
 /* 博客列表 */
@@ -217,10 +246,17 @@ html[data-theme="dark"] .hero {
 .article__footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__read_count {
   opacity: 0.8;
+  color: #0074d0;
+  font-size: 1.8em;
+}
+
+.pagination-nav__link {
+  border: none;
 }
 
 @media (max-width: 1024px) {
