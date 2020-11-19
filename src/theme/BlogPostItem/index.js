@@ -89,7 +89,7 @@ function BlogPostItem(props) {
   const renderTags = () => {
     return (
       (tags.length > 0 || truncated) && (
-        <p className="row margin-vert--sm">
+        <p className="row margin-top--none margin-bottom--md">
           {tags.length > 0 && (
             <div className="col">
               {tags
@@ -97,13 +97,13 @@ function BlogPostItem(props) {
                 .map(({ label, permalink: tagPermalink }, index) => (
                   <Link
                     key={tagPermalink}
-                    className={
-                      index > 0 ? "margin-horiz--md" : "margin-right--md"
-                    }
+                    className={`post__tags ${
+                      index > 0 ? "margin-horiz--sm" : "margin-right--sm"
+                    }`}
                     to={tagPermalink}
                     style={{ fontSize: "0.875em" }}
                   >
-                    #{label}
+                    {label}
                   </Link>
                 ))}
             </div>
@@ -142,14 +142,14 @@ function BlogPostItem(props) {
           </div>
         )}
         <div className={`col ${isBlogPostPage ? `col--12` : `col--10`}`}>
-          {/* 列表页标签 */}
-          {!isBlogPostPage && renderTags()}
           {/* 博文部分 */}
           <article
             className={!isBlogPostPage ? "margin-bottom--md" : undefined}
           >
             {/* 标题 */}
             {renderPostHeader()}
+            {/* 列表页标签 */}
+            {!isBlogPostPage && renderTags()}
             {/* 发布日期与阅读时间 */}
             {isBlogPostPage && (
               <p className={`single-post--date text--center`}>

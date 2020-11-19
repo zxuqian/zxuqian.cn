@@ -172,6 +172,13 @@ html[data-theme="dark"] .hero {
   color: var(--post-pub-date-color);
 }
 
+.post__tags {
+  background: #00b3ff17;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #5d89e2;
+}
+
 /* 底部 */
 .footer {
   margin-top: 4em;
