@@ -78,7 +78,7 @@ h6 {
   background-position: right center;
   background-size: cover;
   display: grid;
-  grid-template-columns: 5fr 8fr;
+  grid-template-columns: 1fr 1fr;
   position: relative;
 }
 
@@ -94,7 +94,7 @@ html[data-theme="dark"] .hero {
 .bloghome__image {
   align-self: center;
   justify-self: center;
-  width: 80%;
+  width: 100%;
   max-width: 700px;
   position: relative;
 }
@@ -111,6 +111,10 @@ html[data-theme="dark"] .hero {
   padding: 4em;
   position: relative;
   z-index: 1;
+}
+
+.bloghome__intro h1 {
+  font-size: calc(1.8em + 1.2vw);
 }
 
 .bloghome__intro > p {
@@ -280,14 +284,13 @@ html[data-theme="dark"] .footer__read_count {
   .hero {
     grid-template-columns: 1fr;
     height: auto;
-
     background-position: top;
   }
   .bloghome__intro {
-    padding: 4em var(--ifm-spacing-horizontal);
+    padding: 0em var(--ifm-spacing-horizontal);
   }
 
   .bloghome__image {
-    /* width: 100%; */
+    width: 90%;
   }
 }
