@@ -107,6 +107,11 @@ html[data-theme="dark"] .hero {
   color: var(--ifm-color-primary);
 }
 
+.bloghome__intro {
+  position: relative;
+  z-index: 200;
+}
+
 .bloghome__intro > p {
   margin: 26px 0px 24px 0;
 }
@@ -241,6 +246,8 @@ html[data-theme="dark"] .hero {
 
 .social__links .dropdown__menu {
   max-width: initial;
+  left: -50%;
+  top: 120%;
 }
 
 .article__footer {
