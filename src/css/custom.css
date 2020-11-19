@@ -97,6 +97,7 @@ html[data-theme="dark"] .hero {
   justify-self: center;
   width: 80%;
   max-width: 700px;
+  position: relative;
 }
 
 .bloghome__image img {
@@ -109,7 +110,7 @@ html[data-theme="dark"] .hero {
 
 .bloghome__intro {
   position: relative;
-  z-index: 200;
+  z-index: 1;
 }
 
 .bloghome__intro > p {
