@@ -6,7 +6,7 @@ author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 从几何时，程序员成了加班、996 的代名词，从以前业务做不完偶尔加班变成了现在的常态，不得不说一句俗话：这是时代的进步还是倒退？
-tags: [程序员, "1024", 健康]
+tags: [程序员, 健康]
 ---
 
 又到一年一度的 10 月 24 日程序员节了，按百度百科的定义，这一天的意义是拒绝加班：
