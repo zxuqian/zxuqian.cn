@@ -14,8 +14,9 @@ module.exports = {
     navbar: {
       title: "峰华前端工程师",
       logo: {
-        alt: " 峰华",
+        alt: "峰华",
         src: "img/logo.png",
+        srcDark: "img/logo.png",
       },
       items: [
         {

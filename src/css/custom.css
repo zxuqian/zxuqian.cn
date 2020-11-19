@@ -85,7 +85,7 @@ h6 {
 
 html[data-theme="dark"] .hero {
   background-image: linear-gradient(
-      50deg,
+      20deg,
       var(--ifm-background-color) 40%,
       rgba(18, 55, 105, 0.85)
     ),
