@@ -6,13 +6,10 @@
  */
 
 module.exports = {
-  samples: {
-    // Features: ["mdx"],
-    "React 基础示例": [
-      "react-examples/01-react-props-buttons/react-props-button",
-      "react-examples/02-gradient-bg-react-state-event/react-state-event-gradient",
-    ],
-  },
+  // samples: {
+  //   // Features: ["mdx"],
+  //   "React 基础示例": [],
+  // },
   css_tutorials: {
     基础: ["css/box-model/box-model"],
   },
@@ -24,6 +21,7 @@ module.exports = {
       "videos/css/03-5-tips-master-css/5-tips-master-css",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
+
     浏览器: [
       "videos/browser/01-dom/what-is-dom",
       "videos/browser/02-bom/what-is-bom",
@@ -33,5 +31,10 @@ module.exports = {
       "videos/network/01-http-basics/http-basics",
       "videos/network/02-https-basics/https-basics",
     ],
+    React: [
+      "videos/react/01-react-props-buttons/react-props-button",
+      "videos/react/02-gradient-bg-react-state-event/react-state-event-gradient",
+    ],
+    TypeScript: ["videos/ts/01-intro/ts-intro"],
   },
 };

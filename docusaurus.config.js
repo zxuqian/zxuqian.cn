@@ -61,12 +61,6 @@ module.exports = {
               label: "CSS",
               to: "docs/css/box-model/box-model",
             },
-            {
-              to:
-                "docs/react-examples/01-react-props-buttons/react-props-button",
-              label: "React 示例",
-              position: "right",
-            },
           ],
         },
         {
