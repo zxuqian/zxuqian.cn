@@ -6,7 +6,7 @@ author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: TypeScript 是 JavaScript 的，带有类型的超集，并且可以编译为 JavaScript 脚本，这篇幅文章将带你认识一下 TypeScript
-tags: [前端, TypeScript, TS, ES6, JavaScript, Vue, React, Nodejs, rest, angular]
+tags: [前端, TypeScript]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -23,14 +23,28 @@ module.exports = {
           to: "/",
           label: "博客",
           position: "right",
+          items: [
+            {
+              label: "前端",
+              to: "tags/前端",
+            },
+            {
+              label: "职业",
+              to: "tags/职业",
+            },
+            {
+              label: "健康",
+              to: "tags/健康",
+            },
+          ],
         },
         {
-          label: "视频系列",
+          label: "视频",
           position: "right",
           to: "docs/videos/js/01-event-loop/event-loop",
         },
         {
-          label: "系列课程",
+          label: "课程",
           position: "right",
           items: [
             {
