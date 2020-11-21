@@ -21,8 +21,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img alt="" src={useBaseUrl('img/2020-03-15-learn-react-props-buttons/2020-03-15-19-02-33.png')} />
 
-
-
 ## 创建 React 工程
 
 1. 使用 create-react-app 创建一个工程：
