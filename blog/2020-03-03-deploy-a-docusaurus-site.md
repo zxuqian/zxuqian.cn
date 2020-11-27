@@ -47,13 +47,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 先创建 Docusarus 这个项目，它有一个脚手架，原本是一个 node 的全局库，但是利用 npx 可以直接用它给咱们创建一下项目就可以了，不用安装到全局库里。运行下边的命令创建项目：
 
 ```bash
-npx @docusaurus/init@next init [name] [template]
+npx @docusaurus/init@latest init [name] [template]
 ```
 
 这个 name 就是项目名，然后 template 是模板，模板一开始就用它官方的 classic，经典的,就行。我这里创建一个 `fh-blog` 项目：
 
 ```bash
-npx @docusaurus/init@next init fh-blog classic
+npx @docusaurus/init@latest init fh-blog classic
 ```
 
 [Docusaurus V2 官网](https://v2.docusaurus.io/)
