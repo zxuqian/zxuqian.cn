@@ -10,9 +10,9 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.68",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.68",
-    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.68",
+    "@docusaurus/core": "^2.0.0-alpha.69",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.69",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.69",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
