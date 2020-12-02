@@ -1,0 +1,19 @@
+---
+id: videos-intro
+title: 视频教程简介
+slug: /videos
+# hide_title: false
+# hide_table_of_contents: false
+# sidebar_label: Markdown :)
+# custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
+description: JS Event Loop 事件循环机制视频动画详解。setTimeout(), Promise(), then() 之间的调用和执行顺序
+keywords:
+  - JavaScript
+  - frontend
+# image: https://i.imgur.com/mErPwqL.png
+---
+
+
+欢迎访问峰华前端工程师博客！这个页面是我发布的视频合集，包括 B 站视频和文本，方便大家引用视频中的代码和链接等。
+
+左侧的导航按类别将视频进行分类，可以点击相应的类别展开所有视频。目前视频和文本还在持续更新中，所以可能会看到 B 站有的视频这里没有，后续更新的话我会通过 B 站社区动态通知大家。如果大家觉得视频有帮助请一定给个三连加关注～感谢！
