@@ -64,7 +64,7 @@ module.exports = {
           ],
         },
         {
-          href: "http://www.itnanls.cn",
+          href: "https://www.itnanls.cn",
           label: "后端学习",
           position: "right",
         },
