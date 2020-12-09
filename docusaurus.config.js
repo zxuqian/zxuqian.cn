@@ -64,6 +64,11 @@ module.exports = {
           ],
         },
         {
+          href: "http://www.itnanls.cn",
+          label: "后端学习",
+          position: "right",
+        },
+        {
           href: "https://github.com/zxuqian/zxuqian.cn",
           label: "GitHub",
           position: "right",
@@ -71,11 +76,6 @@ module.exports = {
         {
           href: "https://github.com/zxuqian/frontend-questions/issues",
           label: "提问",
-          position: "right",
-        },
-        {
-          href: "http://www.itnanls.cn",
-          label: "后端学习",
           position: "right",
         },
       ],
