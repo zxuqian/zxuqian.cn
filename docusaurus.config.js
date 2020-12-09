@@ -73,11 +73,11 @@ module.exports = {
           label: "GitHub",
           position: "right",
         },
-        {
-          href: "https://github.com/zxuqian/frontend-questions/issues",
-          label: "提问",
-          position: "right",
-        },
+        // {
+        //   href: "https://github.com/zxuqian/frontend-questions/issues",
+        //   label: "提问",
+        //   position: "right",
+        // },
       ],
     },
     footer: {
