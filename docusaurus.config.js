@@ -70,7 +70,12 @@ module.exports = {
         },
         {
           href: "https://github.com/zxuqian/frontend-questions/issues",
-          label: "社区讨论",
+          label: "提问",
+          position: "right",
+        },
+        {
+          href: "http://www.itnanls.cn",
+          label: "后端学习",
           position: "right",
         },
       ],
