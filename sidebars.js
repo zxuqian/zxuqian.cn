@@ -36,6 +36,7 @@ module.exports = {
     React: [
       "videos/react/01-react-props-buttons/react-props-button",
       "videos/react/02-gradient-bg-react-state-event/react-state-event-gradient",
+      "videos/react/03-5-react-spring-animations/5-react-spring-animations",
     ],
     TypeScript: ["videos/ts/01-intro/ts-intro"],
   },
