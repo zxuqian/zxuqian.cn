@@ -6,7 +6,7 @@ description: 用一个渐变背景生成器来演示React State & Event 用法�
 ---
 
 import GradientDemo from "./Gradient";
-import BVideo from "../../../../src/components/BVideo";
+import BVideo from "@site/src/components/BVideo";
 
 ## 效果
 

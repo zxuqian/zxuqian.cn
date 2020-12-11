@@ -6,7 +6,7 @@ description: 使用按钮组件展示 React Props 的使用方法
 ---
 
 import ButtonDemo from "./ButtonDemo";
-import BVideo from "../../../../src/components/BVideo";
+import BVideo from "@site/src/components/BVideo";
 
 ## 效果
 

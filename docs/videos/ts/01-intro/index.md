@@ -13,7 +13,7 @@ keywords:
 # image: https://i.imgur.com/mErPwqL.png
 ---
 
-import BVideo from "../../../../src/components/BVideo";
+import BVideo from "@site/src/components/BVideo";
 import dataImg from "./data.png";
 
 <BVideo src="//player.bilibili.com/player.html?aid=968467412&bvid=BV1xp4y1D7ux&cid=199621476&page=1" bsrc="https://www.bilibili.com/video/BV1xp4y1D7ux/"/>

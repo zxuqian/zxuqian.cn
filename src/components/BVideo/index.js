@@ -30,7 +30,7 @@ function BVideo({ src, bsrc }) {
         frameBorder="no"
         framespacing={0}
         allowFullScreen={true}
-        style={{ width: "100%", height: "400px" }}
+        style={{ width: "100%", height: "500px" }}
       ></iframe>
       {/* <div>
         <p>播放量：{view}</p>

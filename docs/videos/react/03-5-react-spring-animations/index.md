@@ -5,12 +5,13 @@ sidebar_label: react-spring 动画
 description: 来自 react-spring 官网的 5 个酷炫、复杂的动画示例，通过学习代码可以掌握高级动画的实现方式。React Spring 是一个物理弹簧仿真动画实现库。
 ---
 
-<!-- import BVideo from "../../../../src/components/BVideo"; -->
+<!-- import BVideo from "@site/src/components/BVideo"; -->
+import BVideo from "@site/src/components/BVideo";
 import CodeSandBox from "@site/src/components/CodeSandBox";
 
 ## 视频
 
-<!-- <BVideo src="//player.bilibili.com/player.html?aid=97436637&cid=166340357&page=1" bsrc="https://www.bilibili.com/video/av97436637/"/> -->
+<BVideo src="//player.bilibili.com/player.html?aid=5430561488&bvid=BV1Ei4y157bU&cid=265332393&page=1" bsrc="https://www.bilibili.com/video/BV1Ei4y157bU/"/>
 
 ## 可拖拽列表
 

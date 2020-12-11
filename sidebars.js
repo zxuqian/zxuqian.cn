@@ -27,6 +27,7 @@ module.exports = {
     浏览器: [
       "videos/browser/01-dom/what-is-dom",
       "videos/browser/02-bom/what-is-bom",
+      "videos/browser/03-js-dom/js-dom-operation",
     ],
     Web: [],
     网络: [
