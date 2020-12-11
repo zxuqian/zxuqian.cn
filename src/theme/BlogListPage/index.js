@@ -95,9 +95,9 @@ function BlogListPage(props) {
           </animated.p>
           <SocialLinks animatedProps={animatedTexts[4]} />
         </div>
-        <div className="bloghome__image">
+        {/* <div className="bloghome__image">
           <animated.img src="/img/hero_main.svg" style={animatedHero} />
-        </div>
+        </div> */}
         {/* <animated.div
           className="bloghome__scroll-down"
           style={animatedBackground}

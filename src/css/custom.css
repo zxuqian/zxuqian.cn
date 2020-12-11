@@ -68,18 +68,11 @@ h6 {
   height: calc(100vh - 60px);
   width: 100vw;
   margin: 0;
-  background-image: linear-gradient(
-      40deg,
-      rgba(255, 255, 255, 0.8) 62%,
-      rgba(0, 132, 255, 0.1)
-    ),
-    url("/img/hero.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 7fr 10fr;
   position: relative;
+  background: url("/img/hero_main.svg") no-repeat right bottom;
+  background-size: cover;
 }
 
 html[data-theme="dark"] .hero {
@@ -90,7 +83,7 @@ html[data-theme="dark"] .hero {
     ),
     url("/img/hero.svg");
 }
-
+/* 
 .bloghome__image {
   align-self: center;
   justify-self: center;
@@ -101,7 +94,7 @@ html[data-theme="dark"] .hero {
 
 .bloghome__image img {
   width: 100%;
-}
+} */
 
 .intro__name {
   color: var(--ifm-color-primary);
