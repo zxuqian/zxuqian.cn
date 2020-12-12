@@ -180,7 +180,7 @@ function BlogPostItem(props) {
             {!isBlogPostPage && (
               <span className="footer__read_count">
                 <Eye
-                  color={isDarkTheme ? "#76baff" : "#1e81e3"}
+                  color={isDarkTheme ? "#76baff" : "#006dfe"}
                   style={{ verticalAlign: "middle" }}
                 />{" "}
                 {views}
