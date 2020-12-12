@@ -14,8 +14,8 @@
   --ifm-color-primary-lighter: #c6ebfc;
   --ifm-color-primary-lightest: #f2fbff;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Helvetica", "Yuanti SC", "Youyuan", "You Yuan",
-    "幼圆", "PingFang SC", "Microsoft Yahei", Helvetica, sans-serif;
+  --ifm-font-family-base: "Helvetica", "Yuanti SC", "Yuanti SC Regular",
+    "Youyuan", "You Yuan", "幼圆", "PingFang SC", "Microsoft Yahei", sans-serif;
 
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
   --ifm-toc-border-color: #f7f7f7;
