@@ -74,7 +74,7 @@ h6 {
   width: 100vw;
   margin: 0;
   display: grid;
-  grid-template-columns: 8.5fr 10fr;
+  grid-template-columns: 7fr 10fr;
   position: relative;
   background: url("/img/hero_main.svg") no-repeat right;
   background-size: 60vw;
@@ -281,7 +281,7 @@ html[data-theme="dark"] .footer__read_count {
   border: none;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1105px) {
   .hero {
     grid-template-columns: 1fr;
     align-items: start;
