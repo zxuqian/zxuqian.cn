@@ -24,7 +24,7 @@ const light = css`
   a {
     font-size: 1em;
     line-height: 1.8em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     /* font-size: 18px; */
     text-align: justify;
     /* letter-spacing: 0.04em; */

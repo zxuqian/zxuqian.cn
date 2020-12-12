@@ -208,6 +208,7 @@ html[data-theme="dark"] .bloghome__intro > p {
   width: 9.75em;
   height: 9.75em;
   margin-top: 1.6em;
+  font-family: "Raleway";
 }
 
 .post__day {
