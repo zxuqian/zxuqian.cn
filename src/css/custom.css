@@ -14,8 +14,8 @@
   --ifm-color-primary-lighter: #c6ebfc;
   --ifm-color-primary-lightest: #f2fbff;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Raleway", "Yuanti SC", "Youyuan", "You Yuan", "幼圆",
-    "PingFang SC", "Microsoft Yahei", Helvetica, sans-serif;
+  --ifm-font-family-base: "Helvetica", "Yuanti SC", "Youyuan", "You Yuan",
+    "幼圆", "PingFang SC", "Microsoft Yahei", Helvetica, sans-serif;
 
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
   --ifm-toc-border-color: #f7f7f7;
@@ -79,7 +79,7 @@ h6 {
   position: relative;
   background: url("/img/hero_main.svg") no-repeat right;
   background-size: 60vw;
-  letter-spacing: 0em;
+  letter-spacing: 0.04em;
 }
 
 html[data-theme="dark"] .hero {
@@ -140,6 +140,8 @@ html[data-theme="dark"] .bloghome__intro > p {
   );
   box-shadow: 0px 0px 32px rgba(0, 105, 165, 0.35);
   border-radius: 7px;
+  font-family: "Yuanti SC", "Youyuan", "You Yuan", "幼圆", "PingFang SC",
+    "Microsoft Yahei", Helvetica, sans-serif;
 }
 
 .bloghome__follow:hover {
