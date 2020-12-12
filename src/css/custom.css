@@ -74,7 +74,7 @@ h6 {
   width: 100vw;
   margin: 0;
   display: grid;
-  grid-template-columns: 9fr 10fr;
+  grid-template-columns: 8.5fr 10fr;
   position: relative;
   background: url("/img/hero_main.svg") no-repeat right;
   background-size: 60vw;
@@ -148,7 +148,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 .blog__section_title {
-  margin: 0em 0 3em 0;
+  margin: 1em 0 2.5em 0;
   display: flex;
   align-items: center;
   justify-content: center;
