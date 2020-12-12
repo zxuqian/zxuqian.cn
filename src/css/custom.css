@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #007be2;
+  --ifm-color-primary: #006dfe;
   --ifm-color-primary-dark: #119cc5;
   --ifm-color-primary-darker: #05879d;
   --ifm-color-primary-darkest: #007a87;
@@ -58,6 +58,10 @@ h6 {
 }
 
 /* navbar */
+.navbar {
+  box-shadow: none;
+}
+
 .navbar__title {
   margin-left: 20px;
   color: var(--ifm-color-primary);
@@ -66,23 +70,25 @@ h6 {
 /* hero */
 .hero {
   height: calc(100vh - 60px);
+  min-height: 900px;
   width: 100vw;
   margin: 0;
   display: grid;
-  grid-template-columns: 7fr 10fr;
+  grid-template-columns: 9fr 10fr;
   position: relative;
-  background: url("/img/hero_main.svg") no-repeat right bottom;
-  background-size: cover;
+  background: url("/img/hero_main.svg") no-repeat right;
+  background-size: 60vw;
+  letter-spacing: 0em;
 }
 
 html[data-theme="dark"] .hero {
-  background-image: linear-gradient(
-      20deg,
-      var(--ifm-background-color) 40%,
-      rgba(18, 55, 105, 0.85)
-    ),
-    url("/img/hero.svg");
+  background-image: url("/img/hero_main_dark.svg");
 }
+
+html[data-theme="dark"] .bloghome__intro > p {
+  color: #dfdfdf;
+}
+
 /* 
 .bloghome__image {
   align-self: center;
@@ -112,20 +118,22 @@ html[data-theme="dark"] .hero {
 
 .bloghome__intro > p {
   margin: 26px 0px 24px 0;
+  color: #999999;
 }
 
 .bloghome__follow {
-  margin: 1em 0;
   display: inline-block;
-  background: linear-gradient(
-    90deg,
-    var(--ifm-color-primary),
-    var(--ifm-color-primary-dark)
-  );
   color: white;
   padding: 0.75em 20px;
-  border-radius: 4px;
+  margin-left: -2px;
   font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-primary) 11.3%,
+    #20b7d9 161.54%
+  );
+  box-shadow: 0px 0px 32px rgba(0, 105, 165, 0.35);
+  border-radius: 7px;
 }
 
 .bloghome__follow:hover {
@@ -140,7 +148,7 @@ html[data-theme="dark"] .hero {
 }
 
 .blog__section_title {
-  margin: 0 0 3em 0;
+  margin: 0em 0 3em 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,16 +232,16 @@ html[data-theme="dark"] .post__tags {
 .social__links {
   width: 100%;
   display: flex;
-  max-width: 250px;
+  max-width: 210px;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 4em;
+  padding: 1em 0 2.5em 0;
 }
 
-.social__links > *,
-.social__links img {
-  color: var(--ifm-navbar-link-color);
-  transform: scale(1.1);
+.social__links > * {
+  width: 24px;
+  height: 24px;
+  color: #4093f6;
 }
 
 .social__links .dropdown {
@@ -273,17 +281,33 @@ html[data-theme="dark"] .footer__read_count {
   border: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 890px) {
   .hero {
     grid-template-columns: 1fr;
-    height: auto;
-    background-position: top;
+    align-items: start;
+    height: 95vh;
+    background-position: center bottom;
+    background-size: 70vh;
   }
   .bloghome__intro {
     padding: 0em var(--ifm-spacing-horizontal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .bloghome__image {
     width: 90%;
+  }
+
+  .blog__section_title {
+    padding-top: 3em;
+  }
+}
+
+@media (max-width: 570px) {
+  .hero {
+    height: 90vh;
+    background-size: 55vh;
   }
 }

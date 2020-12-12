@@ -28,6 +28,7 @@ import { useTrail, animated, useSpring } from "react-spring";
 import Fade from "react-reveal/Fade";
 
 import ArrowDown from "@site/static/icons/arrow-down.svg";
+import BilibiliIcon from "@site/static/icons/bilibili.svg";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -80,6 +81,10 @@ function BlogListPage(props) {
           <animated.p style={animatedTexts[1]}>
             致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
           </animated.p>
+          <animated.p style={animatedTexts[3]}>
+            QQ 1 群：644722908 &nbsp;&nbsp;&nbsp;QQ 2 群：1004912565
+          </animated.p>
+          <SocialLinks animatedProps={animatedTexts[4]} />
           <animated.div style={animatedTexts[2]}>
             <a
               href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
@@ -88,12 +93,6 @@ function BlogListPage(props) {
               去B站关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
             </a>
           </animated.div>
-          <animated.p style={animatedTexts[3]}>
-            QQ 1 群：644722908
-            <br />
-            QQ 2 群：1004912565
-          </animated.p>
-          <SocialLinks animatedProps={animatedTexts[4]} />
         </div>
         {/* <div className="bloghome__image">
           <animated.img src="/img/hero_main.svg" style={animatedHero} />
@@ -154,24 +153,20 @@ function BlogListPage(props) {
 }
 
 function SocialLinks({ animatedProps, ...props }) {
-  const { isDarkTheme } = useThemeContext();
+  // const { isDarkTheme } = useThemeContext();
   return (
     <animated.div className="social__links" style={animatedProps}>
       <a href="https://space.bilibili.com/302954484">
-        <img
-          src={useBaseUrl(`icons/bilibili${isDarkTheme ? "-dark" : ""}.svg`)}
-          alt="bilibili"
-        />
+        <BilibiliIcon />
       </a>
       <a href="https://www.linkedin.com/in/zxuqian/">
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon icon={faLinkedin} size="lg" />
       </a>
       <a href="https://github.com/zxuqian">
-        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon icon={faGithub} size="lg" />
       </a>
       <div class="dropdown dropdown--hoverable">
-        <FontAwesomeIcon icon={faWeixin} color="#07C160" size="lg" />
-        <span>公众号</span>
+        <FontAwesomeIcon icon={faWeixin} size="lg" />
         <img
           width="50%"
           className="dropdown__menu"
