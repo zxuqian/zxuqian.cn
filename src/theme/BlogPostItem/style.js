@@ -24,12 +24,15 @@ const light = css`
   a {
     font-size: 1em;
     line-height: 1.8em;
+    letter-spacing: 0.05em;
+    /* font-size: 18px; */
+    text-align: justify;
     /* letter-spacing: 0.04em; */
   }
 
   p,
   li {
-    color: #545a5f;
+    color: var(--text-color);
   }
 `;
 
@@ -50,7 +53,7 @@ export const StyledBlogItem = styled.div`
         line-height: 1.5em;
         margin-bottom: 20px !important;
         a {
-          color: var(--post-title-color);
+          color: #2f5c85;
         }
       }
 

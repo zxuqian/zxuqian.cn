@@ -21,6 +21,8 @@ import { MarkdownSection, StyledBlogItem } from "./style";
 import { withTheme } from "styled-components";
 
 import Eye from "@site/static/icons/eye.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 const MONTHS = [
   "",
@@ -91,9 +93,14 @@ function BlogPostItem(props) {
   const renderTags = () => {
     return (
       (tags.length > 0 || truncated) && (
-        <p className="row margin-top--none margin-bottom--lg">
+        <div className="row margin-top--none margin-bottom--lg">
           {tags.length > 0 && (
             <div className="col">
+              <FontAwesomeIcon
+                icon={faTags}
+                color="#c4d3e0"
+                className="margin-right--md"
+              />
               {tags
                 .slice(0, 4)
                 .map(({ label, permalink: tagPermalink }, index) => (
@@ -103,14 +110,14 @@ function BlogPostItem(props) {
                       index > 0 ? "margin-horiz--sm" : "margin-right--sm"
                     }`}
                     to={tagPermalink}
-                    style={{ fontSize: "0.875em", fontWeight: 500 }}
+                    style={{ fontSize: "0.75em", fontWeight: 500 }}
                   >
                     {label}
                   </Link>
                 ))}
             </div>
           )}
-        </p>
+        </div>
       )
     );
   };
@@ -171,7 +178,7 @@ function BlogPostItem(props) {
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
           </article>
-          <footer className="article__footer margin-top--lg">
+          <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
             {truncated && (
               <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
                 <strong className={styles.readMore}>阅读原文</strong>

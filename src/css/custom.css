@@ -14,11 +14,12 @@
   --ifm-color-primary-lighter: #c6ebfc;
   --ifm-color-primary-lightest: #f2fbff;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Raleway", "PingFang SC", "Microsoft Yahei", Helvetica,
-    sans-serif;
+  --ifm-font-family-base: "Raleway", "Yuanti SC", "Youyuan", "You Yuan", "幼圆",
+    "PingFang SC", "Microsoft Yahei", Helvetica, sans-serif;
 
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
   --ifm-toc-border-color: #f7f7f7;
+  --text-color: #8c99ab;
 }
 
 html {
@@ -118,7 +119,12 @@ html[data-theme="dark"] .bloghome__intro > p {
 
 .bloghome__intro > p {
   margin: 26px 0px 24px 0;
-  color: #999999;
+  color: #8c99ab;
+  /* text-shadow: 0 0 #8c99ab; */
+  font-size: 1.125rem;
+  text-align: justify;
+  letter-spacing: -0.04em;
+  line-height: 32px;
 }
 
 .bloghome__follow {
@@ -199,6 +205,7 @@ html[data-theme="dark"] .bloghome__intro > p {
   align-items: center;
   width: 9.75em;
   height: 9.75em;
+  margin-top: 1.6em;
 }
 
 .post__day {
@@ -213,10 +220,15 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 .post__tags {
-  background: #00b3ff17;
+  background: #3d94fa;
   padding: 6px 10px;
   border-radius: 6px;
-  color: #5d89e2;
+  color: #ffffff;
+}
+
+.post__tags:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 html[data-theme="dark"] .post__tags {
