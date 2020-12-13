@@ -79,7 +79,7 @@ h6 {
 /* hero */
 .hero {
   height: calc(100vh - 60px);
-  min-height: 900px;
+
   width: 100vw;
   margin: 0;
   display: grid;
@@ -315,6 +315,7 @@ html[data-theme="dark"] .footer__read_count {
     grid-template-columns: 1fr;
     align-items: start;
     height: 95vh;
+    min-height: 900px;
     background-position: center bottom;
     background-size: 70vh;
   }
