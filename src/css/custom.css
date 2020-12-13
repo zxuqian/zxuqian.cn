@@ -251,6 +251,7 @@ html[data-theme="dark"] .post__tags {
   align-items: center;
   justify-content: space-between;
   padding: 1em 0 2.5em 0;
+  z-index: 100;
 }
 
 .social__links > * {
@@ -272,7 +273,7 @@ html[data-theme="dark"] .post__tags {
 
 .social__links .dropdown__menu {
   max-width: initial;
-  left: -50%;
+  right: 0;
   top: 120%;
 }
 
