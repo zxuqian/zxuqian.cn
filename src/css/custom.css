@@ -14,16 +14,17 @@
   --ifm-color-primary-lighter: #c6ebfc;
   --ifm-color-primary-lightest: #f2fbff;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Helvetica", "Yuanti SC", "Yuanti SC Regular",
-    "Youyuan", "You Yuan", "幼圆", "PingFang SC", "Microsoft Yahei", sans-serif;
+  --ifm-font-family-base: "Raleway", "Yuanti SC", "Yuanti SC Regular", "Youyuan",
+    "You Yuan", "幼圆", "PingFang SC", "Microsoft Yahei", sans-serif;
 
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
   --ifm-toc-border-color: #f7f7f7;
   --text-color: #8c99ab;
+  --ifm-heading-color: #2f5c85;
 }
 
 html {
-  --post-title-color: #313131;
+  --post-title-color: #2f5c85;
   --post-pub-date-color: #8c8c8c;
   --divider-color: #ebebeb;
 }
@@ -33,6 +34,13 @@ html[data-theme="dark"] {
   --post-pub-date-color: var(--ifm-color-gray-100);
   --divider-color: #353535;
   --ifm-toc-border-color: #313131;
+  --ifm-heading-color: #ffffff;
+}
+
+article > * {
+  line-height: 1.8em;
+  letter-spacing: 0.04em;
+  text-align: justify;
 }
 
 /* h1,
@@ -290,7 +298,7 @@ html[data-theme="dark"] .post__tags {
 
 .footer__read_count {
   opacity: 0.8;
-  color: #0074d0;
+  color: #006dfe;
   font-size: 1.8em;
 }
 
