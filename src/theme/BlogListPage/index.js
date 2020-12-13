@@ -54,14 +54,14 @@ function BlogListPage(props) {
       friction: 45,
       tension: 460,
     },
-    delay: 200,
+    // delay: 300,
   });
   const animatedHero = useSpring({
     opacity: 1,
-    transform: "translateX(0)",
-    from: { opacity: 0, transform: "translateX(8em)" },
-    config: { mass: 2, tension: 260, friction: 30 },
-    delay: 600,
+    backgroundPositionX: "100%",
+    from: { opacity: 0, backgroundPositionX: "200%" },
+    config: { mass: 3, tension: 280, friction: 30 },
+    // delay: 1200,
   });
 
   // const animatedBackground = useSpring({
@@ -75,7 +75,7 @@ function BlogListPage(props) {
     <Layout title={title} description={description}>
       {/* 个人简介 */}
       {!isPaginated && (
-        <div className="hero">
+        <animated.div className="hero">
           <div className="bloghome__intro">
             <animated.h1 style={animatedTexts[0]}>
               Hello! 我是<span className="intro__name">峰华</span>
@@ -108,7 +108,7 @@ function BlogListPage(props) {
             <ArrowDown />
           </button>
         </animated.div> */}
-        </div>
+        </animated.div>
       )}
       <div className="container margin-vert--sm">
         <div className="row">
