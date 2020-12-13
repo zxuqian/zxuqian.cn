@@ -127,6 +127,11 @@ html[data-theme="dark"] .bloghome__intro > p {
   line-height: 32px;
 }
 
+.bloghome__intro > p:nth-child(3) {
+  align-self: start;
+  margin-top: 0;
+}
+
 .bloghome__follow {
   display: inline-block;
   color: white;

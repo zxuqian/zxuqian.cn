@@ -84,7 +84,7 @@ function BlogListPage(props) {
               致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
             </animated.p>
             <animated.p style={animatedTexts[3]}>
-              QQ 1 群：644722908 &nbsp;&nbsp;&nbsp;QQ 2 群：1004912565
+              QQ 1 群：644722908，2 群：1004912565
             </animated.p>
             <SocialLinks animatedProps={animatedTexts[4]} />
             <animated.div style={animatedTexts[2]}>
