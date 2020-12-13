@@ -66,7 +66,7 @@ console.log(arr[0]);
 
 ```javascript
 function bar() {
-	return foo;
+  return foo;
   foo = 10;
   function foo() {}
   var foo = '11';
@@ -79,7 +79,7 @@ console.log(typeof bar());
 ```javascript
 function bar() {
   function foo() {}
-	return foo;
+  return foo;
   foo = 10;
   var foo = '11';
 }
