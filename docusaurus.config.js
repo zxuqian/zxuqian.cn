@@ -163,6 +163,7 @@ module.exports = {
         blog: {
           path: "./blog",
           routeBasePath: "/",
+          blogSidebarTitle: "近期文章",
           feedOptions: {
             type: "all",
             title: "峰华前端工程师",
