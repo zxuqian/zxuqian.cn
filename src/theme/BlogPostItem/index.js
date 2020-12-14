@@ -24,6 +24,8 @@ import Eye from "@site/static/icons/eye.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
 
+import BrowserOnly from "@docusaurus/BrowserOnly";
+
 const MONTHS = [
   "",
   "February",
@@ -201,23 +203,29 @@ function BlogPostItem(props) {
 }
 
 function Count({ postId, ...post }) {
-  if (localStorage.getItem(postId)) return null;
+  return (
+    <BrowserOnly fallback={<div></div>}>
+      {() => {
+        if (localStorage.getItem(postId)) return null;
 
-  const addViewCount = async () => {
-    await fetch("https://api.zxuqian.cn/post/increase_view", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ postId }),
-    });
-    localStorage.setItem(postId, true);
-  };
+        const addViewCount = async () => {
+          await fetch("https://api.zxuqian.cn/post/increase_view", {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ postId }),
+          });
+          localStorage.setItem(postId, true);
+        };
 
-  useEffect(() => {
-    addViewCount();
-  }, []);
-  return null;
+        useEffect(() => {
+          addViewCount();
+        }, []);
+        return null;
+      }}
+    </BrowserOnly>
+  );
 }
 
 export default BlogPostItem;

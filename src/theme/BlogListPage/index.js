@@ -171,7 +171,7 @@ function SocialLinks({ animatedProps, ...props }) {
       <a href="https://github.com/zxuqian">
         <FontAwesomeIcon icon={faGithub} size="lg" />
       </a>
-      <div class="dropdown dropdown--hoverable">
+      <div className="dropdown dropdown--hoverable">
         <FontAwesomeIcon icon={faWeixin} size="lg" />
         <img
           width="50%"
