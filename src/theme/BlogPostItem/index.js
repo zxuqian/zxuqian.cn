@@ -142,9 +142,9 @@ function BlogPostItem(props) {
         {/* 列表页日期 */}
         {!isBlogPostPage && (
           <div className="col col--2 padding-right--lg margin-bottom--lg">
-            <div class="post__date">
-              <div class="post__day">{day}</div>
-              <div class="post__year_month">
+            <div className="post__date">
+              <div className="post__day">{day}</div>
+              <div className="post__year_month">
                 {year}年{month}月
               </div>
             </div>
@@ -201,6 +201,8 @@ function BlogPostItem(props) {
 }
 
 function Count({ postId, ...post }) {
+  if (localStorage.getItem(postId)) return null;
+
   const addViewCount = async () => {
     await fetch("https://api.zxuqian.cn/post/increase_view", {
       method: "PUT",
@@ -209,6 +211,7 @@ function Count({ postId, ...post }) {
       },
       body: JSON.stringify({ postId }),
     });
+    localStorage.setItem(postId, true);
   };
 
   useEffect(() => {
