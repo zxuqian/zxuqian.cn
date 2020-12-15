@@ -151,6 +151,10 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/vsDark"),
       defaultLanguage: "javascript",
     },
+    googleAnalytics: {
+      trackingID: "UA-118572241-1",
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
   },
   presets: [
     [
@@ -178,15 +182,12 @@ module.exports = {
           changefreq: "daily",
           priority: 0.5,
         },
-        googleAnalytics: {
-          trackingID: "UA-118572241-1",
-          anonymizeIP: true, // Should IPs be anonymized?
-        },
       },
     ],
   ],
   themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
+    "@docusaurus/plugin-google-analytics",
     path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
     // path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
