@@ -178,6 +178,10 @@ module.exports = {
           changefreq: "daily",
           priority: 0.5,
         },
+        googleAnalytics: {
+          trackingID: "UA-118572241-1",
+          anonymizeIP: true, // Should IPs be anonymized?
+        },
       },
     ],
   ],
