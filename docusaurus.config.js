@@ -155,6 +155,11 @@ module.exports = {
       trackingID: "UA-118572241-1",
       anonymizeIP: true, // Should IPs be anonymized?
     },
+    gtag: {
+      trackingID: "G-6PSESJX0BM",
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
   },
   presets: [
     [
