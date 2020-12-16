@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import styles from "./style.module.css";
 
 function BVideo({ src, bsrc }) {
   // get aid
@@ -30,7 +31,8 @@ function BVideo({ src, bsrc }) {
         frameBorder="no"
         framespacing={0}
         allowFullScreen={true}
-        style={{ width: "100%", height: "500px" }}
+        // style={{ width: "100%", height: "500px" }}
+        className={styles.videoFrame}
       ></iframe>
       {/* <div>
         <p>播放量：{view}</p>

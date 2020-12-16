@@ -21,6 +21,7 @@ module.exports = {
       "videos/css/02-flex-layout/flex-layout",
       "videos/css/03-5-tips-master-css/5-tips-master-css",
       "videos/css/04-selectors/css-selectors",
+      "videos/css/05-position/css-position",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
 

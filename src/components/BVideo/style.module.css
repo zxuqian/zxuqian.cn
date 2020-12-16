@@ -1,0 +1,17 @@
+.videoFrame {
+  width: 100%;
+  height: 500px;
+  margin-top: 2vh;
+}
+
+@media (max-width: 570px) {
+  .videoFrame {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .videoFrame {
+    height: 220px;
+  }
+}

@@ -1,11 +1,11 @@
 ---
 id: css-selectors
-title: CSS 选择器教程
+title: CSS 选择器
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
-description: 5 个技巧助你成为 CSS 大师！
+description: 选择器（Selector）用于选取 HTML 元素，既可以用于，在 CSS 中，给对应的元素添加样式，也在 JavaScript 中操作 HTML  DOM。由于选择器的用途广泛且重要，所以这个视频整理了常用的选择器的语法规则和效果。
 keywords:
   - css
   - dom
