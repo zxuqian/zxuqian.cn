@@ -64,6 +64,11 @@ module.exports = {
           ],
         },
         {
+          label: "资源导航",
+          position: "right",
+          to: "docs/resources/resources-intro",
+        },
+        {
           href: "https://www.itnanls.cn",
           label: "后端学习",
           position: "right",

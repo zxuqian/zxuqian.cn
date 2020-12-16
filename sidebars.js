@@ -42,4 +42,10 @@ module.exports = {
     ],
     TypeScript: ["videos/ts/01-intro/ts-intro"],
   },
+  resources: {
+    简介: ["resources/resources-intro"],
+    前端开发: [],
+    软件工具: [],
+    "UI 设计": [],
+  },
 };
