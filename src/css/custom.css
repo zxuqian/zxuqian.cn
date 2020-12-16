@@ -72,8 +72,8 @@ h6 {
 /* hero */
 .hero {
   height: calc(100vh - 60px);
-
   width: 100vw;
+  max-width: 100%;
   margin: 0;
   display: grid;
   grid-template-columns: 7fr 10fr;
