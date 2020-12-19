@@ -258,6 +258,7 @@ html[data-theme="dark"] .post__tags {
   justify-content: space-between;
   padding: 1em 0 2.5em 0;
   z-index: 100;
+  position: relative;
 }
 
 .social__links > * {
