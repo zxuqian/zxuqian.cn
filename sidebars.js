@@ -24,7 +24,7 @@ module.exports = {
       "videos/css/05-position/css-position",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
-
+    特效: ["videos/effects/01-glassmorphism/effects-glassmorphism"],
     浏览器: [
       "videos/browser/01-dom/what-is-dom",
       "videos/browser/02-bom/what-is-bom",
