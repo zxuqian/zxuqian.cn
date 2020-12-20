@@ -27,7 +27,7 @@ function foo() {
 console.log(typeof foo());
 ```
 
-你可能会认为它的输出结果是 "function"，但是结果却是 `undefined`。乍一看代码好像没什么问题，但是细心一点可以看到 return 语句返回的对象放到了下一行，那么问题就来了：JavaScript 的分号是可选的，return 语句在换行后，JavaScript 会自动给它的结尾加上分号，而在 return 之后的代码都不会执行，所以 foo() 的返回结果是 undefined。解决方法是在每行结尾都写上分号，这样就能清楚的知道代码在哪里结束。
+你可能会认为它的输出结果是 "object"，但是结果却是 `undefined`。乍一看代码好像没什么问题，但是细心一点可以看到 return 语句返回的对象放到了下一行，那么问题就来了：JavaScript 的分号是可选的，return 语句在换行后，JavaScript 会自动给它的结尾加上分号，而在 return 之后的代码都不会执行，所以 foo() 的返回结果是 undefined。解决方法是在每行结尾都写上分号，这样就能清楚的知道代码在哪里结束。
 
 ## 2、this 指向
 
