@@ -39,7 +39,7 @@ html[data-theme="dark"] {
 
 article > * {
   line-height: 1.8em;
-  letter-spacing: 0.04em;
+  /* letter-spacing: 0.04em; */
   /* text-align: justify; */
 }
 
