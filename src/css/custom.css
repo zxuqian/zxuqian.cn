@@ -20,7 +20,7 @@
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
   --ifm-toc-border-color: #f7f7f7;
   --text-color: #57616f;
-  --ifm-heading-color: #2f5c85;
+  --ifm-heading-color: hsl(200deg, 20%, 20%);
 }
 
 html {
