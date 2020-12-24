@@ -6,6 +6,7 @@ title: CSS Flex 布局
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: CSS Flex 布局 2分钟动画快速掌握。
+slug: ../css-flex-layout
 keywords:
   - css
   - flex

@@ -6,6 +6,7 @@ title: HTTPS 协议基础
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: 前后端交互之 HTTPS 协议。HTTPS协议简明概述。
+slug: ../https-basics
 keywords:
   - network
   - http

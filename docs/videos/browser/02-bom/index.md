@@ -6,6 +6,7 @@ title: BOM 简介
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: BOM，全称是 Browser Object Model，浏览器对象模型。它不是官方的命名，也没有统一的标准，只是对浏览器提供的 API 的统称。BOM 提供的 API 都放到了 window 全局对象中，它代表当前浏览器窗口。 而 DOM 也属于 BOM 的一部分，因为 window 也包括 document 对象。
+slug: ../what-is-bom
 keywords:
   - JavaScript
   - bom

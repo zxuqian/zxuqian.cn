@@ -6,6 +6,7 @@ title: HTML 基础
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: 一个视频快速了解 HTML 基础，从零开始编写自己的网页。
+slug: ../html-get-started
 keywords:
   - html
   - html5

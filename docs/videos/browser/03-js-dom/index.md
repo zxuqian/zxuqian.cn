@@ -6,6 +6,7 @@ title: JS DOM 操纵
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: 浏览器提供了一系列的 DOM API 接口，用于创建、选择、修改 DOM 中的元素，处理 DOM 事件等。我们分别来看一下这些接口的使用方法和步骤。
+slug: ../js-dom-manipulate
 keywords:
   - JavaScript
   - dom

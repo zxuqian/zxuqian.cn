@@ -6,6 +6,7 @@ title: CSS 选择器
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: 选择器（Selector）用于选取 HTML 元素，既可以用于，在 CSS 中，给对应的元素添加样式，也在 JavaScript 中操作 HTML  DOM。由于选择器的用途广泛且重要，所以这个视频整理了常用的选择器的语法规则和效果。
+slug: ../css-selectors
 keywords:
   - css
   - dom

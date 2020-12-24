@@ -6,6 +6,7 @@ title: 掌握 CSS 的 5 个技巧
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: 5 个技巧助你成为 CSS 大师！
+slug: ../5-tips-master-css
 keywords:
   - css
   - css3

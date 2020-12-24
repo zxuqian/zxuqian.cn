@@ -5,7 +5,8 @@ title: Vue Todo App 开发
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
-description: Vue 3 实战系列的视频来啦！我们会从寻找项目灵感开始，到创建项目、编写 HTML、编写 CSS、拆分组件、完成功能、优化代码结束。这一期是关于如何寻找项目灵感的，学完某个技术没 idea 的难题可以解决了
+description: Vue 3 实战系列的视频来啦！我们会从寻找项目灵感开始，到创建项目、编写 HTML、编写 CSS、拆分组件、完成功能、优化代码结束。这一期是关于如何寻找项目灵感的，学完某个技术没 idea 的难题可以解决了。
+slug: ../develop-a-todo-app-using-vue3
 keywords:
   - vue3
   - css

@@ -6,6 +6,7 @@ title: 玻璃特效
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: CSS 的定位通过 position 属性设置，它有 static, relative, absolute, fixed, sticky 这几种。
+slug: ../css-glassmorphism
 keywords:
   - css
   - glassmorphism

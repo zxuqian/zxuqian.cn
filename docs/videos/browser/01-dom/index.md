@@ -6,6 +6,7 @@ title: DOM 简介
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: 什么是 DOM，有哪些特点？和 HTML、JavaScript 有什么关系？这个 2 分钟的动画视频带你了解 DOM。
+slug: ../what-is-dom
 keywords:
   - JavaScript
   - dom

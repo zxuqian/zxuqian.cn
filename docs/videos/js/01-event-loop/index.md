@@ -6,6 +6,7 @@ title: Event Loop
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: JS Event Loop 事件循环机制视频动画详解。setTimeout(), Promise(), then() 之间的调用和执行顺序
+slug: ../javascript-eventloop
 keywords:
   - JavaScript
   - frontend

@@ -6,6 +6,7 @@ title: TypeScript 入门介绍
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
 description: TypeScript 官方定义是 JavaScript的、带有类型的超集，并且能够编译为普通的 JavaScript。这里有三个重点，一个是编译，一个是带有类型，一个是超集。
+slug: ../typscript-intro
 keywords:
   - JavaScript
   - TypeScript
