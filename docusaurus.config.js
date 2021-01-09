@@ -12,7 +12,7 @@ module.exports = {
   stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
   themeConfig: {
     navbar: {
-      title: "峰华前端工程师",
+      title: "峰华<前端/>工程师",
       logo: {
         alt: "峰华",
         src: "img/logo.png",

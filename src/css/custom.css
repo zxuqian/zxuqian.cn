@@ -69,6 +69,13 @@ h6 {
   color: var(--ifm-color-primary);
 }
 
+.navbar__link,
+.dropdown,
+.navbar__title,
+.menu {
+  font-weight: 400;
+}
+
 /* hero */
 .hero {
   height: calc(100vh - 60px);
