@@ -22,9 +22,14 @@ module.exports = {
       "videos/css/03-5-tips-master-css/5-tips-master-css",
       "videos/css/04-selectors/css-selectors",
       "videos/css/05-position/css-position",
+      "videos/css/06-css-hsl-color/css-hsl-color",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
-    特效: ["videos/effects/01-glassmorphism/effects-glassmorphism"],
+    特效: [
+      "videos/effects/01-glassmorphism/effects-glassmorphism",
+      "videos/effects/02-cyberpunk/effects-glitch",
+      "videos/effects/03-resize/effects-resizable",
+    ],
     浏览器: [
       "videos/browser/01-dom/what-is-dom",
       "videos/browser/02-bom/what-is-bom",
