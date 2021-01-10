@@ -5,7 +5,7 @@ title: 玻璃特效
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
 # custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
-description: CSS 的定位通过 position 属性设置，它有 static, relative, absolute, fixed, sticky 这几种。
+description: 之前我做过这样一期视频，实现一个毛玻璃效果的登录表单。当时的思路是这样的，首先有一个原始的背景图片，在它上面再放上一张一模一样的图片，然后给他设置模糊滤镜，再用一个圆角矩形的框，把它作为蒙版，把图片超出的部分给隐藏掉，只显示表单这一块区域所用到的部分，然后再给它设置一个内部的阴影，让它看起来有一个玻璃反光的效果。这个是比较原始的方式。
 slug: ../css-glassmorphism
 keywords:
   - css
