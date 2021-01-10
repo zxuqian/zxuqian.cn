@@ -78,7 +78,7 @@ function BlogListPage(props) {
         <animated.div className="hero">
           <div className="bloghome__intro">
             <animated.h1 style={animatedTexts[0]}>
-              Hello! 我是<span className="intro__name">峰华</span>
+              Hello! 我是<span className="intro__name">张旭乾</span>
             </animated.h1>
             <animated.p style={animatedTexts[1]}>
               致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
