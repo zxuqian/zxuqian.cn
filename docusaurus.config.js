@@ -147,6 +147,10 @@ module.exports = {
               label: "yuqing521のblog",
               to: "https://yuqing521.github.io/",
             },
+            {
+              label: "lookroot的个人空间",
+              to: "https://www.lookroot.cn/",
+            },
           ],
         },
       ],

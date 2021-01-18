@@ -206,7 +206,7 @@ function Count({ postId, ...post }) {
   return (
     <BrowserOnly fallback={<div></div>}>
       {() => {
-        if (localStorage.getItem(postId)) return null;
+        // if (localStorage.getItem(postId)) return null;
 
         const addViewCount = async () => {
           await fetch("https://api.zxuqian.cn/post/increase_view", {
@@ -216,7 +216,7 @@ function Count({ postId, ...post }) {
             },
             body: JSON.stringify({ postId }),
           });
-          localStorage.setItem(postId, true);
+          // localStorage.setItem(postId, true);
         };
 
         useEffect(() => {
