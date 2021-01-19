@@ -141,7 +141,7 @@ module.exports = {
           ],
         },
         {
-          title: "友情链接1",
+          title: "友情链接",
           items: [
             {
               label: "yuqing521のblog",
