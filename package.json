@@ -8,7 +8,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "ftp": "docusaurus build && git ftp push"
+    "ftp": "docusaurus build && rclone sync -v --exclude .DS_Store build aliyun:htdocs"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.69",
