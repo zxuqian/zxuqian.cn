@@ -1,18 +1,28 @@
 const path = require("path");
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 module.exports = {
   title: "峰华前端工程师",
   tagline: "帮助你提升前端开发技能",
   titleDelimiter: "-",
-  url: "https://zxuqian.cn",
+  url: "https://www.zxuqian.cn",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "zxuqian", // Usually your GitHub org/user name.
   projectName: "zxuqian.cn", // Usually your repo name.
-  stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
+  stylesheets: [
+    "https://fonts.font.im/css?family=Raleway:500,700",
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
+      integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
+    },
+  ],
   themeConfig: {
     navbar: {
-      title: "峰华<前端/>工程师",
+      title: "峰华前端工程师",
       logo: {
         alt: "峰华",
         src: "img/logo.png",
@@ -131,8 +141,7 @@ module.exports = {
             },
             {
               label: "网易云课堂",
-              href:
-                "https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128",
+              href: "https://study.163.com/course/courseMain.htm?courseId=1210022809&share=2&shareId=480000002172128",
             },
             {
               label: "腾讯课堂",
@@ -146,10 +155,6 @@ module.exports = {
             {
               label: "yuqing521のblog",
               to: "https://yuqing521.github.io/",
-            },
-            {
-              label: "lookroot的个人空间",
-              to: "https://www.lookroot.cn/",
             },
           ],
         },
@@ -177,6 +182,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           path: "./blog",
