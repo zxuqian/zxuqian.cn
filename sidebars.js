@@ -50,8 +50,8 @@ module.exports = {
   },
   resources: {
     简介: ["resources/resources-intro"],
-    前端开发: [],
-    软件工具: [],
+    前端开发: ["resources/ui/css-frameworks/css-frameworks"],
+    效率工具: [],
     "UI 设计": [],
   },
 };
