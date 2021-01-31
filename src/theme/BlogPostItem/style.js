@@ -14,10 +14,10 @@ const light = css`
     /* color: var(--ifm-link-color); */
   }
 
-  h2,
+  /* h2,
   h3 {
     color: var(--post-title-color);
-  }
+  } */
 
   p,
   li,

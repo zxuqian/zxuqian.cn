@@ -125,8 +125,9 @@ html[data-theme="dark"] .bloghome__intro > p {
   z-index: 1;
 }
 
-.bloghome__intro h1 {
+.bloghome__intro .hero_text {
   font-size: calc(1.8em + 1.2vw);
+  font-weight: 600;
 }
 
 .bloghome__intro > p {
@@ -272,7 +273,8 @@ html[data-theme="dark"] .post__tags {
   position: relative;
 }
 
-.social__links > * {
+.social__links > *,
+.social__links svg {
   width: 24px;
   height: 24px;
   color: #4093f6;
@@ -315,7 +317,50 @@ html[data-theme="dark"] .footer__read_count {
   border: none;
 }
 
-@media (max-width: 1266px) {
+/* 博客详情页 CSS 覆盖 */
+.blog-wrapper > .container {
+  width: 100vw;
+}
+
+.blog-wrapper > .container > .row {
+  display: grid;
+  grid-template-areas:
+    "detail recent"
+    "detail outline";
+  grid-template-rows: max-content min-content;
+}
+
+.blog-wrapper > .container > .row .col[class*="col--"] {
+  max-width: unset;
+}
+
+/* 近期文章 */
+.blog-wrapper > .container > .row > *:nth-child(1) {
+  grid-area: recent;
+  align-self: start;
+  /* height: 200px; */
+}
+.blog-wrapper > .container > .row > *:nth-child(1) > div {
+  position: static;
+}
+
+.blog-wrapper > .container > .row > *:nth-child(2) {
+  grid-area: detail;
+}
+.blog-wrapper > .container > .row > *:nth-child(3) {
+  grid-area: outline;
+}
+
+.blog-wrapper > .container > .row > *:nth-child(3) > div::before {
+  content: "文章目录";
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--ifm-h3-font-size);
+  color: var(--ifm-heading-color);
+  font-weight: var(--ifm-heading-font-weight);
+}
+
+@media (max-width: 1105px) {
   .hero {
     grid-template-columns: 1fr;
     align-items: start;

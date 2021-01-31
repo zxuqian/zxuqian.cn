@@ -127,7 +127,7 @@ function BlogPostItem(props) {
   return (
     <StyledBlogItem
       isDark={isDarkTheme}
-      className={isBlogPostPage ? "margin-top--xl" : ""}
+      // className={isBlogPostPage ? "margin-top--xl" : ""}
     >
       <Head>
         {image && <meta property="og:image" content={imageUrl} />}

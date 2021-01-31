@@ -17,6 +17,7 @@ import {
   faGithub,
   faQq,
   faWeixin,
+  faWeibo,
 } from "@fortawesome/free-brands-svg-icons";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 // import bilibiliIcon from "@site/static/icons/bilibili.svg";
@@ -29,6 +30,7 @@ import Fade from "react-reveal/Fade";
 
 import ArrowDown from "@site/static/icons/arrow-down.svg";
 import BilibiliIcon from "@site/static/icons/bilibili.svg";
+import CSDNIcon from "@site/static/icons/csdn.svg";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -77,11 +79,14 @@ function BlogListPage(props) {
       {!isPaginated && (
         <animated.div className="hero">
           <div className="bloghome__intro">
-            <animated.h1 style={animatedTexts[0]}>
-              Hello! 我是<span className="intro__name">张旭乾</span>
-            </animated.h1>
+            <animated.div style={animatedTexts[0]} className="hero_text">
+              Hello! 我是<span className="intro__name">峰华</span>
+            </animated.div>
             <animated.p style={animatedTexts[1]}>
-              致力于将编程和艺术相结合，以直观、生动、有趣的方式呈现枯燥的编程概念和原理，助你以最快的速度、愉快的心情掌握编程技巧，进而提升工作竞争力和创新创业能力。
+              在这里，有 B
+              站视频教程合集和配套文本、系统教程、编程博客、前端资源导航、以及
+              UP
+              主的想法和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。
             </animated.p>
             <animated.p style={animatedTexts[3]}>
               QQ 1 群：644722908，2 群：1004912565
@@ -170,6 +175,9 @@ function SocialLinks({ animatedProps, ...props }) {
       </a>
       <a href="https://github.com/zxuqian">
         <FontAwesomeIcon icon={faGithub} size="lg" />
+      </a>
+      <a href="https://blog.csdn.net/fengqiuzhihua">
+        <CSDNIcon />
       </a>
       <div className="dropdown dropdown--hoverable">
         <FontAwesomeIcon icon={faWeixin} size="lg" />
