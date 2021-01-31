@@ -390,10 +390,7 @@ html[data-theme="dark"] .footer__read_count {
 
 @media only screen and (max-width: 996px) {
   .blog-wrapper > .container > .row {
-    grid-template-columns: 1fr 0;
-  }
-  .blog-wrapper > .container > .row > *:nth-child(3) {
-    display: none;
+    display: flex;
   }
 }
 
