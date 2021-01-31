@@ -1,6 +1,6 @@
 ---
 slug: css-selector-specificity
-title: CSS 选择器优先级（特异性、权重）详解
+title: CSS 选择器优先级特异性权重详解
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian

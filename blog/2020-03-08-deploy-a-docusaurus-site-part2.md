@@ -1,6 +1,6 @@
 ---
 slug: deploy-a-docusaurus-site-part2
-title: 超简单！使用 Docusaurus 搭建个人博客（二）
+title: 使用 Docusaurus 搭建个人博客教程（二）
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian

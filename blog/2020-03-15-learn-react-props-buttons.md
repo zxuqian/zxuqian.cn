@@ -1,6 +1,6 @@
 ---
 slug: learn-react-props-buttons
-title: 一组美丽的按钮 - React Props 教程
+title: React Props 教程 - 制作一个按钮
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian

@@ -1,6 +1,6 @@
 ---
 slug: React-intro
-title: 带你走进React的大门 - 你为什么应该学React？
+title: 什么是 React？你为什么应该学React？
 author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
