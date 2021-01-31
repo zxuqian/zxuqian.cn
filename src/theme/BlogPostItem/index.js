@@ -127,6 +127,7 @@ function BlogPostItem(props) {
   return (
     <StyledBlogItem
       isDark={isDarkTheme}
+      isBlogPostPage={isBlogPostPage}
       // className={isBlogPostPage ? "margin-top--xl" : ""}
     >
       <Head>

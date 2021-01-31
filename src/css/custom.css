@@ -31,8 +31,8 @@ html {
   --post-title-color: hsl(220deg 79% 58%);
   --post-pub-date-color: #8c8c8c;
   --divider-color: #ebebeb;
-  --post-shadow-color: hsl(0, 0%, 0%, 0.1);
-  --post-shadow: 0 0 36px var(--post-shadow-color);
+  --post-shadow-color: rgba(6, 29, 63, 0.1);
+  --post-shadow: 0 0 120px var(--post-shadow-color);
 }
 
 html[data-theme="dark"] {
@@ -40,6 +40,7 @@ html[data-theme="dark"] {
   --post-pub-date-color: var(--ifm-color-gray-100);
   --divider-color: #353535;
   --ifm-toc-border-color: #313131;
+  --post-shadow-color: rgb(29, 77, 150, 0.8);
   /* --ifm-heading-color: #ffffff; */
 }
 
