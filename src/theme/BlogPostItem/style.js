@@ -46,6 +46,7 @@ export const StyledBlogItem = styled.div`
       padding: 3em 2em;
     `}
   margin-bottom: 4.25em;
+
   article {
     .single-post--date {
       color: var(--post-title-color);
@@ -76,5 +77,9 @@ export const StyledBlogItem = styled.div`
     .markdown > h1 {
       font-size: 2em;
     }
+  }
+  @media (max-width: 570px) {
+    box-shadow: none;
+    padding: 0;
   }
 `;
