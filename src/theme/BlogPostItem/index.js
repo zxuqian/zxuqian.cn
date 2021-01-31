@@ -143,7 +143,7 @@ function BlogPostItem(props) {
       <div className="row">
         {/* 列表页日期 */}
         {!isBlogPostPage && (
-          <div className="col col--2 padding-right--lg margin-bottom--lg">
+          <div className="col col--3 padding-right--lg margin-bottom--lg">
             <div className="post__date">
               <div className="post__day">{day}</div>
               <div className="post__year_month">
@@ -152,7 +152,7 @@ function BlogPostItem(props) {
             </div>
           </div>
         )}
-        <div className={`col ${isBlogPostPage ? `col--12` : `col--10`}`}>
+        <div className={`col ${isBlogPostPage ? `col--12` : `col--9`}`}>
           {/* 博文部分 */}
           <article
             className={!isBlogPostPage ? "margin-bottom--md" : undefined}

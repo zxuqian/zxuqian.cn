@@ -39,6 +39,8 @@ export const MarkdownSection = styled.section`
 `;
 
 export const StyledBlogItem = styled.div`
+  /* box-shadow: var(--post-shadow); */
+  /* padding: 3em; */
   margin-bottom: 5.25em;
   article {
     .single-post--date {

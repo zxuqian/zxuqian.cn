@@ -31,6 +31,8 @@ html {
   --post-title-color: hsl(220deg 79% 58%);
   --post-pub-date-color: #8c8c8c;
   --divider-color: #ebebeb;
+  --post-shadow-color: hsl(0, 0%, 0%, 0.1);
+  --post-shadow: 0 0 36px var(--post-shadow-color);
 }
 
 html[data-theme="dark"] {
@@ -210,10 +212,10 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 /* 博客列表 */
-.bloghome__posts {
-  /* display: grid;
-  grid-template-columns: 1fr; */
-}
+/* .bloghome__posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
 
 /* 发布日期 */
 .post__date {
