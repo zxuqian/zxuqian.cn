@@ -315,7 +315,7 @@ html[data-theme="dark"] .footer__read_count {
   border: none;
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1266px) {
   .hero {
     grid-template-columns: 1fr;
     align-items: start;
