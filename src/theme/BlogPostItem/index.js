@@ -140,8 +140,11 @@ function BlogPostItem(props) {
 
       {/* 统计 */}
       {isBlogPostPage && <Count postId={postId} />}
-
-      <div className="row">
+      <div
+        className={`row 
+         ${!isBlogPostPage ? "blog-list--item" : ""}`}
+        style={{ margin: 0 }}
+      >
         {/* 列表页日期 */}
         {!isBlogPostPage && (
           <div className="col col--3 padding-right--lg margin-bottom--lg">
@@ -182,11 +185,6 @@ function BlogPostItem(props) {
             </MarkdownSection>
           </article>
           <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
-            {truncated && (
-              <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
-                <strong className={styles.readMore}>阅读原文</strong>
-              </Link>
-            )}
             {!isBlogPostPage && (
               <span className="footer__read_count">
                 <Eye
@@ -195,6 +193,11 @@ function BlogPostItem(props) {
                 />{" "}
                 {views}
               </span>
+            )}
+            {truncated && (
+              <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
+                <strong className={styles.readMore}>阅读原文</strong>
+              </Link>
             )}
           </footer>
         </div>

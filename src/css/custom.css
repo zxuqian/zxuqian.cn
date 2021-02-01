@@ -31,8 +31,15 @@ html {
   --post-title-color: hsl(220deg 79% 58%);
   --post-pub-date-color: #8c8c8c;
   --divider-color: #ebebeb;
-  --post-shadow-color: rgba(6, 29, 63, 0.1);
+  --post-shadow-color: rgba(20, 85, 182, 0.1);
   --post-shadow: 0 0 120px var(--post-shadow-color);
+  --content-background-color: #fafafa;
+  --blog-item-background-color: linear-gradient(
+    310deg,
+    #ffffff,
+    hsl(0deg 0% 95%)
+  );
+  --blog-item-shadow: 20px 20px 60px #ced1d6, -20px -20px 60px #ffffff;
 }
 
 html[data-theme="dark"] {
@@ -41,7 +48,18 @@ html[data-theme="dark"] {
   --divider-color: #353535;
   --ifm-toc-border-color: #313131;
   --post-shadow-color: rgb(29, 77, 150, 0.8);
+  --content-background-color: inherit;
+  --blog-item-background-color: linear-gradient(145deg, #041a31, #000000);
+  --blog-item-shadow: 20px 20px 60px #253748, -20px -20px 60px #253748;
   /* --ifm-heading-color: #ffffff; */
+}
+
+/* 首页背景 */
+.container-wrapper {
+  background: var(--content-background-color);
+  /* box-shadow: 0 -16px 24px var(--post-shadow-color); */
+  /* box-shadow: 20px 20px 60px #d0d3d9, -20px -20px 60px #ffffff; */
+  /* border-top: 1px solid rgb(236 244 255); */
 }
 
 article > * {
@@ -177,7 +195,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 .blog__section_title {
-  margin: 1em 0 2.5em 0;
+  margin: 2em 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,7 +280,7 @@ html[data-theme="dark"] .post__tags {
 
 /* 底部 */
 .footer {
-  margin-top: 4em;
+  /* margin-top: 4em; */
 }
 
 .social__links {
@@ -317,7 +335,32 @@ html[data-theme="dark"] .footer__read_count {
 }
 
 .pagination-nav__link {
+  /* border: none; */
+  margin: 2em 0;
+  background: linear-gradient(
+    90deg,
+    #20b7d9 11.3%,
+    var(--ifm-color-primary) 161.54%
+  );
+  box-shadow: 0px 0px 32px rgb(0 105 165 / 35%);
+  color: white;
   border: none;
+}
+
+.pagination-nav__link:hover {
+  color: white;
+}
+
+pagination-nav__item:hover .pagination-nav__link {
+  border: none;
+}
+
+.pagination-nav__item--next > .pagination-nav__link {
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-primary) 11.3%,
+    #20b7d9 161.54%
+  );
 }
 
 /* 博客详情页 CSS 覆盖 */
