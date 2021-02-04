@@ -432,7 +432,7 @@ pagination-nav__item:hover .pagination-nav__link {
 }
 
 /* 文档侧栏字体大小 */
-.menu__list-item {
+.menu__list-item > .menu__link[tabindex] {
   font-size: 0.875rem;
 }
 
