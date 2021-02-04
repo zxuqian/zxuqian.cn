@@ -29,6 +29,7 @@ module.exports = {
       "videos/effects/01-glassmorphism/effects-glassmorphism",
       "videos/effects/02-cyberpunk/effects-glitch",
       "videos/effects/03-resize/effects-resizable",
+      "videos/effects/04-gradient-animation/gradient-animation",
     ],
     浏览器: [
       "videos/browser/01-dom/what-is-dom",
