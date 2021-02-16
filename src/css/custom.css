@@ -40,6 +40,9 @@ html {
     hsl(0deg 0% 95%)
   );
   --blog-item-shadow: 20px 20px 60px #ced1d6, -20px -20px 60px #ffffff;
+
+  /* 文字颜色 */
+  color: hsl(214deg, 42%, 24%);
 }
 
 html[data-theme="dark"] {
@@ -52,6 +55,7 @@ html[data-theme="dark"] {
   --blog-item-background-color: linear-gradient(145deg, #041a31, #000000);
   --blog-item-shadow: 20px 20px 60px #253748, -20px -20px 60px #253748;
   /* --ifm-heading-color: #ffffff; */
+  color: hsl(214deg, 33%, 90%);
 }
 
 /* 首页背景 */
@@ -361,6 +365,10 @@ pagination-nav__item:hover .pagination-nav__link {
     var(--ifm-color-primary) 11.3%,
     #20b7d9 161.54%
   );
+}
+
+.pagination-nav__sublabel {
+  color: white;
 }
 
 /* 博客详情页 CSS 覆盖 */

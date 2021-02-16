@@ -39,14 +39,16 @@ export const MarkdownSection = styled.section`
 `;
 
 export const StyledBlogItem = styled.div`
-  /* ${({ isBlogPostPage }) =>
-    !isBlogPostPage &&
-    css`
-      box-shadow: var(--post-shadow);
-      padding: 3em 2em;
-    `} */
   margin-top: 4.25em;
   margin-bottom: 4.25em;
+
+  ${({ isBlogPostPage }) =>
+    isBlogPostPage &&
+    css`
+      /* box-shadow: var(--post-shadow);
+      padding: 3em 2em; */
+      margin-top: 0;
+    `}
 
   article {
     .single-post--date {
