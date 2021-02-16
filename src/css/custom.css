@@ -406,6 +406,10 @@ pagination-nav__item:hover .pagination-nav__link {
   font-weight: var(--ifm-heading-font-weight);
 }
 
+.footer__copyright a {
+  color: inherit;
+}
+
 @media (max-width: 1105px) {
   .hero {
     grid-template-columns: 1fr;
