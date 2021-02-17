@@ -44,4 +44,5 @@ export const Time = styled.div`
 export const Content = styled.div`
   grid-area: content;
   margin-top: 1em;
+  word-break: break-all;
 `;
