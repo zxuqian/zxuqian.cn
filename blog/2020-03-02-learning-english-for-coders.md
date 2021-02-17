@@ -6,6 +6,8 @@ author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 tags: [前端, 职业]
+activityId: 362000502504720925
+oid: 59616778
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -48,6 +50,3 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 这基本上就是我的个人经历，其实也并不需要多大努力去学，只要坚持下去，每天收获一点点，学好英语就会水到渠成了。我现在还在坚持着学新概念，已经到第四册了，因为中间工作和学习断了很长时间，所以也和大家一起进步吧。我们一定要有努力克服困难的决心，然后有一点点不安于现状的上进心，去努力学习新的知识，然后回过头来，发现自己已经上了很大的一个台阶，这就是所谓的进步与成长。希望本篇对大家有所启发。
 
-[>> 在 B 站参与讨论](https://t.bilibili.com/362000502504720925?tab=2)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IwJi7CCFS)

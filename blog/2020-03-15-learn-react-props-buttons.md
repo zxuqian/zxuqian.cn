@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: Rect Props 是编写可复用组件的核心，可以利用 Prop 让组件接收不同的参数，然后根据这些参数作出不同的表现，如形状、颜色等。
 tags: [前端, React]
+bvid: av96612743
+oid: 96612743
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -270,7 +272,3 @@ main {
 - `classnames` - 用来组合多个 class
 
 你学会了吗？如果有问题，欢迎通过下方链接参与讨论。
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/av96612743/)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/Iz3U19CVq)

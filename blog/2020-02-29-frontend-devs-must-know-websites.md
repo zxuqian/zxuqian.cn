@@ -6,6 +6,8 @@ author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 tags: [前端, 职业]
+bvid: av92929685
+oid: 92929685
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -106,6 +108,3 @@ CSDN 算是一个特别老牌的社区了，我也是从 2010 年在上边写了
 
 好了，这些就是我平时会去看的一些网站，我相信大家应该也都差不多知道这些，因为前端还有关于编程的网站也不是特别多，但是呢，如果小伙伴们没接触过这些网站的话，也可以去看看，同时呢也能了解我自己平时都是怎么学习的。希望这个文章能对大家有帮助，如果有什么疑问的话欢迎给我留言。
 
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/av92929685)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IwJe4cgA6)

@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: Hello! 今天来带你走进 React 的大门！我第一次听说 React 是我在美国读研的时候，室友选了 web programming 这节课，然后遇到了关于 react 的好多问题...
 tags: [前端, React]
+bvid: av97436637
+oid: 97436637
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -221,7 +223,3 @@ function handleClick() {
 - 事件处理中的 Event 参数是合成的，属性和原生的 event 基本一样。
 
 你学会了吗？如果有问题就到 B 站和微博给我留言吧。
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/av97436637/)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IzwTriHmY)

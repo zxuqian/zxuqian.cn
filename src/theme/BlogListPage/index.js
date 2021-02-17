@@ -31,6 +31,7 @@ import Fade from "react-reveal/Fade";
 import ArrowDown from "@site/static/icons/arrow-down.svg";
 import BilibiliIcon from "@site/static/icons/bilibili.svg";
 import CSDNIcon from "@site/static/icons/csdn.svg";
+import Button from "../../components/Button";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -93,12 +94,12 @@ function BlogListPage(props) {
             </animated.p>
             <SocialLinks animatedProps={animatedTexts[4]} />
             <animated.div style={animatedTexts[2]}>
-              <a
+              <Button
+                isLink
                 href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
-                className="bloghome__follow"
               >
                 去B站关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
-              </a>
+              </Button>
             </animated.div>
           </div>
 

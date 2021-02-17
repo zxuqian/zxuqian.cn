@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: CSS flexbox 布局十分强大，它可以对元素进行水平和垂直方向上的对齐，也支持自由缩放，方便响应式布局的开发。这个文章就教你认识 flex-box 布局，看完之后你也能熟练的运用它！
 tags: [前端, React]
+bvid: BV1P7411m7Nu
+oid: 99087136
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -672,8 +674,6 @@ export const NestedFlexBox = ({ minWidth }) => (
 - 嵌套`flex`容器的缩放问题。
 
 你学会了吗？如果有问题，欢迎通过下方链接参与讨论。
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/BV1P7411m7Nu/)
 
 export const StyledWrapper = styled.div`
   margin-bottom: 24px;

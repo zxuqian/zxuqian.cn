@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: Hello! 今天来带你走进 React 的大门！我第一次听说 React 是我在美国读研的时候，室友选了 web programming 这节课，然后遇到了关于 react 的好多问题...
 tags: [前端, React]
+bvid: av95815105
+oid: 95815105
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -151,7 +153,3 @@ function App() {
 ## 总结
 
 今天给你讲了一下 react 是什么，然后它有一些什么优点。接下来后面我会逐渐介绍它的一些特性，比如说属性、状态、还有事件的处理，高级的用法，组件的设计等等。现在你可以先用这个工程来自己先玩一下，看看能不能自己做出点什么东西出来。如果有什么其他问题，请在评论区留言，谢谢大家。
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/av95815105/)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IyywRowJD)

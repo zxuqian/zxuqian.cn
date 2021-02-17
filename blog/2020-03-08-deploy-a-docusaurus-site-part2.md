@@ -6,6 +6,8 @@ author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 tags: [前端, 职业]
+bvid: av94703630
+oid: 94703630
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -176,7 +178,3 @@ jobs:
 #### 发布博客
 
 在把所有的这些文件弄好之后，把代码推送到 github 上等 github actions 运行完之后，就可以访问自己的网站了。以后再发表文章，只需要在本地写好之后，推送到 github 上完事儿了。到这里你自己的博客就搭建好了，向全世界展示你的文采吧！
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/av94703630/)
-
-[>> 在 微博 参与讨论](https://weibo.com/2993970500/IxeMOiDlu)

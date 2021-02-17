@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: TypeScript 是 JavaScript 的，带有类型的超集，并且可以编译为 JavaScript 脚本，这篇幅文章将带你认识一下 TypeScript
 tags: [前端, TypeScript]
+bvid: BV1xp4y1D7ux
+oid: 968467412
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -360,5 +362,3 @@ let tup: [number, string, boolean] = [1, "fh", true];
 这样你就能对 TypeScript 有大体的认识了，也能编写简单的 TypeScript 应用并且看懂一部分其他人的代码了。到这里你可能发现 TypeScript 带来的功能特性都是零散的，因为它本身就是给 JS 添砖加瓦，所以它的语法点逐一突破就好了。
 
 你学会了吗？如果有问题，欢迎通过下方链接参与讨论。
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/BV1xp4y1D7ux/)

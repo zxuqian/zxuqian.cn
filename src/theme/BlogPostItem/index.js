@@ -25,6 +25,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 import BrowserOnly from "@docusaurus/BrowserOnly";
+import Comments from "@site/src/components/Comments";
 
 const MONTHS = [
   "",
@@ -51,7 +52,16 @@ function BlogPostItem(props) {
     views,
   } = props;
   const { date, permalink, tags, readingTime } = metadata;
-  const { slug: postId, author, title, image } = frontMatter;
+  // activityId, oid 为 B 站评论相关
+  const {
+    slug: postId,
+    author,
+    title,
+    image,
+    activityId,
+    oid,
+    bvid,
+  } = frontMatter;
 
   const authorURL = frontMatter.author_url || frontMatter.authorURL;
   const authorTitle = frontMatter.author_title || frontMatter.authorTitle;
@@ -198,6 +208,9 @@ function BlogPostItem(props) {
               <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
                 <strong className={styles.readMore}>阅读原文</strong>
               </Link>
+            )}
+            {isBlogPostPage && (
+              <Comments activityId={activityId} oid={oid} bvid={bvid} />
             )}
           </footer>
         </div>

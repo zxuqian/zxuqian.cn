@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 前端工程师了解后端的功能和作用之后，能更好的和后端工程师进行沟通，减少沟通成本，另外也有助于向全栈工程师方向发展。
 tags: [前端, 后端]
+bvid: BV1XV411d7Cg
+oid: 413073953
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -65,6 +67,4 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
 你学会了吗？如果有问题，欢迎通过下方链接参与讨论。
-
-[>> 在 B 站参与讨论](https://www.bilibili.com/video/BV1XV411d7Cg/)
 
