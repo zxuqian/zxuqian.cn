@@ -221,7 +221,11 @@ function BlogPostItem(props) {
             )}
 
             {/* 正文 */}
-            <MarkdownSection isDark={isDarkTheme} className="markdown">
+            <MarkdownSection
+              isBlogPostPage={isBlogPostPage}
+              isDark={isDarkTheme}
+              className="markdown"
+            >
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
           </article>

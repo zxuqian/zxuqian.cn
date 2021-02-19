@@ -35,12 +35,25 @@ const light = css`
 `;
 
 export const MarkdownSection = styled.section`
-  ${({ isDark }) => (isDark ? `` : light)}
+  ${({ isDark }) => (isDark ? `` : light)};
+  ${({ isBlogPostPage }) =>
+    isBlogPostPage
+      ? ""
+      : css`
+          /* img {
+            width: 100%;
+            height: 40%;
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            object-position: top;
+          } */
+        `}
 `;
 
 export const StyledBlogItem = styled.div`
   margin-top: 4.25em;
-  margin-bottom: 4.25em;
+  margin-bottom: 7.25em;
 
   ${({ isBlogPostPage }) =>
     isBlogPostPage &&
