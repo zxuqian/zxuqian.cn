@@ -42,5 +42,25 @@
   "阅读原文": {
     "message": "Read More",
     "description": "read full text"
+  },
+  "blogtagpage.title": {
+    "message": "",
+    "description": "blog tag page title"
+  },
+  "blogtagpage.title.alt": {
+    "message": "Posts in tag: ",
+    "description": "blog tag page title in alternate order"
+  },
+  "blogtagpage.description": {
+    "message": "Tag",
+    "description": "blog tag page description"
+  },
+  "blogtagpage.count.label": {
+    "message": " posts",
+    "description": "blog page count label"
+  },
+  "blogtagpage.seeall.label": {
+    "message": "See All Tags",
+    "description": "blog page see all label"
   }
 }
