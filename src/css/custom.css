@@ -226,8 +226,8 @@ html[data-theme="dark"] .bloghome__intro > p {
   display: grid;
   justify-items: center;
   align-items: center;
-  width: 9.75em;
-  height: 9.75em;
+  width: 10.5em;
+  height: 10.5em;
   margin-top: 1.6em;
   font-family: "Raleway";
 }
