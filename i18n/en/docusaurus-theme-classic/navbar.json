@@ -1,0 +1,54 @@
+{
+  "title": {
+    "message": "Xuqian Zhang",
+    "description": "The title in the navbar"
+  },
+  "item.label.博客": {
+    "message": "Blogs",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.视频": {
+    "message": "Videos",
+    "description": "Navbar item with label 视频"
+  },
+  "item.label.课程": {
+    "message": "Courses",
+    "description": "Navbar item with label 课程"
+  },
+  "item.label.教程": {
+    "message": "Tutorials",
+    "description": "Navbar item with label 教程"
+  },
+  "item.label.资源导航": {
+    "message": "Resources",
+    "description": "Navbar item with label 资源导航"
+  },
+  "item.label.后端学习": {
+    "message": "Backend",
+    "description": "Navbar item with label 后端学习"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.前端": {
+    "message": "Frontend",
+    "description": "Navbar item with label 前端"
+  },
+  "item.label.职业": {
+    "message": "Career",
+    "description": "Navbar item with label 职业"
+  },
+  "item.label.健康": {
+    "message": "Health",
+    "description": "Navbar item with label 健康"
+  },
+  "item.label.React 即时通信 UI 开发实战": {
+    "message": "React IM UI development",
+    "description": "Navbar item with label React 即时通信 UI 开发实战"
+  },
+  "item.label.CSS": {
+    "message": "CSS",
+    "description": "Navbar item with label CSS"
+  }
+}

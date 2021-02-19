@@ -20,6 +20,10 @@ module.exports = {
       },
       items: [
         {
+          type: "localeDropdown",
+          position: "left",
+        },
+        {
           to: "/",
           label: "博客",
           position: "right",
@@ -206,4 +210,16 @@ module.exports = {
     // "@docusaurus/plugin-ideal-image",
     // path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
   ],
+  i18n: {
+    defaultLocale: "zh-CN",
+    locales: ["zh-CN", "en"],
+    localeConfigs: {
+      "zh-CN": {
+        label: "中文",
+      },
+      en: {
+        label: "English",
+      },
+    },
+  },
 };

@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
+    "start-en": "yarn run start -- --locale en",
+    "write-translations": "docusaurus write-translations",
     "clear": "docusaurus clear",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

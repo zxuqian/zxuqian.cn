@@ -33,6 +33,8 @@ import BilibiliIcon from "@site/static/icons/bilibili.svg";
 import CSDNIcon from "@site/static/icons/csdn.svg";
 import Button from "../../components/Button";
 
+import Translate, { translate } from "@docusaurus/Translate";
+
 function BlogListPage(props) {
   const { metadata, items } = props;
 
@@ -81,24 +83,38 @@ function BlogListPage(props) {
         <animated.div className="hero">
           <div className="bloghome__intro">
             <animated.div style={animatedTexts[0]} className="hero_text">
-              Hello! 我是<span className="intro__name">峰华</span>
+              <Translate description="hero greet">Hello! 我是</Translate>
+              <span className="intro__name">
+                <Translate description="my name">峰华</Translate>
+              </span>
             </animated.div>
             <animated.p style={animatedTexts[1]}>
-              在这里，有 B
-              站视频教程合集和配套文本、系统教程、编程博客、前端资源导航、以及
-              UP
-              主的想法和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。
+              <Translate id="homepage.hero.text" description="hero text">
+                在这里，有
+                B站视频教程合集和配套文本、系统教程、编程博客、前端资源导航、以及UP主的想法和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。
+              </Translate>
             </animated.p>
             <animated.p style={animatedTexts[3]}>
-              QQ 1 群：644722908，2 群：1004912565
+              <Translate id="homepage.qqgroup" description="qq group">
+                QQ 1 群：644722908，2 群：1004912565
+              </Translate>
             </animated.p>
             <SocialLinks animatedProps={animatedTexts[4]} />
             <animated.div style={animatedTexts[2]}>
               <Button
                 isLink
-                href="https://space.bilibili.com/302954484?from=search&seid=1788147379248960737"
+                href={translate({
+                  message:
+                    "https://space.bilibili.com/302954484?from=search&seid=1788147379248960737",
+                  description: "social link bilibili or twitter",
+                })}
               >
-                去B站关注 ({(Math.round(followers) / 10000).toFixed(1)} 万)
+                <Translate description="follow me btn text">
+                  去B站关注
+                </Translate>
+                <Translate id="homepage.followers" description="followers">
+                  ({(Math.round(followers) / 10000).toFixed(1)} 万)
+                </Translate>
               </Button>
             </animated.div>
           </div>
@@ -123,7 +139,10 @@ function BlogListPage(props) {
               {/* <div className="content__divider"></div> */}
               {!isPaginated && (
                 <h1 className="blog__section_title">
-                  最新博客&nbsp;
+                  <Translate description="latest blogs heading">
+                    最新博客
+                  </Translate>
+                  &nbsp;
                   <svg
                     width="31"
                     height="31"

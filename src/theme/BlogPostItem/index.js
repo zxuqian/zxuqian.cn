@@ -13,6 +13,7 @@ import Head from "@docusaurus/Head";
 import Link from "@docusaurus/Link";
 import MDXComponents from "@theme/MDXComponents";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import ThemeContext from "@theme/ThemeContext";
 
@@ -26,6 +27,8 @@ import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Comments from "@site/src/components/Comments";
+
+import Translate, { translate } from "@docusaurus/Translate";
 
 const MONTHS = [
   "",
@@ -73,10 +76,23 @@ function BlogPostItem(props) {
   const theme = useContext(ThemeContext);
   const { isDarkTheme } = theme;
 
-  const match = date.substring(0, 10).split("-");
-  const year = match[0];
-  const month = parseInt(match[1], 10);
-  const day = parseInt(match[2], 10);
+  // 当前语言
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+
+  const dateObj = new Date(date);
+
+  const year = dateObj.getFullYear();
+  let month = dateObj.getMonth() + 1;
+  const day = dateObj.getDate();
+
+  let dateStr = `${year}年${month}月`;
+
+  if (currentLocale === "en") {
+    month = dateObj.toLocaleString("default", { month: "long" });
+    dateStr = `${month}, ${year}`;
+  }
 
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? "h1" : "h2";
@@ -160,9 +176,7 @@ function BlogPostItem(props) {
           <div className="col col--3 padding-right--lg margin-bottom--lg">
             <div className="post__date">
               <div className="post__day">{day}</div>
-              <div className="post__year_month">
-                {year}年{month}月
-              </div>
+              <div className="post__year_month">{dateStr}</div>
             </div>
           </div>
         )}
@@ -178,8 +192,25 @@ function BlogPostItem(props) {
             {/* 发布日期与阅读时间 */}
             {isBlogPostPage && (
               <p className={`single-post--date text--center`}>
-                {year}年{month}月{day}日 · 预计阅读时间：
-                {readingTime && <> {Math.ceil(readingTime)} 分钟</>}
+                {dateStr} ·{" "}
+                <Translate
+                  id="blogpage.estimated.time"
+                  description="blog page estimated time"
+                >
+                  预计阅读时间：
+                </Translate>
+                {readingTime && (
+                  <>
+                    {" "}
+                    {Math.ceil(readingTime)}{" "}
+                    <Translate
+                      id="blogpage.estimated.time.label"
+                      description="blog page estimated time label"
+                    >
+                      分钟
+                    </Translate>
+                  </>
+                )}
               </p>
             )}
             {/* 标签 */}
@@ -206,7 +237,9 @@ function BlogPostItem(props) {
             )}
             {truncated && (
               <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
-                <strong className={styles.readMore}>阅读原文</strong>
+                <strong className={styles.readMore}>
+                  <Translate description="read full text">阅读原文</Translate>
+                </strong>
               </Link>
             )}
             {isBlogPostPage && (

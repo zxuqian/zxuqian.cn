@@ -44,6 +44,7 @@ function Comments({ activityId, oid, bvid }) {
       <Button isLink href={url} style={{ width: "max-content" }}>
         去 B 站发表评论
       </Button>
+      <p>评论数据来自 Bilibili 相关动态和视频</p>
       {comments.map((comment) => {
         const { member, ctime, content, replies } = comment;
         return (

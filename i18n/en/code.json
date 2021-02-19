@@ -1,0 +1,46 @@
+{
+  "Hello! 我是": {
+    "message": "Hello! I'm ",
+    "description": "hero greet"
+  },
+  "峰华": {
+    "message": "Xuqian",
+    "description": "my name"
+  },
+  "homepage.hero.text": {
+    "message": "I'm a front-end developer. Here you can find the corresponding scripts for my videos on Bilibili. You can also find tutorials, blogs, courses, resources, as well as my thoughts and life hacks. I will help you learn front-end development in the most intuitive and fastest way. Hope my experience will inspire you.",
+    "description": "hero text"
+  },
+  "homepage.qqgroup": {
+    "message": "",
+    "description": "qq group"
+  },
+  "https://space.bilibili.com/302954484?from=search&seid=1788147379248960737": {
+    "message": "https://twitter.com/zxuqian",
+    "description": "social link bilibili or twitter"
+  },
+  "去B站关注": {
+    "message": "Follow Me on Twitter",
+    "description": "follow me btn text"
+  },
+  "homepage.followers": {
+    "message": "",
+    "description": "followers"
+  },
+  "最新博客": {
+    "message": "Latest Blogs",
+    "description": "latest blogs heading"
+  },
+  "blogpage.estimated.time": {
+    "message": "",
+    "description": "blog page estimated time"
+  },
+  "blogpage.estimated.time.label": {
+    "message": "min read",
+    "description": "blog page estimated time label"
+  },
+  "阅读原文": {
+    "message": "Read More",
+    "description": "read full text"
+  }
+}
