@@ -7,8 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 品牌 UPPERVOID，创始人为 Vis，毕业于沃顿商学院，坚持理性逻辑和艺术审美应当结合起来，这一点与本 UP 主的理念保持一致。在体验过诸如喜马拉雅、北极圈之类的极端环境之后，Vis 认为应该将防护作为生存之根本，加上对科技从业者的敬佩，于是就有了 UPPERVOID，专门为互联网从业人士打造的生活方式品牌。通过把最新的科技融入到生活中，把未来机械世界的场景提前带入到了日常生活中来，让我们体验到技术究竟会引领大家到何方。这款机能服是 UPPERVOID 的第一个产品，从面料、功能和设计上来看已经完全可以看到未来高科技生活的影子了。
 tags: [男装, 生活方式]
-activityId: 485292696989459450
-oid: 109254828
+activityId: "485292696989459450"
+oid: "109254828"
 ---
 
 ![实拍](./img/uppervoid-jacket/19-实拍.jpg)

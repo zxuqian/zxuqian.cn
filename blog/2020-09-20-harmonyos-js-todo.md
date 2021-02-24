@@ -7,8 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 使用鸿蒙 JS 框架开发 Todo 应用的 TV 版 UI 界面。
 tags: [前端, 鸿蒙, JavaScript]
-activityId: 436748829132110033
-oid: 91640194
+activityId: "436748829132110033"
+oid: "91640194"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -8,7 +8,7 @@ author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s
 description: Rect Props 是编写可复用组件的核心，可以利用 Prop 让组件接收不同的参数，然后根据这些参数作出不同的表现，如形状、颜色等。
 tags: [前端, React]
 bvid: av96612743
-oid: 96612743
+oid: "96612743"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -8,7 +8,7 @@ author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s
 description: Hello! 今天来带你走进 React 的大门！我第一次听说 React 是我在美国读研的时候，室友选了 web programming 这节课，然后遇到了关于 react 的好多问题...
 tags: [前端, React]
 bvid: av95815105
-oid: 95815105
+oid: "95815105"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

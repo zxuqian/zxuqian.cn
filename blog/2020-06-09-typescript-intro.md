@@ -8,7 +8,7 @@ author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s
 description: TypeScript 是 JavaScript 的，带有类型的超集，并且可以编译为 JavaScript 脚本，这篇幅文章将带你认识一下 TypeScript
 tags: [前端, TypeScript]
 bvid: BV1xp4y1D7ux
-oid: 968467412
+oid: "968467412"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

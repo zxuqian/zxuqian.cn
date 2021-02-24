@@ -7,8 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: JavaScript 早期的规范不统一，也没有严格的标准，再加上它的语法灵活多样，有些看起来就不正确的代码却能正常执行，一些看起来符合逻辑的代码，运行结果却相差十万八千里。这些问题在日常开发中经常会导致 BUG，更重要的是，很多面试官会把它们拿出来当考验咱们 JS 工程师的能力。
 tags: [前端, JavaScript]
-activityId: 468208584104520356
-oid: 101349209
+activityId: "468208584104520356"
+oid: "101349209"
 ---
 
 如果你用 JavaScript 写过项目或者参加过面试，那一定遇到过不少令人匪夷所思的问题。JavaScript 早期的规范不统一，也没有严格的标准，再加上它的语法灵活多样，有些看起来就不正确的代码却能正常执行，一些看起来符合逻辑的代码，运行结果却相差十万八千里。这些问题在日常开发中经常会导致 BUG，更重要的是，很多面试官会把它们拿出来当考验咱们 JS 工程师的能力。那么这篇文章就总结了 5 个 JavaScript 比较坑的问题，以及它们出现的原因和解决方法。
