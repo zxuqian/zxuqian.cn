@@ -208,7 +208,7 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
     // "@docusaurus/plugin-ideal-image",
-    // path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
+    path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
   ],
   i18n: {
     defaultLocale: "zh-CN",
