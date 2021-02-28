@@ -5,8 +5,10 @@ author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
-description: 
-tags: [前端, React]
+description: 从原生角度上如何实现游戏里的物理特性，例如运动、碰撞。不用框架编写一个简单的、基于 JavaScript Canvas 的物理引擎，实现小球的碰撞效果。
+tags: [前端, 游戏, JavaScript]
+acitivityId: "496710575489658086"
+oid: "116705550"
 ---
 
 年前我看到合成大西瓜小游戏火了，想到之前从来没有研究过游戏方面的开发，这次就想趁着这个机会看看 JavaScript 游戏开发，从原生角度上如何实现游戏里的物理特性，例如运动、碰撞。虽然之前研究过物理相关的动画库，但是我打算试试不用框架编写一个简单的 JavaScript 物理引擎，实现小球的碰撞效果。
