@@ -1,0 +1,125 @@
+---
+slug: 5-javascript-tricky-problems
+title: 5 JavaScript Tricky Problems That Are Hard To Debug
+author: 峰华
+author_title: 前端工程师 / B站UP主
+author_url: https://github.com/zxuqian
+author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
+description: JavaScript 早期的规范不统一，也没有严格的标准，再加上它的语法灵活多样，有些看起来就不正确的代码却能正常执行，一些看起来符合逻辑的代码，运行结果却相差十万八千里。这些问题在日常开发中经常会导致 BUG，更重要的是，很多面试官会把它们拿出来当考验咱们 JS 工程师的能力。
+tags: [Frontend, JavaScript]
+activityId: 468208584104520356
+oid: 101349209
+---
+
+If you have ever written projects in JavaScript or participated in frontend interviews, you sure have encountered a lot of tricky problems. Due to the lack of a standard JavaScript specification in the early days, plus JavaScript's flexible syntax, codes will run strangely even if they seemed correct. These problems often lead to BUGs in daily development. More importantly, many interviewers will use them to test your frontend skills. So this article summarizes 5 JavaScript tricky prolems and their causes and solutions.
+
+<!-- truncate -->
+
+## 1. Optional semicolon
+
+problem:
+
+```javascript
+function foo() {
+return
+  {
+     value: 1
+  };
+}
+console.log(typeof foo());
+```
+
+You might think its output is "object", but the result is `undefined`. At first glance, the code seems to be okay, but if you look at it carefully, you can see that the object returned is placed next to the return statement. Here comes the problem: Semicolon in JavaScript is optional, and JavaScript will automatically add a simicolon when the return statement wraps. The code after the return statement will not be executed, so the result of calling foo() is undefined. 
+
+The solution is to write a semicolon at the end of each line, so that the complier clearly knows where the code ends.
+
+## 2. What does 'this' point to?
+
+problem:
+
+```javascript
+var a = 5;
+var obj = {
+a: 3,
+  foo: function() {
+    console.log(this.a);
+  }
+}
+
+var objFoo = obj.foo;
+objFoo();
+```
+
+The result is 5. When calling a function, its internal this refers to the calling object, for example, `obj.foo()` this refers to the obj object. If the function is called globally, this refers to the global object, which is window in the browser. `objFoo` is equivalent to calling it globally after obtaining the reference to the `foo` method of the `obj` object, so this points to the window object. Variables defined in the top-level scope using `var` will be added to window, so the objFoo() call prints the global a, which is 5.
+
+## 3. Array length
+
+problem:
+
+```javascript
+const arr = [1, 2, 3, 4];
+arr.length = 0;
+console.log(arr[0]);
+```
+
+The result is `undefined`, because the length property of the array can also control the number of elements in the array in turn. When arr.length is set to 0, arr becomes an empty array, and then the elements inside are all undefined. .
+
+## 4. Hoisting
+
+problem:
+
+```javascript
+function bar() {
+  return foo;
+  foo = 10;
+  function foo() {}
+  var foo = '11';
+}
+console.log(typeof bar());
+```
+
+The result is `function`. Variables declared with var and functions defined with funtion will be promoted to the top of the current scope, so variables can be assigned first and then declared with var, while functions can be called first and then defined. **But it should be noted that the variable defined with var (referring to the assignment at the same time as the declaration) will only promote the declaration part, and the assignment part will not be promoted. For example, ** `var foo = '11'` in the example Will raise `var foo`, but `foo = 11` stays in place. When defining the bar() function, a scope will be created at the same time, and promotion will put related variables and functions in the first line of the bar() function. Based on the above rules, it can be known that the declarations of the foo() function and the foo variable have been improved, because the foo variable has the same name, but only the declaration, so the value of the function will not be overwritten, and foo still points to the function. After that, use the return statement directly to return the result, and the following code will not be executed again. The code in bar() is actually the following form:
+
+```javascript
+function bar() {
+  function foo() {}
+  var foo;
+  return foo;
+  foo = 10;
+  var foo = '11';
+}
+```
+
+## 5. Scope and closure
+
+problem:
+
+```javascript
+for(var i = 0; i <3; i++) {
+  setTimeout(() => {
+    console.log(i);
+  });
+}
+```
+
+You might think that the result of the above code is `0 1 2`, but it is actually `3 3 3`. This is because variables defined with the var keyword have no block-level scope. The i defined in the for loop is equivalent to Global variable, it will be added to the window variable, even after the for loop exits, the value of i can be accessed. This leads to a problem. The function deferred using setTimeout() will be executed after the for loop ends. At this time, the value of i has become 3, so 3 functions in setTimeout() will all print 3. There are two ways to solve this problem.
+
+The first is to use the let keyword to define the variable i, so that every time a loop, a new scope is created, so the i in each scope is independent of each other, so you can print out `0 1 2` .
+
+The second method is to use self-executing functions, such as the following code:
+
+```javascript
+for(var i = 0; i <3; i++) {
+(function(i) {
+    setTimeout(() => {
+      console.log(i);
+    })
+  })(i)
+}
+```
+
+At this time, i is passed to the anonymous self-executing function through the parameter, and the self-executing function creates a closure, so it will capture the value of i, which is equivalent to copying the value of the parameter i internally, so no matter what the external i is Change, its internal value will not change. This will also print out `0 1 2`.
+
+## Summary
+
+These 5 questions expose some common pits in JavaScript. A little carelessness will leave hidden dangers and are difficult to detect, such as a simple line break, a change in this point, accidental modification of the length of an array, variable and function promotion, and scope The creation of there may be different situations. These questions may not be common in daily development, but they often appear in JS written tests and interviews to test the interviewer’s familiarity with JS. In addition, the pits in JS are far more than these, so you need to accumulate more in your daily life. You can also pay attention to this blog. I will update the JavaScript usage issues from time to time, thanks!

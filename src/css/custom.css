@@ -360,6 +360,7 @@ pagination-nav__item:hover .pagination-nav__link {
     "detail recent"
     "detail outline";
   grid-template-rows: max-content min-content;
+  grid-template-columns: minmax(0, 1fr) 250px;
 }
 
 .blog-wrapper > .container > .row .col[class*="col--"] {

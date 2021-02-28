@@ -1,4 +1,6 @@
 const path = require("path");
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 module.exports = {
   title: "峰华前端工程师",
@@ -161,7 +163,8 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/">冀ICP备14007097号-3</a></p>`,
     },
     prism: {
-      darkTheme: require("prism-react-renderer/themes/vsDark"),
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/oceanicNext"),
       defaultLanguage: "javascript",
     },
     googleAnalytics: {
@@ -181,11 +184,16 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master/docs",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+          showLastUpdateTime: true,
         },
         blog: {
           path: "./blog",
           routeBasePath: "/",
           blogSidebarTitle: "近期文章",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
           feedOptions: {
             type: "all",
             title: "峰华前端工程师",
@@ -209,6 +217,15 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
     // "@docusaurus/plugin-ideal-image",
     path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
+  ],
+  stylesheets: [
+    {
+      href: "/katex/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
+    },
   ],
   i18n: {
     defaultLocale: "zh-CN",
