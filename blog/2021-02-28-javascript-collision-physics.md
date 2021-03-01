@@ -127,7 +127,7 @@ let y = 100;
 let vx = 12;
 let vy = 25;
 
-process() {
+function process() {
   ctx.fillStyle = "hsl(170, 100%, 50%)";
   ctx.beginPath();
   ctx.arc(x, y, 60, 0, 2 * Math.PI);
