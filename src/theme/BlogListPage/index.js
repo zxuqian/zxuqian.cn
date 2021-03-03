@@ -96,7 +96,7 @@ function BlogListPage(props) {
             </animated.p>
             <animated.p style={animatedTexts[3]}>
               <Translate id="homepage.qqgroup" description="qq group">
-                QQ 1 群：644722908，2 群：1004912565
+                QQ 1 群：644722908 <br /> QQ 2 群：1004912565
               </Translate>
             </animated.p>
             <SocialLinks animatedProps={animatedTexts[4]} />

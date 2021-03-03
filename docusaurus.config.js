@@ -11,7 +11,6 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "zxuqian", // Usually your GitHub org/user name.
   projectName: "zxuqian.cn", // Usually your repo name.
-  stylesheets: ["https://fonts.font.im/css?family=Raleway:500,700"],
   themeConfig: {
     navbar: {
       title: "峰华<前端/>工程师",
@@ -226,6 +225,7 @@ module.exports = {
         "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
       crossorigin: "anonymous",
     },
+    "https://fonts.font.im/css?family=Raleway:500,700",
   ],
   i18n: {
     defaultLocale: "zh-CN",
