@@ -58,6 +58,10 @@ html[data-theme="dark"] {
   color: hsl(214deg, 33%, 90%);
 }
 
+video {
+  max-width: 100%;
+}
+
 /* 首页背景 */
 .container-wrapper {
   background: var(--content-background-color);
@@ -70,6 +74,11 @@ article > * {
   line-height: 1.8em;
   /* letter-spacing: 0.04em; */
   /* text-align: justify; */
+}
+
+.math.math-display {
+  max-width: 100%;
+  overflow: auto;
 }
 
 /* h1,

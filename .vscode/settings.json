@@ -1,4 +1,5 @@
 {
   "pasteImage.insertPattern": "![img](./img/${imageFileName}",
-  "pasteImage.path": "${currentFileDir}/img"
+  "pasteImage.path": "${currentFileDir}/img",
+  "liveServer.settings.port": 5501
 }
