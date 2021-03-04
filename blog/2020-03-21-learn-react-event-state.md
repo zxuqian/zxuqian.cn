@@ -17,10 +17,6 @@ Hello, 今天教你写一个渐变背景生成器。我会用这个例子来解�
 
 <!-- truncate -->
 
-效果演示：
-
-<img alt="" src={useBaseUrl('img/2020-03-21-learn-react-event-state/demo.gif')} />
-
 [源码：Github - React-Examples](https://github.com/zxuqian/react-examples)
 
 [示例和视频](../docs/videos/react/react-state-event-exmaple)

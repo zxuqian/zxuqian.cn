@@ -13,12 +13,11 @@ oid: "331491643"
 
 微信 8.0 更新的一大特色就是支持动画表情，如果发送的消息只有一个内置的表情图标，这个表情会有一段简单的动画，一些特殊的表情还有全屏特效，例如烟花表情有全屏放烟花的特效，炸弹表情有爆炸动画并且消息和头像也会随之震动。本着作为前端工程师的职业精神，我就想看看能不能实现一个类似的特效。折腾许久之后，做出来的效果如下：
 
-<img src={require("./img/2021-01-24-wechat-stickers-demo.gif").default} width="300" />
-
 <!-- truncate -->
 
 <!-- [B 站视频 - 点击传送]() -->
 
+<Video src={require("./img/2021-01-24-wechat-stickers-demo.mp4").default} width={300} />
 
 集中贴出需要的链接：
 
@@ -725,3 +724,4 @@ function shakeMessages() {
 
 <!-- [>> 在 B 站参与讨论]() -->
 
+import Video from "@site/src/components/Video";

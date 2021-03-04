@@ -15,9 +15,9 @@ oid: "116705550"
 
 为什么不用现成的游戏库呢？因为我觉得在了解底层的实现原理之后，才能更有效的理解框架上的概念和使用方法，在解决 BUG 的时候能够更有效率，同时对自己的编码技能也是一种提升。在对 JavaScript 物理引擎的研究过程中，发现写代码是次要的，最主要的是理解相关的物理、数学公式和概念，虽然我是理科生，但是数学和物理从来不是我的强项，我不是把知识还给老师了，而是压根就没掌握过 ^o^。过年期间花了有小半个月的时间在学习物理知识，现在仍然对某些概念和推导过程没有太大的自信，不过最后还算是做出了一个简单的、比较满意的结果，见下图。
 
-![gravity.gif](./img/javascript-collision-physics/01-gravity.gif)
-
 <!-- truncate -->
+
+<Video src={require("./img/javascript-collision-physics/01-gravity.mp4").default} />
 
 接下来看一下怎么实现这样的效果。
 
@@ -174,7 +174,7 @@ function process(now) {
 
 现在小球就可以移动了：
 
-![moving-ball.gif](./img/javascript-collision-physics/03-moving-ball.gif)
+<Video src={require("./img/javascript-collision-physics/03-moving-ball.mp4").default} />
 
 ## 重构代码
 
@@ -260,7 +260,7 @@ new Gameboard();
 
 这个时候有两个小球在移动了。
 
-![two-moving-balls.gif](./img/javascript-collision-physics/04-two-moving-balls.gif)
+<Video src={require("./img/javascript-collision-physics/04-two-moving-balls.mp4").default} />
 
 ## 碰撞检测
 
@@ -368,7 +368,7 @@ this.checkCollision();
 
 现在，可以看到小球在碰撞时，会改变颜色了。
 
-![collision-detect.gif](./img/javascript-collision-physics/05-collision-detect.gif)
+<Video src={require("./img/javascript-collision-physics/05-collision-detect.mp4").default} />
 
 ## 边界碰撞
 
@@ -411,7 +411,7 @@ this.checkCollision();
 
 这时候可以看到小球在碰到边界时，可以反弹了：
 
-![edge-collision.gif](./img/javascript-collision-physics/07-edge-collision.gif)
+<Video src={require("./img/javascript-collision-physics/07-edge-collision.mp4").default} />
 
 但是小球间的碰撞还没有处理，在处理之前，先复习一下向量的基本操作，数学好的同学可以直接跳过，只看相关的代码。
 
@@ -646,7 +646,7 @@ checkCollideWith(other) {
 
 这时，小球的碰撞效果就实现了。
 
-![ball-collision.gif](./img/javascript-collision-physics/09-ball-collision.gif)
+<Video src={require("./img/javascript-collision-physics/09-ball-collision.mp4").default} />
 
 ## 非弹性碰撞
 
@@ -737,7 +737,7 @@ let v2nAfter =
 
 这里要注意的是两小球碰撞时的恢复系数应取两者的最小值，按照常识，弹性小的无论是去撞别人还是别人撞它，都会有同样的效果。现在小球碰撞后速度会有所减慢，不过还差一点，我们可以加上重力来让小球自然下落。
 
-![coefficient-of-restitution.gif](./img/javascript-collision-physics/10-coefficient-of-restitution.gif)
+<Video src={require("./img/javascript-collision-physics/10-coefficient-of-restitution.mp4").default} />
 
 ## 重力
 
@@ -757,7 +757,7 @@ class Circle {
 
 重力加速度大约是 $9.8m/s^2$，但是由于我们的画布是以象素为单位的，所以使用 9.8 看起来会像是没有重力，或者像是从很远的地方观察小球，这时候可以把重力加速度放大一定倍数来达到更逼真的效果。
 
-![gravity.gif](./img/javascript-collision-physics/01-gravity.gif)
+<Video src={require("./img/javascript-collision-physics/01-gravity.mp4").default} />
 
 ## 总结
 
@@ -780,3 +780,4 @@ class Circle {
 
 希望这篇文章对你有所帮助，如果文章中的代码、公式或表述有不正确的地方，请留言指正，感谢阅读！
 
+import Video from "@site/src/components/Video";
