@@ -121,9 +121,9 @@ function BlogPostItem(props) {
   const renderTags = () => {
     return (
       (tags.length > 0 || truncated) && (
-        <div className="row margin-top--none margin-bottom--lg">
+        <div className="post__tags-container margin-top--none margin-bottom--lg">
           {tags.length > 0 && (
-            <div className="col">
+            <>
               <FontAwesomeIcon
                 icon={faTags}
                 color="#c4d3e0"
@@ -143,7 +143,7 @@ function BlogPostItem(props) {
                     {label}
                   </Link>
                 ))}
-            </div>
+            </>
           )}
         </div>
       )

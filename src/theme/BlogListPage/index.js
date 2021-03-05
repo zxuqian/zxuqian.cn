@@ -206,7 +206,7 @@ function SocialLinks({ animatedProps, ...props }) {
         <img
           width="50%"
           className="dropdown__menu"
-          src={useBaseUrl("/img/publicQR.png")}
+          src={useBaseUrl("/img/publicQR.webp")}
         />
       </div>
     </animated.div>

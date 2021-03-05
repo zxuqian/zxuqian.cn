@@ -23,6 +23,7 @@ module.exports = {
       "videos/css/04-selectors/css-selectors",
       "videos/css/05-position/css-position",
       "videos/css/06-css-hsl-color/css-hsl-color",
+      "videos/css/07-css-grid-place-items/css-grid-place-items",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
     特效: [
@@ -35,6 +36,7 @@ module.exports = {
       "videos/browser/01-dom/what-is-dom",
       "videos/browser/02-bom/what-is-bom",
       "videos/browser/03-js-dom/js-dom-operation",
+      "videos/browser/04-web-components-get-started/web-components-get-started",
     ],
     Web: [],
     网络: [

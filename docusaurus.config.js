@@ -16,8 +16,8 @@ module.exports = {
       title: "峰华<前端/>工程师",
       logo: {
         alt: "峰华",
-        src: "img/logo.png",
-        srcDark: "img/logo.png",
+        src: "img/logo.webp",
+        srcDark: "img/logo.webp",
       },
       items: [
         {
