@@ -225,7 +225,7 @@ module.exports = {
         "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
       crossorigin: "anonymous",
     },
-    "https://fonts.font.im/css?family=Raleway:500,700",
+    "https://fonts.font.im/css?family=Raleway:500,700&display=swap",
   ],
   i18n: {
     defaultLocale: "zh-CN",

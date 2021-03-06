@@ -8,6 +8,7 @@
     "write-translations": "docusaurus write-translations",
     "clear": "docusaurus clear",
     "build": "docusaurus build",
+    "build-cn": "docusaurus build --locale zh-CN",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy"
   },

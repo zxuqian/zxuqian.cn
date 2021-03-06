@@ -19,7 +19,6 @@ import ThemeContext from "@theme/ThemeContext";
 
 import styles from "./styles.module.css";
 import { MarkdownSection, StyledBlogItem } from "./style";
-import { withTheme } from "styled-components";
 
 import Eye from "@site/static/icons/eye.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,7 +27,7 @@ import { faTags } from "@fortawesome/free-solid-svg-icons";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Comments from "@site/src/components/Comments";
 
-import Translate, { translate } from "@docusaurus/Translate";
+import Translate from "@docusaurus/Translate";
 
 const MONTHS = [
   "",

@@ -9,7 +9,7 @@ import React, { useContext, useEffect, useState } from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import BlogPostItem from "../BlogPostItem";
+import BlogPostItem from "@theme/BlogPostItem";
 import BlogListPaginator from "@theme/BlogListPaginator";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,13 +22,11 @@ import {
 import useBaseUrl from "@docusaurus/useBaseUrl";
 // import bilibiliIcon from "@site/static/icons/bilibili.svg";
 
-import useThemeContext from "@theme/hooks/useThemeContext";
 import useFollowers from "./useFollowers";
 import useViews from "./useViews";
 import { useTrail, animated, useSpring } from "react-spring";
 import Fade from "react-reveal/Fade";
 
-import ArrowDown from "@site/static/icons/arrow-down.svg";
 import BilibiliIcon from "@site/static/icons/bilibili.svg";
 import CSDNIcon from "@site/static/icons/csdn.svg";
 import Button from "../../components/Button";

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-styled;
 
 function Button({ isLink = false, children, ...rest }) {
   return (
