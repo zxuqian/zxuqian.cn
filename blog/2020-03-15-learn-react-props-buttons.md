@@ -75,14 +75,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
    比如：
 
-   ```jsx live
+   ```jsx
    function App() {
      // 作为演示，我在 App 组件里又定义了一个 Button 组件
      function Button({ children }) {
        return <button>{children}</button>;
      }
-     // 这里"按钮"两个字就是<Button>组件的 children，可以自己
-     // 改成别的试试
      return <Button>按钮</Button>;
    }
    ```
