@@ -24,6 +24,7 @@ module.exports = {
       "videos/css/05-position/css-position",
       "videos/css/06-css-hsl-color/css-hsl-color",
       "videos/css/07-css-grid-place-items/css-grid-place-items",
+      "videos/css/08-css-text-image-wrap/css-text-image-wrap",
     ],
     HTML: ["videos/html/01-html-basics/html-basics"],
     特效: [

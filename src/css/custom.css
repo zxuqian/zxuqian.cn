@@ -166,7 +166,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 
 .bloghome__intro > p {
   margin: 26px 0px 24px 0;
-  color: #8c99ab;
+  color: hsl(215, 19%, 48%);
   /* text-shadow: 0 0 #8c99ab; */
   font-size: 1.125rem;
   text-align: justify;

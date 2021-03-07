@@ -16,6 +16,7 @@ module.exports = function (context, options) {
               else {
                   bp.src = 'http://push.zhanzhang.baidu.com/push.js';
               }
+              bp.defer = true;
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(bp, s);
           })();

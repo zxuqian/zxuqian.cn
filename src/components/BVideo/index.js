@@ -38,7 +38,7 @@ function BVideo({ src, bsrc }) {
         <p>播放量：{view}</p>
       </div> */}
       <div style={{ fontWeight: 800, padding: "2em 0" }}>
-        <a href={bsrc}>点击跳转到B站进行观看~记得给个三连哦！</a>
+        {/* <a href={bsrc}>点击跳转到B站进行观看~记得给个三连哦！</a> */}
       </div>
     </>
   );

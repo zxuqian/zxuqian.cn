@@ -1,4 +1,4 @@
-module.exports = function(context, options) {
+module.exports = function (context, options) {
   return {
     name: "docusaurus-google-adsense-plugin",
     injectHtmlTags() {
@@ -8,13 +8,13 @@ module.exports = function(context, options) {
             tagName: "script",
             attributes: {
               "data-ad-client": "ca-pub-3487507367729662",
-              async: true,
+              defer: true,
               src:
-                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            }
-          }
-        ]
+                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+            },
+          },
+        ],
       };
-    }
+    },
   };
 };
