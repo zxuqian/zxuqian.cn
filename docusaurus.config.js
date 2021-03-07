@@ -4,7 +4,8 @@ const katex = require("rehype-katex");
 
 module.exports = {
   title: "峰华前端工程师",
-  tagline: "帮助你提升前端开发技能",
+  // tagline:
+  //   "帮助你提升前端开发技能，分享 HTML、CSS、JavaScript、React 和 Vue 等开发实战经验",
   titleDelimiter: "-",
   url: "https://zxuqian.cn",
   baseUrl: "/",
@@ -13,7 +14,7 @@ module.exports = {
   projectName: "zxuqian.cn", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "峰华<前端/>工程师",
+      title: "峰华",
       logo: {
         alt: "峰华",
         src: "img/logo.webp",

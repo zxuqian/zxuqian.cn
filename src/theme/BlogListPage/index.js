@@ -32,6 +32,7 @@ import CSDNIcon from "@site/static/icons/csdn.svg";
 import Button from "../../components/Button";
 
 import Translate, { translate } from "@docusaurus/Translate";
+import Head from "@docusaurus/Head";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -42,7 +43,7 @@ function BlogListPage(props) {
   const isBlogOnlyMode = metadata.permalink === "/";
   const isPaginated = metadata.page > 1;
   const title = isBlogOnlyMode ? siteTitle : "Blog";
-  const description = `不仅仅是前端工程师，分享React.js, HTML, CSS, JavaScript, Node.js 技术以及个人发展、自我提升相关的心得`;
+  const description = `让你学会前端开发`;
 
   // Get all post views
   const views = useViews(items);
@@ -76,6 +77,11 @@ function BlogListPage(props) {
 
   return (
     <Layout title={title} description={description}>
+      <Head>
+        <title>
+          {title} - {description}
+        </title>
+      </Head>
       {/* 个人简介 */}
       {!isPaginated && (
         <animated.div className="hero">
