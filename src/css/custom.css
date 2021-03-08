@@ -513,6 +513,7 @@ pagination-nav__item:hover .pagination-nav__link {
   .bloghome__image svg {
     width: 100%;
     height: auto;
+    padding-left: 12px;
   }
   .bloghome__intro {
     padding-top: 2em;
