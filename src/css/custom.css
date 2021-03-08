@@ -151,7 +151,7 @@ h6 {
   max-width: 100%;
   margin: 0;
   display: grid;
-  grid-template-columns: 8fr 10fr;
+  grid-template-columns: 8fr 11fr;
   position: relative;
   /* background: url("/img/hero_main.svg") no-repeat right; */
   /* background-size: 60vw; */
@@ -177,6 +177,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 
 .bloghome__image svg {
   width: 100%;
+  height: auto;
 }
 
 .intro__name {
@@ -523,7 +524,8 @@ pagination-nav__item:hover .pagination-nav__link {
   }
 }
 
-.hero_main_svg__rotate {
+.hero_main_svg__js_rotate,
+.hero_main_dark_svg__js_rotate {
   animation: rotating 4s ease-in-out infinite;
   transform-origin: center center;
   transform-box: fill-box;
