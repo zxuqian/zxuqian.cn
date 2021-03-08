@@ -8,6 +8,7 @@
 import React, { useContext, useEffect, useState } from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useThemeContext from "@theme/hooks/useThemeContext";
 import Layout from "@theme/Layout";
 import BlogPostItem from "@theme/BlogPostItem";
 import BlogListPaginator from "@theme/BlogListPaginator";
@@ -33,6 +34,9 @@ import Button from "../../components/Button";
 
 import Translate, { translate } from "@docusaurus/Translate";
 import Head from "@docusaurus/Head";
+
+import HeroMain from "./img/hero_main.svg";
+import HeroMainDark from "./img/hero_main_dark.svg";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -123,9 +127,7 @@ function BlogListPage(props) {
             </animated.div>
           </div>
 
-          {/* <div className="bloghome__image">
-          <animated.img src="/img/hero_main.svg" style={animatedHero} />
-        </div> */}
+          <HeroMainImage />
           {/* <animated.div
           className="bloghome__scroll-down"
           style={animatedBackground}
@@ -214,6 +216,15 @@ function SocialLinks({ animatedProps, ...props }) {
         />
       </div>
     </animated.div>
+  );
+}
+
+function HeroMainImage() {
+  const { isDarkTheme } = useThemeContext();
+  return (
+    <div className="bloghome__image">
+      {isDarkTheme ? <HeroMainDark /> : <HeroMain />}
+    </div>
   );
 }
 
