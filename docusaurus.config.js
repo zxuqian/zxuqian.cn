@@ -236,11 +236,11 @@ module.exports = {
       type: "text/css",
       rel: "stylesheet",
     },
-    {
-      href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
-      type: "text/css",
-      rel: "stylesheet",
-    },
+    // {
+    //   href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
+    //   type: "text/css",
+    //   rel: "stylesheet",
+    // },
   ],
   i18n: {
     defaultLocale: "zh-CN",

@@ -93,6 +93,11 @@ export const StyledBlogItem = styled.div`
     .markdown > h1 {
       font-size: 2em;
     }
+
+    .markdown p,
+    .markdown ul {
+      font-family: var(--content-font-family);
+    }
   }
 
   /* 卡片新拟态特效 */
