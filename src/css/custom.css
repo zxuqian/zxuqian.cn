@@ -180,6 +180,18 @@ html[data-theme="dark"] .bloghome__intro > p {
   height: auto;
 }
 
+.hero_main_svg__js g,
+.hero_main_svg__todo path:nth-child(1),
+.hero_main_svg__magnifier path:nth-child(1) {
+  fill: #2a2b3b;
+}
+
+[data-theme="dark"] .hero_main_svg__js g,
+[data-theme="dark"] .hero_main_svg__todo path:nth-child(1),
+[data-theme="dark"] .hero_main_svg__magnifier path:nth-child(1) {
+  fill: #abaff1;
+}
+
 .intro__name {
   color: var(--ifm-color-primary);
 }
