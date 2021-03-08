@@ -20,6 +20,8 @@
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Raleway", "PingFang SC", "Microsoft Yahei",
     sans-serif;
+  --ifm-font-family-monospace: "Fira Code", SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
 
   --ifm-navbar-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
   --ifm-toc-border-color: #f7f7f7;

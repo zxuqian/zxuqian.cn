@@ -220,6 +220,11 @@ module.exports = {
   ],
   stylesheets: [
     {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      type: "text/css",
+    },
+    {
       href: "/katex/katex.min.css",
       type: "text/css",
       integrity:
@@ -229,9 +234,12 @@ module.exports = {
     {
       href: "https://fonts.font.im/css?family=Raleway:500,700&display=swap",
       type: "text/css",
-      rel: "preload",
-      as: "style",
-      onload: "this.rel='stylesheet'",
+      rel: "stylesheet",
+    },
+    {
+      href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
+      type: "text/css",
+      rel: "stylesheet",
     },
   ],
   i18n: {
