@@ -231,6 +231,7 @@ module.exports = {
       type: "text/css",
       rel: "preload",
       as: "style",
+      onload: "this.rel='stylesheet'",
     },
   ],
   i18n: {
