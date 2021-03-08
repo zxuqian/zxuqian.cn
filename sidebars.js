@@ -38,6 +38,7 @@ module.exports = {
       "videos/browser/02-bom/what-is-bom",
       "videos/browser/03-js-dom/js-dom-operation",
       "videos/browser/04-web-components-get-started/web-components-get-started",
+      "videos/browser/05-native-drag-drop/native-drag-drop",
     ],
     Web: [],
     网络: [
