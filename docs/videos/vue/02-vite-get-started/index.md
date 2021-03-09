@@ -1,13 +1,10 @@
 ---
-to: docs/videos/<%= category %>/<%= num %>-<%= name %>/index.md
----
----
-id: <%= name %>
+id: vite-get-started
 title: 请输入文档标题
-slug: ../<%= name %>
+slug: ../vite-get-started
 description: 请输入描述
 keywords:
-  - <%= category %>
+  - css
   - color
   - grid
   - place-items
@@ -17,4 +14,4 @@ keywords:
 
 import BVideo from "@site/src/components/BVideo";
 
-<BVideo src="<%- url %>"/>
+<BVideo src="//player.bilibili.com/player.html?aid=929383659&bvid=BV1CK4y1S7aw&cid=306339485&page=1"/>

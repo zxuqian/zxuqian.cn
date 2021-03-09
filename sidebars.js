@@ -50,7 +50,11 @@ module.exports = {
       "videos/react/02-gradient-bg-react-state-event/react-state-event-gradient",
       "videos/react/03-5-react-spring-animations/5-react-spring-animations",
     ],
-    Vue: ["videos/vue/01-vue-todo-app/vue-todo-app"],
+
+    Vue: [
+      "videos/vue/01-vue-todo-app/vue-todo-app",
+      "videos/vue/02-vite-get-started/vite-get-started",
+    ],
     TypeScript: ["videos/ts/01-intro/ts-intro"],
   },
   resources: {

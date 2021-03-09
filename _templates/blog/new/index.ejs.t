@@ -11,6 +11,9 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 请输入描述
 tags: [前端, React]
+activityId: 相关动态 ID
+bvid: 相关视频 ID（与 activityId 2选一）
+oid: 必填
 ---
 
 <!-- truncate -->
