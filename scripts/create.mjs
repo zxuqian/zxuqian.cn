@@ -1,3 +1,7 @@
+/**
+ * 自动生成博客、文档或视频教程文本工具
+ */
+
 import figlet from "figlet";
 import chalk from "chalk";
 import inquirer from "inquirer";
@@ -119,6 +123,8 @@ function getFileCount(dir) {
 
 async function getVideos() {
   const spinner = ora(chalk.blue("加载视频列表...")).start();
+
+  // 获取视频列表 API
   const res = await fetch(
     `https://api.bilibili.com/x/space/arc/search?mid=302954484&ps=100&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp`
   );
@@ -139,7 +145,8 @@ async function getVideos() {
 
 async function getIframeUrl(bvid) {
   const spinner = ora(chalk.blue("组装 iframe url...")).start();
-  // http://api.bilibili.com/x/web-interface/view
+
+  // 获取视频详情 API
   const res = await fetch(
     `http://api.bilibili.com/x/web-interface/view?bvid=${bvid}`
   );
