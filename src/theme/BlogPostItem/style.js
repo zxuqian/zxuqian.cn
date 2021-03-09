@@ -66,11 +66,18 @@ export const StyledBlogItem = styled.div`
   article {
     .single-post--date {
       color: var(--post-title-color);
+      font-size: 0.9em;
     }
     > header {
       > h1 {
         font-size: 2em;
         /* color: #2f5c85; */
+        @media (max-width: 570px) {
+          & {
+            font-size: 1.6em;
+            text-align: center;
+          }
+        }
       }
 
       > h2 {
@@ -83,15 +90,16 @@ export const StyledBlogItem = styled.div`
             text-decoration: none;
           }
         }
+        @media (max-width: 570px) {
+          & {
+            font-size: 1.7em;
+          }
+        }
       }
 
       > div > time {
         color: var(--post-pub-date-color);
       }
-    }
-
-    .markdown > h1 {
-      font-size: 2em;
     }
 
     .markdown p,

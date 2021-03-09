@@ -1,6 +1,6 @@
 ---
 id: css-position
-title: CSS 定位
+title: CSS 5 大定位属性 Static, Relative, Absolute, Fixed, Sticky 使用教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
@@ -21,8 +21,6 @@ import BVideo from "@site/src/components/BVideo";
 <BVideo src="//player.bilibili.com/player.html?aid=541725652&bvid=BV1ni4y1g7tc&cid=224228999&page=1" bsrc="https://www.bilibili.com/video/BV1ni4y1g7tc/"/>
 
 我们在设计页面的时候，上边的元素并不是整齐的，从上到下，从左到右排列的，而是有各中各样的布局方式，比如错位的，层叠的，固定在某个地方的，要实现这些复杂的布局，需要熟练掌握 CSS 定位的概念和用法。
-
-
 
 CSS 的定位通过 position 属性设置，它有 static, relative, absolute, fixed, sticky 这几种。
 

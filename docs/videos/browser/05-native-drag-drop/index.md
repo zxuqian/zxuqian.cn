@@ -1,6 +1,6 @@
 ---
 id: native-drag-drop
-title: 原生拖拽 API 入门
+title: 使用原生 JS Drag & Drop API 实现元素拖拽和文件拖放
 slug: ../native-drag-drop
 description: 有时候经常会好奇那些可视化拖拽的工具，还有拖放文件上传是怎么实现的，是不是得监听鼠标点击，移动和释放事件，然后同时计算新位置的坐标？其实不用那么麻烦，浏览器提供了内置的 Drag & Drop API，能很方便的实现拖拽功能。
 keywords:

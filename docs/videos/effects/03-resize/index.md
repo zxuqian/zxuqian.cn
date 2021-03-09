@@ -1,6 +1,6 @@
 ---
 id: effects-resizable
-title: CSS 实现可缩放元素
+title: 使用 2 行 CSS 代码实现可缩放的 HTML 元素
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

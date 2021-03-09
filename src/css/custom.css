@@ -8,6 +8,9 @@
 
 /* "Yuanti SC", "Yuanti SC Regular", "Youyuan",
     "You Yuan", "幼圆", */
+* {
+  word-break: break-all;
+}
 
 :root {
   --ifm-color-primary: #006dfe;
@@ -40,7 +43,7 @@ html {
   --post-shadow: 0 0 120px var(--post-shadow-color);
   --content-background-color: #fafafa;
   --blog-item-background-color: linear-gradient(
-    310deg,
+    50deg,
     #ffffff,
     hsl(0deg 0% 95%)
   );
@@ -82,6 +85,19 @@ html[data-theme="dark"] h4,
 html[data-theme="dark"] h5,
 html[data-theme="dark"] h6 {
   --ifm-heading-color: hsl(214deg, 100%, 96%);
+}
+
+.main-wrapper h1,
+.markdown > h1 {
+  font-size: 2.2em;
+}
+
+.markdown > h2 {
+  font-size: 1.8em;
+}
+
+.markdown > h3 {
+  font-size: 1.5em;
 }
 
 video {
@@ -272,6 +288,11 @@ html[data-theme="dark"] .bloghome__intro > p {
 } */
 
 /* 发布日期 */
+.post__date-container {
+  display: grid;
+  justify-items: center;
+}
+
 .post__date {
   background: url("/icons/circle.svg") no-repeat;
   background-size: contain;
@@ -281,7 +302,7 @@ html[data-theme="dark"] .bloghome__intro > p {
   align-items: center;
   width: 10.5em;
   height: 10.5em;
-  margin-top: 1.6em;
+  margin-top: 1em;
   font-family: "Raleway";
 }
 
@@ -294,6 +315,15 @@ html[data-theme="dark"] .bloghome__intro > p {
 .post__year_month {
   align-self: start;
   color: var(--post-pub-date-color);
+}
+
+.line__decor {
+  width: 65%;
+  height: 4px;
+  background-color: var(--ifm-color-primary);
+  align-self: end;
+  margin-bottom: 1.15em;
+  opacity: 0.25;
 }
 
 .post__tags-container {
@@ -490,6 +520,14 @@ pagination-nav__item:hover .pagination-nav__link {
   .blog__section_title {
     padding-top: 3em;
   }
+
+  .post__date-container {
+    justify-items: start;
+  }
+
+  .line__decor {
+    display: none;
+  }
 }
 
 /* 文档侧栏字体大小 */
@@ -504,6 +542,19 @@ pagination-nav__item:hover .pagination-nav__link {
 }
 
 @media (max-width: 570px) {
+  .main-wrapper h1,
+  .markdown > h1 {
+    font-size: 1.6em;
+  }
+
+  .markdown > h2 {
+    font-size: 1.4em;
+  }
+
+  .markdown > h3 {
+    font-size: 1.2em;
+  }
+
   .hero {
     height: auto;
   }
@@ -520,6 +571,9 @@ pagination-nav__item:hover .pagination-nav__link {
   }
   .blog__section_title {
     padding-top: 2em;
+  }
+  .post__date-container {
+    margin-bottom: 1em !important;
   }
 }
 

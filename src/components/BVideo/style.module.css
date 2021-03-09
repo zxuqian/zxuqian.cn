@@ -4,6 +4,10 @@
   margin-top: 2vh;
 }
 
+.videoFrame + * {
+  margin-top: 2em;
+}
+
 @media (max-width: 570px) {
   .videoFrame {
     height: 300px;

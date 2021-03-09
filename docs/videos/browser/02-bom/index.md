@@ -1,6 +1,6 @@
 ---
 id: what-is-bom
-title: BOM 简介
+title: 什么是 BOM？与 HTML DOM 有什么区别？
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

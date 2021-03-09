@@ -1,6 +1,6 @@
 ---
 id: js-dom-operation
-title: JS DOM 操纵
+title: JS HTML DOM 操作入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

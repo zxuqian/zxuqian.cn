@@ -98,9 +98,9 @@ async function askVideoDocInfo() {
   // console.log(
   //   `hygen video-doc new ${docName} --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}"`
   // );
-  // shell.exec(
-  //   `hygen video-doc new ${docName} --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}"`
-  // );
+  shell.exec(
+    `hygen video-doc new ${docName} --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}"`
+  );
 }
 
 // hygen video-doc new css-test --category css --num 09 --sidebar CSS
@@ -120,7 +120,7 @@ function getFileCount(dir) {
 async function getVideos() {
   const spinner = ora(chalk.blue("加载视频列表...")).start();
   const res = await fetch(
-    `https://api.bilibili.com/x/space/arc/search?mid=302954484&ps=10&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp`
+    `https://api.bilibili.com/x/space/arc/search?mid=302954484&ps=100&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp`
   );
   const resData = await res.json();
   const {

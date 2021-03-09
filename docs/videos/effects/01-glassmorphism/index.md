@@ -1,6 +1,6 @@
 ---
 id: effects-glassmorphism
-title: CSS 玻璃特效
+title: 教你使用 2 行代码实现毛玻璃特效 Glassmorphism，附代码生成工具
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

@@ -1,6 +1,6 @@
 ---
 id: grid-layout
-title: CSS Grid 布局
+title: CSS Grid 布局入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

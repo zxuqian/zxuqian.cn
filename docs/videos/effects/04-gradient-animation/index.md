@@ -1,6 +1,6 @@
 ---
 id: gradient-animation
-title: CSS 渐变动画
+title: 使用 CSS 实现渐变背景色过渡动画
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

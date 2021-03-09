@@ -1,6 +1,6 @@
 ---
 id: css-grid-place-items
-title: CSS place-items
+title: 使用 2 行 CSS 代码居中元素
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

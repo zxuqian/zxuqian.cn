@@ -120,7 +120,7 @@ function BlogPostItem(props) {
   const renderTags = () => {
     return (
       (tags.length > 0 || truncated) && (
-        <div className="post__tags-container margin-top--none margin-bottom--lg">
+        <div className="post__tags-container margin-top--none margin-bottom--md">
           {tags.length > 0 && (
             <>
               <FontAwesomeIcon
@@ -172,11 +172,12 @@ function BlogPostItem(props) {
       >
         {/* 列表页日期 */}
         {!isBlogPostPage && (
-          <div className="col col--3 padding-right--lg margin-bottom--lg">
+          <div className="post__date-container col col--3 padding-right--lg margin-bottom--lg">
             <div className="post__date">
               <div className="post__day">{day}</div>
               <div className="post__year_month">{dateStr}</div>
             </div>
+            <div className="line__decor"></div>
           </div>
         )}
         <div className={`col ${isBlogPostPage ? `col--12` : `col--9`}`}>
@@ -214,7 +215,7 @@ function BlogPostItem(props) {
             )}
             {/* 标签 */}
             {isBlogPostPage && (
-              <div className="text--center margin-bottom--lg padding-bottom--xs">
+              <div className="text--center margin-bottom--xs padding-bottom--xs">
                 {renderTags()}
               </div>
             )}

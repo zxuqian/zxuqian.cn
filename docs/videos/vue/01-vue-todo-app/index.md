@@ -1,6 +1,6 @@
 ---
 id: vue-todo-app
-title: Vue Todo App 开发
+title: Vue 3.0 实战，开发基于 Composition API 的 Todo Web App
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

@@ -1,6 +1,6 @@
 ---
 id: what-is-dom
-title: DOM 简介
+title: HTML DOM 入门简介
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

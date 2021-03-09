@@ -1,6 +1,6 @@
 ---
 id: ts-intro
-title: TypeScript 入门介绍
+title: TypeScript 入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

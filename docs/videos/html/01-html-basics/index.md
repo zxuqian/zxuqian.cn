@@ -1,6 +1,6 @@
 ---
 id: html-basics
-title: HTML 基础
+title: HTML 网页制作基础入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

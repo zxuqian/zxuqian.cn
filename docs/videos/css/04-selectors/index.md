@@ -1,6 +1,6 @@
 ---
 id: css-selectors
-title: CSS 选择器
+title: JS DOM 和 CSS 选择器入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
@@ -26,7 +26,7 @@ import BVideo from "@site/src/components/BVideo";
 
 首先看基础选择器。
 
-### 基础选择器有
+### 基础选择器
 
 **类型选择器**。用于直接选择HTML 元素，例如 div，它可以选择 HTML 页面中的所有 div 元素。
 

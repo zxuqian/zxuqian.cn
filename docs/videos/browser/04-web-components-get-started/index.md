@@ -1,6 +1,6 @@
 ---
 id: web-components-get-started
-title: Web Components 入门
+title: Web Components 前端开发入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

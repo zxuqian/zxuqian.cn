@@ -1,6 +1,6 @@
 ---
 id: 5-tips-master-css
-title: 掌握 CSS 的 5 个技巧
+title: 5个 CSS 特效实现和发现灵感网站推荐
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

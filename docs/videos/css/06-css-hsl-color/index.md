@@ -1,6 +1,6 @@
 ---
 id: css-hsl-color
-title: HSL 颜色及变量
+title: CSS HSL：更直观、可复用的 CSS 颜色表示法，不再盲猜颜色
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

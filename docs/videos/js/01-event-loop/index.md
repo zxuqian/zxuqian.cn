@@ -1,6 +1,6 @@
 ---
 id: event-loop
-title: Event Loop
+title: 最直观的 JavaScript Event Loop 动画演示
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

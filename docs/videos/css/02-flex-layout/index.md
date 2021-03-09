@@ -1,6 +1,6 @@
 ---
 id: flex-layout
-title: CSS Flex 布局
+title: CSS flex 布局入门教程
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

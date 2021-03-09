@@ -1,6 +1,6 @@
 ---
 id: effects-glitch
-title: CSS 实现赛博朋克按钮色差故障特效
+title: 使用 CSS 实现赛博朋克 2077 官网按钮色差故障
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
