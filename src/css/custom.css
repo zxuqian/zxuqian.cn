@@ -591,8 +591,7 @@ pagination-nav__item:hover .pagination-nav__link {
   }
 }
 
-.hero_main_svg__js_rotate,
-.hero_main_dark_svg__js_rotate {
+.hero_main_svg__js_rotate {
   animation: rotating 4s ease-in-out infinite;
   transform-origin: center center;
   transform-box: fill-box;

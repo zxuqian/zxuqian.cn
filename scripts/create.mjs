@@ -138,7 +138,7 @@ async function getVideos() {
   return vlist.map((video, index) => ({
     name: `${index + 1}. ${video.title}`,
     value: video.bvid,
-    short: video.title.slice(0, 8),
+    short: video.title.slice(0, 18) + "...",
   }));
   // https://api.bilibili.com/x/space/arc/search?mid=302954484&ps=30&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp
 }
