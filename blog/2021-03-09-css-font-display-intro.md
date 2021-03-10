@@ -7,13 +7,13 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 在编写网站的时候，或多或少都会用到一些网络上的字体，CSS 3 中虽然加入了对 Web Fonts（网络字体）的支持，但是浏览器对它们的加载和默认处理方式会极大的影响网站的性能和用户体验。例如默认情况下，在 Web Fonts 加载时，使用该字体的地方会显示空白，直到字体下载完成之后才会显示，这时通过改变 CSS 中的 `font-display` 属性，就可以避免这个问题。
 tags: [前端, css, 性能优化]
+activityId: "500549825279095997"
+oid: "500549825279095997"
 ---
 
-<!-- activityId: 相关动态 ID
-bvid: 相关视频 ID（与 activityId 2选一）
-oid: 必填 -->
-
 在编写网站的时候，或多或少都会用到一些网络上的字体，CSS 3 中虽然加入了对 Web Fonts（网络字体）的支持，但是浏览器对它们的加载和默认处理方式会极大的影响网站的性能和用户体验。例如默认情况下，在 Web Fonts 加载时，使用该字体的地方会显示空白，直到字体下载完成之后才会显示，这时通过改变 CSS 中的 `font-display` 属性，就可以避免这个问题。
+
+<!-- truncate -->
 
 ## 什么是 Web Fonts
 
