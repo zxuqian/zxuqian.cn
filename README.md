@@ -137,6 +137,6 @@ hygen doc new react-get-started
 | <img src="./static/img/wechatPay.webp" height="250" /> | <img src="./static/img/aliPay.webp" height="250" /> |
 ## 关于版权
 
-所有插件、主题代码均为开源，可自由使用分发。其他内容包括但不限于文章、图片、视频等版权均为作者所有，但遵循 CC BY-NC 4.0 协议，转载时请注明来源和署名，并且不可用于商业目的。
+所有插件、主题代码均为开源，可自由使用分发。其他内容包括但不限于文章、图片、视频等版权均为作者所有，但遵循 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans) 协议，转载时请注明来源和署名，并且不可用于商业目的。
 
 博客首页头图 `./src/theme/BlogListPage/img/hero_main.svg` 为版权图片，不可在产品中使用，亦不可进行传播、复制或修改，或任何目的。
