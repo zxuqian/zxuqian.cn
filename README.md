@@ -4,7 +4,7 @@
 
 本博客的代码如无特殊说明，可以自由使用，版权信息详见[关于版权](#关于版权)部分。接下来简单介绍一下本博客的开发和部署方式，关于 Docusaurus 的使用方法请参考官方网站 [Docusaurus 2](https://v2.docusaurus.io/)。
 
-## 安装
+## 使用方法
 
 首先克隆仓库代码：
 
@@ -118,7 +118,7 @@ hygen doc new react-get-started
 
 （待完善）
 
-## 自定义组件
+## 自定义组件（待完善）
 
 ### BlogListPage
 
@@ -135,13 +135,8 @@ hygen doc new react-get-started
 |                          微信                          |                       支付宝                        |
 | :----------------------------------------------------: | :-------------------------------------------------: |
 | <img src="./static/img/wechatPay.webp" height="250" /> | <img src="./static/img/aliPay.webp" height="250" /> |
-
-
-
-
-
 ## 关于版权
 
 所有插件、主题代码均为开源，可自由使用分发。其他内容包括但不限于文章、图片、视频等版权均为作者所有，但遵循 CC BY-NC 4.0 协议，转载时请注明来源和署名，并且不可用于商业目的。
 
-博客首页头图（./src/theme/BlogListPage/img/hero_main.svg）为版权图片，不可在产品中使用，亦不可进行传播、复制或修改，或任何目的。
+博客首页头图 `./src/theme/BlogListPage/img/hero_main.svg` 为版权图片，不可在产品中使用，亦不可进行传播、复制或修改，或任何目的。
