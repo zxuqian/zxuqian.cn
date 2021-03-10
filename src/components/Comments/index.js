@@ -14,18 +14,19 @@ function Comments({ activityId, oid, bvid }) {
   const [page, setPage] = useState({});
 
   let url = "";
-  let type = "11";
+  let type = "11"; // 图片动态，需要有 activityId 和 oid
   if (activityId) {
     url = `https://t.bilibili.com/${activityId}?tab=2`;
   }
   if (bvid) {
-    type = "1";
+    type = "1"; // 视频动态，需要有 bvid 和 oid
     url = `https://www.bilibili.com/video/${bvid}`;
   }
 
   const getComments = async () => {
-    if (!oid) {
-      return;
+    if (!oid && activityId) {
+      type = "17"; // 纯动态，无图片，只需要 activityId
+      oid = activityId;
     }
     const res = await fetch(
       `https://api.zxuqian.cn/comments?type=${type}&oid=${oid}&sort=1`

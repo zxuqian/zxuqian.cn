@@ -13,7 +13,7 @@ description: 请输入描述
 tags: [前端, React]
 activityId: 相关动态 ID
 bvid: 相关视频 ID（与 activityId 2选一）
-oid: 必填
+oid: oid
 ---
 
 <!-- truncate -->
