@@ -87,6 +87,16 @@ html[data-theme="dark"] h6 {
   --ifm-heading-color: hsl(214deg, 100%, 96%);
 }
 
+video {
+  max-width: 100%;
+}
+
+table {
+  word-break: keep-all;
+  white-space: nowrap;
+  /* text-align: center; */
+}
+
 .main-wrapper h1,
 .markdown > h1 {
   font-size: 2.2em;
@@ -98,10 +108,6 @@ html[data-theme="dark"] h6 {
 
 .markdown > h3 {
   font-size: 1.5em;
-}
-
-video {
-  max-width: 100%;
 }
 
 /* 首页背景 */
