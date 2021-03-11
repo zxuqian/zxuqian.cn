@@ -41,6 +41,8 @@ function BlogListPage(props) {
 
   const {
     siteConfig: { title: siteTitle },
+    // 当前语言
+    i18n: { currentLocale },
   } = useDocusaurusContext();
   const isBlogOnlyMode = metadata.permalink === "/";
   const isPaginated = metadata.page > 1;
@@ -100,16 +102,23 @@ function BlogListPage(props) {
                 B站视频教程合集和配套文本、系统教程、编程博客、前端资源导航、以及UP主的想法和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。
               </Translate>
             </animated.p>
-            <animated.p style={animatedTexts[3]}>
-              <Translate id="homepage.qqgroup" description="qq group">
-                QQ 1 群：644722908 <br /> QQ 2 群：1004912565
-              </Translate>
-            </animated.p>
+            {currentLocale === "zh-CN" && (
+              <animated.p style={animatedTexts[3]}>
+                <Translate id="homepage.qqgroup1" description="qq group1">
+                  QQ 1 群：644722908
+                </Translate>
+                <br />
+                <Translate id="homepage.qqgroup2" description="qq group2">
+                  QQ 2 群：1004912565
+                </Translate>
+              </animated.p>
+            )}
             <SocialLinks animatedProps={animatedTexts[4]} />
             <animated.div style={animatedTexts[2]}>
               <Button
                 isLink
                 href={translate({
+                  id: "homepage.follow.link.href",
                   message:
                     "https://space.bilibili.com/302954484?from=search&seid=1788147379248960737",
                   description: "social link bilibili or twitter",
@@ -118,8 +127,12 @@ function BlogListPage(props) {
                 <Translate description="follow me btn text">
                   去B站关注
                 </Translate>
-                <Translate id="homepage.followers" description="followers">
-                  ({(Math.round(followers) / 10000).toFixed(1)} 万)
+                <Translate
+                  id="homepage.followers"
+                  description="followers"
+                  values={{ count: (Math.round(followers) / 10000).toFixed(1) }}
+                >
+                  {" {count} 万"}
                 </Translate>
               </Button>
             </animated.div>
