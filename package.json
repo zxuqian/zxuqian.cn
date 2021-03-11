@@ -12,7 +12,8 @@
     "build-cn": "docusaurus build --locale zh-CN",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "gen": "node scripts/create.mjs"
+    "gen": "node scripts/create.mjs",
+    "serve": "docusaurus serve"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.71",
