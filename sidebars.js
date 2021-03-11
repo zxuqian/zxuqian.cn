@@ -54,9 +54,11 @@ module.exports = {
     Vue: [
       "videos/vue/01-vue-todo-app/vue-todo-app",
       "videos/vue/02-vite-get-started/vite-get-started",
-      "videos/vue/03-test/test",
     ],
-    TypeScript: ["videos/ts/01-intro/ts-intro"],
+    TypeScript: [
+      "videos/ts/01-intro/ts-intro",
+      "videos/ts/02-typescript-oo-basics/typescript-oo-basics",
+    ],
   },
   resources: {
     简介: ["resources/resources-intro"],

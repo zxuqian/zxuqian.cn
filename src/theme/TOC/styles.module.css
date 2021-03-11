@@ -1,0 +1,12 @@
+.sidebarContainer {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 2rem);
+}
+
+.ads {
+  margin-top: 1em;
+}
+
+.ads.ads.ads.ads.ads.ads::before {
+  content: "推广";
+}

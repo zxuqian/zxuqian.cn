@@ -4,6 +4,7 @@
 # Production
 /build
 /drafts
+/tmp
 cloudbaserc.json
 
 # Generated files

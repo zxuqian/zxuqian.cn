@@ -10,6 +10,9 @@ import fs from "fs";
 import path from "path";
 import shell from "shelljs";
 import fetch from "isomorphic-fetch";
+import dotEnv from "dotenv";
+
+dotEnv.config();
 
 const docTypeHandlers = {
   "video doc": askVideoDocInfo,
@@ -62,6 +65,7 @@ async function askDocType() {
 
 async function askVideoDocInfo() {
   const videos = await getVideos();
+  const yuqueDocs = await getYuqueDocs();
 
   const questions = [
     {
@@ -69,6 +73,12 @@ async function askVideoDocInfo() {
       name: "bvid",
       message: "请选择关联视频",
       choices: videos,
+    },
+    {
+      type: "list",
+      name: "yuqueDocInfo",
+      message: "请选择关联文档",
+      choices: yuqueDocs,
     },
     {
       type: "list",
@@ -83,7 +93,9 @@ async function askVideoDocInfo() {
     },
   ];
 
-  const { bvid, docCategory, docName } = await inquirer.prompt(questions);
+  const { bvid, docCategory, docName, yuqueDocInfo } = await inquirer.prompt(
+    questions
+  );
 
   const { aid, cid } = await getIframeUrl(bvid);
 
@@ -99,12 +111,27 @@ async function askVideoDocInfo() {
   let count = getFileCount(dirName) + 1;
   count = count > 10 ? count : `0${count}`;
 
+  // get doc body
+  const lakeBody = await getYuqueDoc(yuqueDocInfo.slug);
+  const cleanBody = lakeBody.replace(/<a name="[\w]{5}"><\/a>|<br \/>/g, "\n");
+
   // console.log(
-  //   `hygen video-doc new ${docName} --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}"`
+  //   `hygen video-doc new ${docName} --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}" --body ${lakeBody}`
   // );
+  // Write to a temporary file
+  if (!fs.existsSync("tmp")) {
+    fs.mkdirSync("tmp");
+  }
+  const fileName = new Date().getTime();
+  fs.writeFileSync(`tmp/${fileName}`, cleanBody);
+
+  // it will concate the temporary doc file into the template body
   shell.exec(
-    `hygen video-doc new ${docName} --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}"`
+    `hygen video-doc new ${docName} --title "${yuqueDocInfo.title}" --category ${docCategory} --num ${count} --sidebar ${videoDocCategoryToSidebar[docCategory]} --url "${url}" --tmp ${fileName}`
   );
+
+  // remove tmp
+  fs.rmSync(`tmp/${fileName}`);
 }
 
 // hygen video-doc new css-test --category css --num 09 --sidebar CSS
@@ -156,4 +183,47 @@ async function getIframeUrl(bvid) {
   } = resData;
   spinner.succeed(chalk.green("组装 iframe url 成功"));
   return { aid, bvid, cid };
+}
+
+async function getYuqueDocs() {
+  const spinner = ora(chalk.blue("加载文档列表...")).start();
+
+  const token = process.env.YUQUE_TOKEN;
+  // 获取语雀文档列表；
+  const res = await fetch(
+    `https://www.yuque.com/api/v2/repos/fenghua-uy38l/cfswf4/docs`,
+    {
+      headers: {
+        "X-Auth-Token": token,
+      },
+    }
+  );
+
+  const { data = {} } = await res.json();
+  spinner.succeed(chalk.green("加载文档列表成功"));
+  return data.map((doc, index) => ({
+    name: `${index + 1}. ${doc.title}`,
+    value: { slug: doc.slug, title: doc.title },
+    short: doc.title.slice(0, 18) + "...",
+  }));
+}
+
+async function getYuqueDoc(slug) {
+  const token = process.env.YUQUE_TOKEN;
+
+  const spinner = ora(chalk.blue("获取文档 markdown...")).start();
+
+  // 获取视频详情 API
+  const res = await fetch(
+    `https://www.yuque.com/api/v2/repos/fenghua-uy38l/cfswf4/docs/${slug}?raw=1`,
+    {
+      headers: {
+        "X-Auth-Token": token,
+      },
+    }
+  );
+  const resData = await res.json();
+  // console.log(resData.data.body_draft);
+  spinner.succeed(chalk.green("获取文档 markdown成功!"));
+  return resData.data.body_draft;
 }

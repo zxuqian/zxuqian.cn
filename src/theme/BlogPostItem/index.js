@@ -26,6 +26,8 @@ import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Comments from "@site/src/components/Comments";
+import Ad from "@site/src/components/Ad";
+import adConfig from "@site/src/components/Ad/config";
 
 import Translate from "@docusaurus/Translate";
 
@@ -228,6 +230,13 @@ function BlogPostItem(props) {
             >
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
+            {isBlogPostPage && (
+              <div style={{ marginTop: "1em" }}>
+                {adConfig.articleFooter.map(({ id, alt, imageSrc, link }) => (
+                  <Ad key={id} link={link} src={imageSrc} alt={alt} />
+                ))}
+              </div>
+            )}
           </article>
           <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
             {!isBlogPostPage && (

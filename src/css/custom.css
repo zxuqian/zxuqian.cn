@@ -479,13 +479,18 @@ pagination-nav__item:hover .pagination-nav__link {
   grid-area: outline;
 }
 
-.blog-wrapper > .container > .row > *:nth-child(3) > div::before {
+.blog-wrapper > .container > .row > *:nth-child(3) > div > div::before {
   content: "文章目录";
   display: block;
   margin-bottom: 0.5rem;
   font-size: var(--ifm-h3-font-size);
   color: var(--ifm-heading-color);
   font-weight: var(--ifm-heading-font-weight);
+}
+
+.blog-wrapper > .container > .row > *:nth-child(3) > div > div:nth-child(1) {
+  position: static;
+  top: unset;
 }
 
 .footer__copyright a {

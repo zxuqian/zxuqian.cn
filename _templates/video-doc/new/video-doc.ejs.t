@@ -1,9 +1,10 @@
 ---
 to: docs/videos/<%= category %>/<%= num %>-<%= name %>/index.md
+sh: cat tmp/<%= tmp %> >> docs/videos/<%= category %>/<%= num %>-<%= name %>/index.md
 ---
 ---
 id: <%= name %>
-title: 请输入文档标题
+title: <%= title %>
 slug: ../<%= name %>
 description: 请输入描述
 keywords:
