@@ -1,13 +1,12 @@
 ---
 id: typescript-oo-basics
-title: 面向对象编程基础：TypeScript 实现
+title: TypeScript：面向对象编程基础
 slug: ../typescript-oo-basics
 description: 面向对象这个词听起来好像很抽象，什么是对象，什么要面向它？这个视频就给你介绍一下面向对象编程的概念，并且使用 TypeScript 来演示面向对象的代码。如果你有一定的编程基础，但是对面向对象这个概念比较模糊的话，那这个视频就是适合你的。
 keywords:
   - ts
-  - color
-  - grid
-  - place-items
+  - typescript
+  - 面向对象
   - 前端
   - frontend
 ---
