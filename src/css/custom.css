@@ -488,10 +488,10 @@ pagination-nav__item:hover .pagination-nav__link {
   font-weight: var(--ifm-heading-font-weight);
 }
 
-.blog-wrapper > .container > .row > *:nth-child(3) > div > div:nth-child(1) {
+/* .blog-wrapper > .container > .row > *:nth-child(3) > div > div:nth-child(1) {
   position: static;
   top: unset;
-}
+} */
 
 .footer__copyright a {
   color: inherit;
