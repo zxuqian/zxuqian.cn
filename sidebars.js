@@ -59,6 +59,7 @@ module.exports = {
       "videos/ts/01-intro/ts-intro",
       "videos/ts/02-typescript-oo-basics/typescript-oo-basics",
       "videos/ts/03-typescript-oop-abstraction/typescript-oop-abstraction",
+      "videos/ts/04-typescript-oop-inheritance/typescript-oop-inheritance",
     ],
   },
   resources: {
