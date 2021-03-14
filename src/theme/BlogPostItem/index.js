@@ -230,13 +230,13 @@ function BlogPostItem(props) {
             >
               <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             </MarkdownSection>
-            {isBlogPostPage && (
+            {/* {isBlogPostPage && (
               <div style={{ marginTop: "1em" }}>
                 {adConfig.articleFooter.map(({ id, alt, imageSrc, link }) => (
                   <Ad key={id} link={link} src={imageSrc} alt={alt} />
                 ))}
               </div>
-            )}
+            )} */}
           </article>
           <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
             {!isBlogPostPage && (

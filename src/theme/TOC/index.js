@@ -12,11 +12,11 @@ function TOC({ ...rest }) {
   return (
     <div className={styles.sidebarContainer}>
       <OriginalTOC {...rest} />
-      <div className={styles.ads}>
+      {/* <div className={styles.ads}>
         {sidebar.map(({ id, alt, imageSrc, link }) => (
           <Ad key={id} link={link} src={imageSrc} alt={alt} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
