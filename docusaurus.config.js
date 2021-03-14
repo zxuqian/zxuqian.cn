@@ -13,6 +13,7 @@ module.exports = {
   organizationName: "zxuqian", // Usually your GitHub org/user name.
   projectName: "zxuqian.cn", // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: "峰华",
       logo: {
