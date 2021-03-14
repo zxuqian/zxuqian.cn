@@ -47,7 +47,7 @@ function BlogListPage(props) {
   const isBlogOnlyMode = metadata.permalink === "/";
   const isPaginated = metadata.page > 1;
   const title = isBlogOnlyMode ? siteTitle : "Blog";
-  const description = `让你学会前端开发`;
+  const description = `html, css, javascript, react, vue 前端教程，以及 B站视频教程合集和配套文本、系统教程、编程博客和前端资源导航。致力于帮助你以最直观、最快速的方式学会前端开发。`;
 
   // Get all post views
   const views = useViews(items);
@@ -82,9 +82,11 @@ function BlogListPage(props) {
   return (
     <Layout title={title} description={description}>
       <Head>
-        <title>
-          {title} - {description}
-        </title>
+        <meta
+          name="keywords"
+          content="前端, html, css, js, javascript, react, vue, typescript, es6, html5, css3, 性能优化, 兼容性调整"
+        />
+        <title>{title} - 让你学会前端开发</title>
       </Head>
       {/* 个人简介 */}
       {!isPaginated && (

@@ -7,9 +7,7 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 请输入描述
 tags: [前端, WebRTC, avatarify]
-activityId: 相关动态 ID
-bvid: 相关视频 ID（与 activityId 2选一）
-oid: oid
+activityId: "501899252469610680"
 ---
 
 因为疫情的原因，线上视频会议软件异军突起，成为了在家办公的主要沟通渠道。而最近抖音上“蚂蚁呀嘿”恶搞换脸的小视频也突然火了起来，那我就想了想能不能在视频会议的时候换张脸活跃下气氛？在 Github 上一番搜寻之后发现还真有办法，有一个开源的 Python 人工智能换脸的库，那正好趁着这个机会研究一下前端 WebRTC 实现视频通话功能，外加换脸操作。先看一下效果吧：
