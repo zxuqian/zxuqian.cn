@@ -60,6 +60,7 @@ module.exports = {
       "videos/ts/02-typescript-oo-basics/typescript-oo-basics",
       "videos/ts/03-typescript-oop-abstraction/typescript-oop-abstraction",
       "videos/ts/04-typescript-oop-inheritance/typescript-oop-inheritance",
+      "videos/ts/05-typescript-oop-polymorphism/typescript-oop-polymorphism",
     ],
   },
   resources: {
