@@ -191,6 +191,7 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
     // "@docusaurus/plugin-ideal-image",
     path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
+    "docusaurus2-dotenv",
   ],
   stylesheets: [
     {

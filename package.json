@@ -16,6 +16,7 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
+    "@cloudbase/js-sdk": "^1.4.1",
     "@docusaurus/core": "^2.0.0-alpha.71",
     "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.71",
     "@docusaurus/preset-classic": "^2.0.0-alpha.71",
@@ -27,6 +28,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@zxuqian/react-examples": "^0.1.4",
     "classnames": "^2.2.6",
+    "docusaurus2-dotenv": "^1.4.0",
     "ora": "^5.3.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
