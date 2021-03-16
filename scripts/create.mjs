@@ -67,7 +67,7 @@ async function askDocType() {
 
 async function askVideoDocInfo() {
   const videos = await getVideos();
-  const repo = `fenghua-uy38l/cfswf4`;
+  const repo = process.env.VIDEO_DOC_REPO;
   const yuqueDocs = await getYuqueDocs(repo);
 
   const questions = [

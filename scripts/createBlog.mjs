@@ -16,7 +16,7 @@ import { createDoc } from "./common.mjs";
 dotEnv.config();
 
 export async function askBlogInfo() {
-  const repo = `fenghua-uy38l/gbo7r6`;
+  const repo = process.env.BLOG_REPO;
   const yuqueDocs = await getYuqueDocs(repo);
 
   const questions = [
