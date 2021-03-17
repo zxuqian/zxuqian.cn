@@ -46,7 +46,7 @@ function BlogTagsPostPage(props) {
       wrapperClassName="blog-wrapper"
     >
       <div className="container margin-vert--lg">
-        <div className="row">
+        <div className="row blog-tags__page">
           {/* <div className="col col--2">
             <BlogSidebar sidebar={sidebar} />
           </div> */}

@@ -70,6 +70,7 @@ html h6 {
 }
 
 html[data-theme="dark"] {
+  --ifm-color-primary: hsl(214deg, 100%, 60%);
   --post-title-color: white;
   --post-pub-date-color: var(--ifm-color-gray-100);
   --divider-color: #353535;
@@ -458,7 +459,7 @@ pagination-nav__item:hover .pagination-nav__link {
   width: 100vw;
 }
 
-.blog-wrapper > .container > .row {
+.blog-wrapper > .container > .row:not([class~="blog-tags__page"]) {
   display: grid;
   grid-template-areas:
     "detail recent"
