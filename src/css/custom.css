@@ -662,3 +662,10 @@ pagination-nav__item:hover .pagination-nav__link {
     display: block;
   }
 }
+
+/* 博客目录隐藏后，回复 row 默认样式 */
+@media (max-width: 996px) {
+  .blog-wrapper > .container > .row:not([class~="blog-tags__page"]) {
+    display: initial;
+  }
+}

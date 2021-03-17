@@ -182,7 +182,11 @@ function BlogPostItem(props) {
             <div className="line__decor"></div>
           </div>
         )}
-        <div className={`col ${isBlogPostPage ? `col--12` : `col--9`}`}>
+        <div
+          className={`col ${
+            isBlogPostPage ? `col--12` : `col--9`
+          } article__details`}
+        >
           {/* 博文部分 */}
           <article
             className={!isBlogPostPage ? "margin-bottom--md" : undefined}

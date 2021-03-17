@@ -80,7 +80,11 @@ function BlogListPage(props) {
   // });
 
   return (
-    <Layout title={title} description={description}>
+    <Layout
+      title={title}
+      description={description}
+      wrapperClassName="blog-list__page"
+    >
       <Head>
         <meta
           name="keywords"

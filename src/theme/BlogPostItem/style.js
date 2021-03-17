@@ -63,11 +63,18 @@ export const StyledBlogItem = styled.div`
       margin-top: 0;
     `}
 
+  @media (max-width: 570px) {
+    .article__details {
+      padding: 0;
+    }
+  }
+
   article {
     .single-post--date {
       color: var(--post-title-color);
       font-size: 0.9em;
     }
+
     > header {
       > h1 {
         font-size: 2em;
