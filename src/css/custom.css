@@ -33,6 +33,10 @@
   --ifm-toc-border-color: #f7f7f7;
   --text-color: #2b333e;
   /* --ifm-heading-color: hsl(200deg, 20%, 20%); */
+
+  /* 搜索框 */
+  --search-local-modal-background: hsl(0deg, 0%, 100%);
+  --search-local-modal-shadow: 0px 0px 48px hsl(0deg, 0%, 0%, 0.12);
 }
 
 html {
@@ -76,6 +80,11 @@ html[data-theme="dark"] {
   --blog-item-shadow: 20px 20px 60px #253748, -20px -20px 60px #253748;
   --ifm-heading-color: #ffffff;
   color: hsl(214deg, 15%, 85%);
+
+  /* 搜索 */
+  /* 搜索框 */
+  --search-local-modal-background: var(--ifm-background-color);
+  --search-local-modal-shadow: 0px 0px 48px hsl(0deg, 100%, 100%, 0.12);
 }
 
 html[data-theme="dark"] h1,
@@ -546,6 +555,11 @@ pagination-nav__item:hover .pagination-nav__link {
   font-size: 0.875rem;
 }
 
+/* 搜索 */
+.navbar__search-input {
+  outline: none;
+}
+
 @media only screen and (max-width: 996px) {
   .blog-wrapper > .container > .row {
     display: flex;
@@ -617,5 +631,25 @@ pagination-nav__item:hover .pagination-nav__link {
   }
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+/* 导航收缩相应尺寸调大 */
+@media (max-width: 1100px) {
+  .navbar > .container,
+  .navbar > .container-fluid {
+    padding: 0;
+  }
+  .navbar__toggle {
+    display: inherit;
+  }
+  .navbar__item {
+    display: none;
+  }
+  .navbar__search-input {
+    width: 9rem;
+  }
+  .navbar-sidebar {
+    display: block;
   }
 }
