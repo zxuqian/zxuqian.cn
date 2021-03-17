@@ -192,6 +192,13 @@ module.exports = {
     // "@docusaurus/plugin-ideal-image",
     path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
     "docusaurus2-dotenv",
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        language: ["en", "zh"],
+      },
+    ],
   ],
   stylesheets: [
     {
