@@ -63,7 +63,10 @@ module.exports = {
       "videos/ts/05-typescript-oop-polymorphism/typescript-oop-polymorphism",
     ],
     Express: ["videos/express/01-express-mongo-crud/express-mongo-crud"],
-    "Mongo DB": [],
+    "Mongo DB": [
+      "videos/express/01-express-mongo-crud/express-mongo-crud",
+      "videos/express/01-express-mongo-crud/express-mongo-crud",
+    ],
   },
   resources: {
     简介: ["resources/resources-intro"],

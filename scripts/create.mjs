@@ -137,6 +137,9 @@ async function askVideoDocInfo() {
  */
 function getFileCount(dir) {
   // "docs/videos/css"
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
   const files = fs.readdirSync(dir);
   const filesArr = files.filter((file) => !file.startsWith("."));
   return filesArr.length;

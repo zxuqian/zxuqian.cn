@@ -16,7 +16,6 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@cloudbase/js-sdk": "^1.4.1",
     "@docusaurus/core": "^2.0.0-alpha.72",
     "@docusaurus/plugin-ideal-image": "^2.0.0-alpha.72",
     "@docusaurus/preset-classic": "^2.0.0-alpha.72",
