@@ -35,7 +35,7 @@ const videoDocCategoryToSidebar = {
   vue: "Vue",
   ts: "TypeScript",
   express: "Express",
-  mongo: "Mongo DB",
+  mongo: '"Mongo DB"',
 };
 
 (async () => {
