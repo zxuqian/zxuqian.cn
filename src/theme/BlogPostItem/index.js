@@ -184,8 +184,8 @@ function BlogPostItem(props) {
         )}
         <div
           className={`col ${
-            isBlogPostPage ? `col--12` : `col--9`
-          } article__details`}
+            isBlogPostPage ? `col--12 article__details` : `col--9`
+          }`}
         >
           {/* 博文部分 */}
           <article
