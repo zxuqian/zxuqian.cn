@@ -13,7 +13,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "gen": "node scripts/create.mjs",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "index": "docker run -it --env-file=.env -e \"CONFIG=$(cat docsearch.json | jq -r tostring)\" algolia/docsearch-scraper"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.72",

@@ -92,6 +92,11 @@ module.exports = {
         // },
       ],
     },
+    algolia: {
+      apiKey: "fabfb0e9997e101154ed85d64b7b6a3c",
+      indexName: "ZXUQIANCN",
+      appId: "LIJMO3C9C4",
+    },
     footer: {
       style: "dark",
       links: [
@@ -192,15 +197,15 @@ module.exports = {
     // "@docusaurus/plugin-ideal-image",
     path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
     "docusaurus2-dotenv",
-    [
-      "@easyops-cn/docusaurus-search-local",
-      {
-        hashed: true,
-        // indexPages: true,
-        blogRouteBasePath: "/",
-        language: ["en", "zh"],
-      },
-    ],
+    // [
+    //   "@easyops-cn/docusaurus-search-local",
+    //   {
+    //     hashed: true,
+    //     // indexPages: true,
+    //     blogRouteBasePath: "/",
+    //     language: ["en", "zh"],
+    //   },
+    // ],
   ],
   stylesheets: [
     {
