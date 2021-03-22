@@ -31,23 +31,35 @@ keywords:
 
 下边来介绍主题。
 
-## Material Theme
+## [Material Theme](https://github.com/material-theme/vsc-material-theme)
 
-Material Theme 是我经常使用的主题，分为原版和社区版，不过我并没发现有什么区别。它包括 palenight、ocean、darker 等主题，并且还有对应的高对比度版。
+[![material theme](./img/material-theme.webp)](https://github.com/material-theme/vsc-material-theme)
+
+[Material Theme](https://github.com/material-theme/vsc-material-theme) 是我经常使用的主题，分为原版和社区版，不过我并没发现有什么区别。它包括 palenight、ocean、darker 等主题，并且还有对应的高对比度版。
 
 
-## 1984
+## [1984](https://github.com/juanmnl/vs-1984)
 
-1984 是一款赛博朋克风的主题，里边包含 Cyberpunk、funcy、Orweillian 等子主题，**我现在在用的是 Cyberpunk 这一款**，整体颜色为单一绿色，很有极客风，而且文字的颜色也有渐变效果，特别酷，这款也是 1984 中唯一适合长期使用的，其他的对眼睛不太友好（作者亲自说明）。
+[![1984](./img/1984.webp)](https://github.com/juanmnl/vs-1984)
 
-## Dracula Official
 
-Dracula 是在各种 IDE 环境下都非常有名的主题，可以说是深色主题的佼佼者，我第一次在用 VS Code 的时候就是用的这款主题。
+[1984](https://github.com/juanmnl/vs-1984) 是一款赛博朋克风的主题，里边包含 Cyberpunk、funcy、Orweillian 等子主题，**我现在在用的是 Cyberpunk 这一款**，整体颜色为单一绿色，很有极客风，而且文字的颜色也有渐变效果，特别酷，这款也是 1984 中唯一适合长期使用的，其他的对眼睛不太友好（作者亲自说明）。
 
-## Hydra Theme for VS-Code
+## [Dracula Official](https://github.com/dracula/visual-studio-code)
 
-1984 主题作者推荐的护眼主题，在 1984 Cyberpunk 出题出现之前，我试了试这一款，感觉跟 Material Theme 的 palenight 类似，也是很优雅的主题。
+[![Dracula](./img/dracula.webp)](https://github.com/dracula/visual-studio-code)
 
-## One Monokai Theme
+[Dracula](https://github.com/dracula/visual-studio-code) 是在各种 IDE 环境下都非常有名的主题，可以说是深色主题的佼佼者，我第一次在用 VS Code 的时候就是用的这款主题。
 
-Monokai 和 One Dark 主题的合体，这两个颜色色系一般是用在代码高亮中的，做成主题感觉也就那样。
+## [Hydra Theme for VS-Code](https://github.com/juanmnl/vs-hydra)
+
+[![Hydra](./img/hydra.webp)](https://github.com/juanmnl/vs-hydra)
+
+
+[Hydra](https://github.com/juanmnl/vs-hydra) 是 1984 主题作者推荐的护眼主题，在 1984 Cyberpunk 出题出现之前，我试了试这一款，感觉跟 Material Theme 的 palenight 类似，也是很优雅的主题。
+
+## [One Monokai Theme](https://github.com/azemoh/vscode-one-monokai)
+
+[![One Monokai](./img/one-monokai.webp)](https://github.com/azemoh/vscode-one-monokai)
+
+[One Monokai Theme](https://github.com/azemoh/vscode-one-monokai) 是 Monokai 和 One Dark 主题的合体，这两个颜色色系一般是用在代码高亮中的，做成主题感觉也就那样。
