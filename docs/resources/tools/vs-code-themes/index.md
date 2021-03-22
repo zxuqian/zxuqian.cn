@@ -1,6 +1,6 @@
 ---
 id: vs-code-themes
-title: 自用的 VS Code 主题推荐
+title: 自用的 5 款 VS Code 主题推荐
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
