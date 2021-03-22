@@ -68,6 +68,7 @@ module.exports = {
   resources: {
     简介: ["resources/resources-intro"],
     前端开发: ["resources/ui/css-frameworks/css-frameworks"],
+    开发工具: ["resources/tools/vs-code-themes/vs-code-themes"],
     效率工具: [],
     "UI 设计": [],
   },
