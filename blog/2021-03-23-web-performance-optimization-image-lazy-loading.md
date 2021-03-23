@@ -35,7 +35,7 @@ oid: oid
 
 如果给屏幕外的图片设置 loading 为 lazy，那么可以看到只有在滑动到图片快要出现的时候，图片才会加载：
 
-<Video src={require("./img/2021-03-23-web-performance-optimization-image-lazy-loading/showcase.webm").default} />
+<Video src={require("./img/2021-03-23-web-performance-optimization-image-lazy-loading/showcase.mp4").default} webmSrc={require("./img/2021-03-23-web-performance-optimization-image-lazy-loading/showcase.webm").default} />
 
 要注意的是，不要给首屏出现在可视区域的图片设置懒加载，因为它本身就在可视区域，应该尽快加载，以让用户尽早看到图片。另外，使用懒加载的图片应该尽量设置宽高，这样可以避免抖动：在等图片加载的时候，相应区域会显示为空白，其他元素不会占位。如果不设置宽高，其它元素就有可能会占位，图片加载完成之后，又会把占位的元素挤下去，造成抖动。
 
