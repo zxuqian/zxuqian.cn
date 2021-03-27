@@ -196,6 +196,7 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
     // "@docusaurus/plugin-ideal-image",
     path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
+    path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
     "docusaurus2-dotenv",
     // [
     //   "@easyops-cn/docusaurus-search-local",
