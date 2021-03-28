@@ -147,10 +147,10 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/oceanicNext"),
       defaultLanguage: "javascript",
     },
-    googleAnalytics: {
-      trackingID: "UA-118572241-1",
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
+    // googleAnalytics: {
+    //   trackingID: "UA-118572241-1",
+    //   anonymizeIP: true, // Should IPs be anonymized?
+    // },
     gtag: {
       trackingID: "G-6PSESJX0BM",
       // Optional fields.

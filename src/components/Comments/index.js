@@ -85,7 +85,10 @@ function CommentItem({ isReply = false, member, ctime, content }) {
   replyDate.setUTCSeconds(ctime);
   return (
     <StyledCommentItem isReply={isReply}>
-      <Avatar src={member.avatar} referrerPolicy="no-referrer" />
+      <Avatar
+        src={member.avatar.replace("http", "https")}
+        referrerPolicy="no-referrer"
+      />
       <NickName>{member.uname}</NickName>
       <Time>
         {replyDate.getFullYear()} 年 {replyDate.getMonth() + 1} 月

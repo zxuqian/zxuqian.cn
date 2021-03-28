@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -15,17 +15,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faQq,
   faWeixin,
-  faWeibo,
 } from "@fortawesome/free-brands-svg-icons";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 // import bilibiliIcon from "@site/static/icons/bilibili.svg";
 
 import useFollowers from "./useFollowers";
 import useViews from "./useViews";
-import { useTrail, animated, useSpring } from "react-spring";
-import Fade from "react-reveal/Fade";
+import { useTrail, animated } from "react-spring";
+// import Fade from "react-reveal/Fade";
 
 import BilibiliIcon from "@site/static/icons/bilibili.svg";
 import CSDNIcon from "@site/static/icons/csdn.svg";
@@ -64,13 +62,13 @@ function BlogListPage(props) {
     },
     // delay: 300,
   });
-  const animatedHero = useSpring({
-    opacity: 1,
-    backgroundPositionX: "100%",
-    from: { opacity: 0, backgroundPositionX: "200%" },
-    config: { mass: 3, tension: 280, friction: 30 },
-    // delay: 1200,
-  });
+  // const animatedHero = useSpring({
+  //   opacity: 1,
+  //   backgroundPositionX: "100%",
+  //   from: { opacity: 0, backgroundPositionX: "200%" },
+  //   config: { mass: 3, tension: 280, friction: 30 },
+  //   // delay: 1200,
+  // });
 
   // const animatedBackground = useSpring({
   //   background: "linear-gradient(25deg, #1081ff, #72e1f6, #b185ff)",
@@ -182,21 +180,21 @@ function BlogListPage(props) {
               )}
               <div className="bloghome__posts">
                 {items.map(({ content: BlogPostContent }) => (
-                  <Fade key={BlogPostContent.metadata.permalink}>
-                    <BlogPostItem
-                      key={BlogPostContent.metadata.permalink}
-                      frontMatter={BlogPostContent.frontMatter}
-                      metadata={BlogPostContent.metadata}
-                      truncated={BlogPostContent.metadata.truncated}
-                      views={
-                        views.find(
-                          (v) => v.slug == BlogPostContent.frontMatter.slug
-                        )?.views
-                      }
-                    >
-                      <BlogPostContent />
-                    </BlogPostItem>
-                  </Fade>
+                  // <Fade key={BlogPostContent.metadata.permalink}>
+                  <BlogPostItem
+                    key={BlogPostContent.metadata.permalink}
+                    frontMatter={BlogPostContent.frontMatter}
+                    metadata={BlogPostContent.metadata}
+                    truncated={BlogPostContent.metadata.truncated}
+                    views={
+                      views.find(
+                        (v) => v.slug == BlogPostContent.frontMatter.slug
+                      )?.views
+                    }
+                  >
+                    <BlogPostContent />
+                  </BlogPostItem>
+                  // </Fade>
                 ))}
                 <BlogListPaginator metadata={metadata} />
               </div>
