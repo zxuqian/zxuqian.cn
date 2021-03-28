@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from "react";
+import React, { useState } from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -33,6 +33,10 @@ import Translate, { translate } from "@docusaurus/Translate";
 import Head from "@docusaurus/Head";
 
 import HeroMain from "./img/hero_main.svg";
+import ListFilter from "./img/list.svg";
+import CardFilter from "./img/card.svg";
+
+import Link from "@docusaurus/Link";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -51,6 +55,17 @@ function BlogListPage(props) {
   const views = useViews(items);
   // Get followers
   const followers = useFollowers();
+
+  // list or card view
+  const [viewType, setViewType] = useState(
+    localStorage.getItem("viewType") || "card"
+  );
+
+  const toggleViewType = (newViewType) => {
+    setViewType(newViewType);
+    localStorage.setItem("viewType", newViewType);
+  };
+
   // animation
   const animatedTexts = useTrail(5, {
     from: { opacity: 0, transform: "translateY(3em)" },
@@ -178,25 +193,66 @@ function BlogListPage(props) {
                   </svg>
                 </h1>
               )}
+              {/* switch list and card */}
+              <div className="bloghome__swith-view">
+                <CardFilter
+                  onClick={() => toggleViewType("card")}
+                  fill={viewType === "card" ? "#006dfe" : "#CECECE"}
+                />
+                <ListFilter
+                  onClick={() => toggleViewType("list")}
+                  fill={viewType === "list" ? "#006dfe" : "#CECECE"}
+                />
+              </div>
               <div className="bloghome__posts">
-                {items.map(({ content: BlogPostContent }) => (
-                  // <Fade key={BlogPostContent.metadata.permalink}>
-                  <BlogPostItem
-                    key={BlogPostContent.metadata.permalink}
-                    frontMatter={BlogPostContent.frontMatter}
-                    metadata={BlogPostContent.metadata}
-                    truncated={BlogPostContent.metadata.truncated}
-                    views={
-                      views.find(
-                        (v) => v.slug == BlogPostContent.frontMatter.slug
-                      )?.views
-                    }
-                  >
-                    <BlogPostContent />
-                  </BlogPostItem>
-                  // </Fade>
-                ))}
-                <BlogListPaginator metadata={metadata} />
+                {viewType === "card" && (
+                  <div className="bloghome__posts-card">
+                    {items.map(({ content: BlogPostContent }) => (
+                      // <Fade key={BlogPostContent.metadata.permalink}>
+                      <BlogPostItem
+                        key={BlogPostContent.metadata.permalink}
+                        frontMatter={BlogPostContent.frontMatter}
+                        metadata={BlogPostContent.metadata}
+                        truncated={BlogPostContent.metadata.truncated}
+                        views={
+                          views.find(
+                            (v) => v.slug == BlogPostContent.frontMatter.slug
+                          )?.views
+                        }
+                      >
+                        <BlogPostContent />
+                      </BlogPostItem>
+                      // </Fade>
+                    ))}
+                  </div>
+                )}
+
+                {viewType === "list" && (
+                  <div className="bloghome__posts-list">
+                    {items.map(({ content: BlogPostContent }) => {
+                      const { metadata, frontMatter } = BlogPostContent;
+                      const { title } = frontMatter;
+                      const { permalink, date } = metadata;
+
+                      const dateObj = new Date(date);
+
+                      const year = dateObj.getFullYear();
+                      let month = ("0" + (dateObj.getMonth() + 1)).slice(-2);
+                      const day = ("0" + dateObj.getDate()).slice(-2);
+
+                      return (
+                        <div class="post__list-item">
+                          <Link to={permalink}>{title}</Link>
+                          <div className="post__list-indicator"></div>
+                          <div className="post__list-date">
+                            {year}-{month}-{day}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+                <BlogListPaginator metadata={metadata} viewType={viewType} />
               </div>
             </div>
           </div>
