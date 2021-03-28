@@ -55,6 +55,7 @@ module.exports = {
       "videos/vue/01-vue-todo-app/vue-todo-app",
       "videos/vue/02-vite-get-started/vite-get-started",
       "videos/vue/03-vue-watch-api-tips/vue-watch-api-tips",
+      "videos/vue/04-vue-echarts-integration/vue-echarts-integration",
     ],
     TypeScript: [
       "videos/ts/01-intro/ts-intro",
