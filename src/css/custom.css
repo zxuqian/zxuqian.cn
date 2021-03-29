@@ -312,6 +312,11 @@ html[data-theme="dark"] .bloghome__intro > p {
   stroke: #7f7f7f;
 }
 
+.bloghome__posts-list,
+.bloghome__posts-card {
+  animation: fading 0.8s;
+}
+
 /* 切换视图按钮 */
 .bloghome__swith-view {
   text-align: center;
@@ -320,6 +325,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 
 .bloghome__swith-view svg {
   cursor: pointer;
+  transition: 0.6s;
 }
 
 .bloghome__posts-list {
@@ -708,6 +714,15 @@ pagination-nav__item:hover .pagination-nav__link {
   }
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
