@@ -13,6 +13,12 @@ module.exports = {
   organizationName: "zxuqian", // Usually your GitHub org/user name.
   projectName: "zxuqian.cn", // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: "feature_release", // Any value that will identify this message.
+      content: "博客列表现在支持 列表≡ 视图了，快速找到过往文章~",
+      backgroundColor: "#fafbfc", // Defaults to `#fff`.
+      textColor: "#091E42", // Defaults to `#000`.
+    },
     hideableSidebar: true,
     navbar: {
       title: "峰华",
