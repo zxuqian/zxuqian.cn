@@ -320,7 +320,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 /* 切换视图按钮 */
 .bloghome__swith-view {
   text-align: center;
-  margin: 1em 0;
+  margin: 2em 0 1em 0;
 }
 
 .bloghome__swith-view svg {
@@ -330,34 +330,53 @@ html[data-theme="dark"] .bloghome__intro > p {
 
 .bloghome__posts-list {
   display: grid;
-  row-gap: 12px;
-  padding: 3em 0;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 0 3em 0;
 }
 
 .post__list-item {
   display: grid;
-  grid-template-columns: max-content 1fr 100px;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
+    "title title"
+    "tags date";
   column-gap: 2em;
+  row-gap: 1em;
   align-items: center;
+  padding: 1em 1.2em;
+  background: white;
+  border-radius: 6px;
 }
 
-.post__list-item a {
+.post__list-item .post__list-title {
   color: inherit;
-  font-size: 1.125em;
+  font-size: 1em;
   text-decoration: none;
   transition: 0.6s;
+  grid-area: title;
 }
 
-.post__list-item a:hover {
+.post__list-item .post__list:hover {
   color: var(--ifm-color-primary);
 }
 
-.post__list-indicator {
-  width: 100%;
-  border-top: 2px dashed var(--divider-color);
+.post__list-tags {
+  grid-area: tags;
+  overflow-x: auto;
+  padding: 0.2em 0;
+}
+
+.post__list-tags a {
+  background: white;
+  border: 1px solid #3d94fa;
+  color: inherit;
 }
 
 .post__list-date {
+  grid-area: date;
+  justify-self: end;
   color: var(--ifm-color-emphasis-600);
 }
 
@@ -635,6 +654,7 @@ pagination-nav__item:hover .pagination-nav__link {
 @media only screen and (max-width: 700px) {
   .bloghome__posts-list {
     row-gap: 36px;
+    grid-template-columns: minmax(0, max-content);
   }
   .post__list-item {
     grid-template-columns: 1fr;

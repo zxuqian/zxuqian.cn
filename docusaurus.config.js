@@ -15,7 +15,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: "博客列表现在支持 列表≡ 视图了，快速找到过往文章~",
+      content: "博客列表现在支持 列表≡ 视图了~!",
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },

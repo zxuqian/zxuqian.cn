@@ -52,7 +52,7 @@ export const MarkdownSection = styled.section`
 `;
 
 export const StyledBlogItem = styled.div`
-  margin-top: 4.25em;
+  margin-top: 0em;
   margin-bottom: 7.25em;
 
   ${({ isBlogPostPage }) =>
@@ -121,7 +121,14 @@ export const StyledBlogItem = styled.div`
     background: var(--blog-item-background-color);
     box-shadow: var(--blog-item-shadow);
     padding: 2em 1em;
+
     position: relative;
+  }
+
+  @media (max-width: 1000px) {
+    .blog-list--item {
+      padding-right: 1em;
+    }
   }
 
   .testt {

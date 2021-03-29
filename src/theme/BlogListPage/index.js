@@ -38,6 +38,7 @@ import CardFilter from "./img/card.svg";
 
 import Link from "@docusaurus/Link";
 import { useViewType } from "./useViewType";
+import { faTags } from "@fortawesome/free-solid-svg-icons";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -232,7 +233,7 @@ function BlogListPage(props) {
                         frontMatter,
                       } = BlogPostContent;
                       const { title } = frontMatter;
-                      const { permalink, date } = blogMetaData;
+                      const { permalink, date, tags } = blogMetaData;
 
                       const dateObj = new Date(date);
 
@@ -245,8 +246,36 @@ function BlogListPage(props) {
                           className="post__list-item"
                           key={blogMetaData.permalink + index}
                         >
-                          <Link to={permalink}>{title}</Link>
-                          <div className="post__list-indicator"></div>
+                          <Link to={permalink} className="post__list-title">
+                            {title}
+                          </Link>
+                          <div className="post__list-tags">
+                            {tags.length > 0 &&
+                              tags
+                                .slice(0, 2)
+                                .map(
+                                  (
+                                    { label, permalink: tagPermalink },
+                                    index
+                                  ) => (
+                                    <Link
+                                      key={tagPermalink}
+                                      className={`post__tags ${
+                                        index < tags.length
+                                          ? "margin-right--sm"
+                                          : ""
+                                      }`}
+                                      to={tagPermalink}
+                                      style={{
+                                        fontSize: "0.75em",
+                                        fontWeight: 500,
+                                      }}
+                                    >
+                                      {label}
+                                    </Link>
+                                  )
+                                )}
+                          </div>
                           <div className="post__list-date">
                             {year}-{month}-{day}
                           </div>
