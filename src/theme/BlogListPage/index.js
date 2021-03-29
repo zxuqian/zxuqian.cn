@@ -37,6 +37,7 @@ import ListFilter from "./img/list.svg";
 import CardFilter from "./img/card.svg";
 
 import Link from "@docusaurus/Link";
+import { useViewType } from "./useViewType";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -57,14 +58,10 @@ function BlogListPage(props) {
   const followers = useFollowers();
 
   // list or card view
-  const [viewType, setViewType] = useState(
-    localStorage.getItem("viewType") || "card"
-  );
+  const { viewType, toggleViewType } = useViewType();
 
-  const toggleViewType = (newViewType) => {
-    setViewType(newViewType);
-    localStorage.setItem("viewType", newViewType);
-  };
+  const isCardView = viewType === "card";
+  const isListView = viewType === "list";
 
   // animation
   const animatedTexts = useTrail(5, {
@@ -205,7 +202,7 @@ function BlogListPage(props) {
                 />
               </div>
               <div className="bloghome__posts">
-                {viewType === "card" && (
+                {isCardView && (
                   <div className="bloghome__posts-card">
                     {items.map(({ content: BlogPostContent }) => (
                       // <Fade key={BlogPostContent.metadata.permalink}>
@@ -227,12 +224,15 @@ function BlogListPage(props) {
                   </div>
                 )}
 
-                {viewType === "list" && (
+                {isListView && (
                   <div className="bloghome__posts-list">
-                    {items.map(({ content: BlogPostContent }) => {
-                      const { metadata, frontMatter } = BlogPostContent;
+                    {items.map(({ content: BlogPostContent }, index) => {
+                      const {
+                        metadata: blogMetaData,
+                        frontMatter,
+                      } = BlogPostContent;
                       const { title } = frontMatter;
-                      const { permalink, date } = metadata;
+                      const { permalink, date } = blogMetaData;
 
                       const dateObj = new Date(date);
 
@@ -241,7 +241,10 @@ function BlogListPage(props) {
                       const day = ("0" + dateObj.getDate()).slice(-2);
 
                       return (
-                        <div class="post__list-item">
+                        <div
+                          className="post__list-item"
+                          key={blogMetaData.permalink + index}
+                        >
                           <Link to={permalink}>{title}</Link>
                           <div className="post__list-indicator"></div>
                           <div className="post__list-date">
@@ -252,7 +255,7 @@ function BlogListPage(props) {
                     })}
                   </div>
                 )}
-                <BlogListPaginator metadata={metadata} viewType={viewType} />
+                <BlogListPaginator metadata={metadata} />
               </div>
             </div>
           </div>

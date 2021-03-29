@@ -348,7 +348,7 @@ html[data-theme="dark"] .bloghome__intro > p {
 
 .post__list-indicator {
   width: 100%;
-  border-top: 2px dashed hsl(0deg, 0%, 95%);
+  border-top: 2px dashed var(--divider-color);
 }
 
 .post__list-date {
@@ -597,7 +597,7 @@ pagination-nav__item:hover .pagination-nav__link {
   }
 
   .blog__section_title {
-    padding-top: 3em;
+    margin-top: 3em;
   }
 
   .post__date-container {
@@ -672,7 +672,7 @@ pagination-nav__item:hover .pagination-nav__link {
     padding-top: 2em;
   }
   .blog__section_title {
-    padding-top: 2em;
+    margin-top: 2em;
   }
   .post__date-container {
     margin-bottom: 1em !important;
