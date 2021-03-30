@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           to: "/",
-          label: "博客",
+          label: "首页",
           position: "right",
           items: [
             {
@@ -52,10 +52,25 @@ module.exports = {
           ],
         },
         {
-          label: "视频",
+          label: "学习",
           position: "right",
-          to: "docs/videos/videos-intro",
+          items: [
+            {
+              label: "B 站配套文本",
+              to: "docs/videos/videos-intro",
+            },
+            {
+              label: "CSS 教程",
+              to: "docs/css/box-model/box-model",
+            },
+            {
+              label: "资源导航",
+              // position: "right",
+              to: "docs/resources/resources-intro",
+            },
+          ],
         },
+
         {
           label: "课程",
           position: "right",
@@ -66,29 +81,15 @@ module.exports = {
             },
           ],
         },
-        {
-          label: "教程",
-          position: "right",
-          items: [
-            {
-              label: "CSS",
-              to: "docs/css/box-model/box-model",
-            },
-          ],
-        },
-        {
-          label: "资源导航",
-          position: "right",
-          to: "docs/resources/resources-intro",
-        },
+
         {
           href: "https://www.itnanls.cn",
-          label: "后端学习",
+          label: "IT楠老师",
           position: "right",
         },
         {
           href: "https://github.com/zxuqian/zxuqian.cn",
-          label: "GitHub",
+          label: "本站源码",
           position: "right",
         },
         // {
@@ -110,7 +111,7 @@ module.exports = {
           title: "Social",
           items: [
             {
-              label: "博客",
+              label: "首页",
               to: "/",
             },
             {
