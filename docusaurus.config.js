@@ -109,12 +109,33 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Social",
+          title: "学习",
           items: [
             {
-              label: "首页",
-              to: "/",
+              label: "React 即时通信 UI 开发实战",
+              to: "docs/course/react-chat-ui/react-chat-ui",
             },
+            {
+              label: "B 站配套文本",
+              to: "docs/videos/videos-intro",
+            },
+            {
+              label: "CSS 教程",
+              to: "docs/css/box-model/box-model",
+            },
+            {
+              label: "资源导航",
+              to: "docs/resources/resources-intro",
+            },
+          ],
+        },
+        {
+          title: "社交媒体",
+          items: [
+            // {
+            //   label: "首页",
+            //   to: "/",
+            // },
             {
               label: "GitHub",
               href: "https://github.com/zxuqian/zxuqian.cn",

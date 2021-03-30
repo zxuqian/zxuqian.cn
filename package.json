@@ -12,7 +12,7 @@
     "build-cn": "docusaurus build --locale zh-CN",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "deploy-oss": "~/ossutilmac64 sync build oss://zxuqian-cn-site/",
+    "deploy-obs": "~/obsutil rm obs://zxuqian-cn/ -r -f && ~/obsutil cp build obs://zxuqian-cn/ -r -f -flat -exclude=.DS_Store",
     "gen": "node scripts/create.mjs",
     "serve": "docusaurus serve",
     "index": "docker run -it --env-file=.env -e \"CONFIG=$(cat docsearch.json | jq -r tostring)\" algolia/docsearch-scraper"
