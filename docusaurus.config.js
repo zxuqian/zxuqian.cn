@@ -15,7 +15,8 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: "博客列表现在支持 列表≡ 视图了~!",
+      content:
+        "调整了导航，B站视频文本、教程、资源动到了“学习”菜单；博客列表现在支持 列表≡ 视图了~!",
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
@@ -36,20 +37,20 @@ module.exports = {
           to: "/",
           label: "首页",
           position: "right",
-          items: [
-            {
-              label: "前端",
-              to: "tags/前端",
-            },
-            {
-              label: "职业",
-              to: "tags/职业",
-            },
-            {
-              label: "健康",
-              to: "tags/健康",
-            },
-          ],
+          // items: [
+          //   {
+          //     label: "前端",
+          //     to: "tags/前端",
+          //   },
+          //   {
+          //     label: "职业",
+          //     to: "tags/职业",
+          //   },
+          //   {
+          //     label: "健康",
+          //     to: "tags/健康",
+          //   },
+          // ],
         },
         {
           label: "学习",
