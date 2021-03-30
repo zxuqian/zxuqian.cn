@@ -656,17 +656,6 @@ pagination-nav__item:hover .pagination-nav__link {
     row-gap: 36px;
     grid-template-columns: minmax(0, max-content);
   }
-  .post__list-item {
-    grid-template-columns: 1fr;
-  }
-
-  .post__list-indicator {
-    display: none;
-  }
-
-  .post__list-date {
-    justify-self: end;
-  }
 }
 
 @media (max-width: 570px) {

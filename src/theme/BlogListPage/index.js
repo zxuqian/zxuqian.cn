@@ -244,7 +244,7 @@ function BlogListPage(props) {
                       return (
                         <div
                           className="post__list-item"
-                          key={blogMetaData.permalink + index}
+                          key={blogMetaData.permalink}
                         >
                           <Link to={permalink} className="post__list-title">
                             {title}
