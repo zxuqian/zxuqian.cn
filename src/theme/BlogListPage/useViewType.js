@@ -9,9 +9,7 @@ export function useViewType() {
 
   const toggleViewType = useCallback((newViewType) => {
     setViewType(newViewType);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("viewType", newViewType);
-    }
+    localStorage.setItem("viewType", newViewType);
   }, []);
 
   return {
