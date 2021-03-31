@@ -16,7 +16,7 @@ module.exports = {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
       content:
-        "调整了导航，B站视频文本、教程、资源动到了“学习”菜单；博客列表现在支持 列表≡ 视图了~!",
+        "更新<a href='/docs/videos/express/express-get-started'>《Express 快速入门指南》</a>配套文本；调整了导航；添加 列表≡ 视图!",
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
