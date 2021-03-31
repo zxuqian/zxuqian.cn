@@ -17,9 +17,9 @@ module.exports = {
     简介: ["videos/videos-intro"],
     JavaScript: ["videos/js/01-event-loop/event-loop"],
     CSS: [
+      "videos/css/03-5-tips-master-css/5-tips-master-css",
       "videos/css/01-grid-layout/grid-layout",
       "videos/css/02-flex-layout/flex-layout",
-      "videos/css/03-5-tips-master-css/5-tips-master-css",
       "videos/css/04-selectors/css-selectors",
       "videos/css/05-position/css-position",
       "videos/css/06-css-hsl-color/css-hsl-color",
@@ -37,8 +37,8 @@ module.exports = {
       "videos/browser/01-dom/what-is-dom",
       "videos/browser/02-bom/what-is-bom",
       "videos/browser/03-js-dom/js-dom-operation",
-      "videos/browser/04-web-components-get-started/web-components-get-started",
       "videos/browser/05-native-drag-drop/native-drag-drop",
+      "videos/browser/04-web-components-get-started/web-components-get-started",
     ],
     Web: [],
     网络: [
@@ -64,7 +64,11 @@ module.exports = {
       "videos/ts/04-typescript-oop-inheritance/typescript-oop-inheritance",
       "videos/ts/05-typescript-oop-polymorphism/typescript-oop-polymorphism",
     ],
-    Express: ["videos/express/01-express-mongo-crud/express-mongo-crud"],
+
+    Express: [
+      "videos/express/02-express-get-started/express-get-started",
+      "videos/express/01-express-mongo-crud/express-mongo-crud",
+    ],
     "Mongo DB": ["videos/mongo/01-mongodb-get-started/mongodb-get-started"],
   },
   resources: {

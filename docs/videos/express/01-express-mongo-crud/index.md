@@ -14,7 +14,7 @@ keywords:
   - fullstack
 ---
 
-之前分别讲了 Express 和 MongoDB 的使用方法。那么该如何把他们两个结合到一起呢？毕竟把后端应用程序和数据库连起来才能构成一个完整的后端 API。这个视频就教你实现一个完整的后端增删改查 API。要更好的理解视频的内容，你需要熟悉 ES6、ES7 的语法，尤其是 async/await 的用法。
+之前分别讲了 [Express](../02-express-get-started/index.md) 和 MongoDB 的使用方法。那么该如何把他们两个结合到一起呢？毕竟把后端应用程序和数据库连起来才能构成一个完整的后端 API。这个视频就教你实现一个完整的后端增删改查 API。要更好的理解视频的内容，你需要熟悉 ES6、ES7 的语法，尤其是 async/await 的用法。
 
 import BVideo from "@site/src/components/BVideo";
 
