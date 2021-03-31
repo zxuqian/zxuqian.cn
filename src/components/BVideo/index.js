@@ -26,6 +26,7 @@ function BVideo({ src, bsrc }) {
     <>
       <iframe
         src={src}
+        loading="lazy"
         scrolling="no"
         border={0}
         frameBorder="no"
