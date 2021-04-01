@@ -7,10 +7,6 @@
     "message": "峰华",
     "description": "my name"
   },
-  "homepage.hero.text": {
-    "message": "在这里，有 B站视频教程合集和配套文本、系统教程、编程博客、前端资源导航、以及UP主的想法和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。",
-    "description": "hero text"
-  },
   "homepage.qqgroup1": {
     "message": "QQ 1 群：644722908",
     "description": "qq group1"
@@ -258,5 +254,29 @@
   "theme.SearchBar.label": {
     "message": "搜索",
     "description": "The ARIA label and placeholder for search button"
+  },
+  "hompage.hero.text.bilibili": {
+    "message": "B站视频配套文本、",
+    "description": "Bilibili docs link label"
+  },
+  "homepage.hero.text": {
+    "message": "在这里，有{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。",
+    "description": "hero text"
+  },
+  "hompage.hero.text.course": {
+    "message": "系统课程、",
+    "description": "Course link label"
+  },
+  "hompage.hero.text.blog": {
+    "message": "技术博客、",
+    "description": "Blog link label"
+  },
+  "hompage.hero.text.link": {
+    "message": "前端资源导航、",
+    "description": "Link link label"
+  },
+  "hompage.hero.text.idea": {
+    "message": "想法和生活点滴",
+    "description": "Idea link label"
   }
 }

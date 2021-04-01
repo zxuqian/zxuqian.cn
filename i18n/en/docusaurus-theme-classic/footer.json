@@ -1,15 +1,7 @@
 {
-  "link.title.Social": {
-    "message": "Social",
-    "description": "The title of the footer links column with title=Social in the footer"
-  },
   "link.title.友情链接": {
     "message": "Links",
     "description": "The title of the footer links column with title=友情链接 in the footer"
-  },
-  "link.item.label.博客": {
-    "message": "Blogs",
-    "description": "The label of footer link with label=博客 linking to /"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
@@ -38,5 +30,29 @@
   "copyright": {
     "message": "Copyright © 2021 Xuqian Zhang Built with Docusaurus.<p></p>",
     "description": "The footer copyright"
+  },
+  "link.title.学习": {
+    "message": "Learn",
+    "description": "The title of the footer links column with title=学习 in the footer"
+  },
+  "link.title.社交媒体": {
+    "message": "Social",
+    "description": "The title of the footer links column with title=社交媒体 in the footer"
+  },
+  "link.item.label.React 即时通信 UI 开发实战": {
+    "message": "React IM Course",
+    "description": "The label of footer link with label=React 即时通信 UI 开发实战 linking to docs/course/react-chat-ui/react-chat-ui"
+  },
+  "link.item.label.B 站配套文本": {
+    "message": "Videos",
+    "description": "The label of footer link with label=B 站配套文本 linking to docs/videos/videos-intro"
+  },
+  "link.item.label.CSS 教程": {
+    "message": "CSS Tutorial",
+    "description": "The label of footer link with label=CSS 教程 linking to docs/css/box-model/box-model"
+  },
+  "link.item.label.资源导航": {
+    "message": "Resources",
+    "description": "The label of footer link with label=资源导航 linking to docs/resources/resources-intro"
   }
 }

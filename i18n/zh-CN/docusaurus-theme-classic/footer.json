@@ -1,15 +1,7 @@
 {
-  "link.title.Social": {
-    "message": "Social",
-    "description": "The title of the footer links column with title=Social in the footer"
-  },
   "link.title.友情链接": {
     "message": "友情链接",
     "description": "The title of the footer links column with title=友情链接 in the footer"
-  },
-  "link.item.label.博客": {
-    "message": "博客",
-    "description": "The label of footer link with label=博客 linking to /"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
@@ -38,5 +30,29 @@
   "copyright": {
     "message": "<p>Copyright © 2021 峰华 (张旭乾) Built with Docusaurus.</p><p><a href=\"http://beian.miit.gov.cn/\" style=\"color: hsl(210deg, 100%, 80%)\">冀ICP备14007097号-3</a></p><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"/img/creative-commons-license-icon.png\" /></a><br />本站所有内容遵循 <a rel=\"license\" href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans\" style=\"color: hsl(210deg, 100%, 80%)\">CC BY-NC 4.0 协议</a>，转载须注明署名和出处，且不可用于商业用途。若与其他同步平台协议冲突，以本网站为准。",
     "description": "The footer copyright"
+  },
+  "link.title.学习": {
+    "message": "学习",
+    "description": "The title of the footer links column with title=学习 in the footer"
+  },
+  "link.title.社交媒体": {
+    "message": "社交媒体",
+    "description": "The title of the footer links column with title=社交媒体 in the footer"
+  },
+  "link.item.label.React 即时通信 UI 开发实战": {
+    "message": "React 即时通信 UI 开发实战",
+    "description": "The label of footer link with label=React 即时通信 UI 开发实战 linking to docs/course/react-chat-ui/react-chat-ui"
+  },
+  "link.item.label.B 站配套文本": {
+    "message": "B 站配套文本",
+    "description": "The label of footer link with label=B 站配套文本 linking to docs/videos/videos-intro"
+  },
+  "link.item.label.CSS 教程": {
+    "message": "CSS 教程",
+    "description": "The label of footer link with label=CSS 教程 linking to docs/css/box-model/box-model"
+  },
+  "link.item.label.资源导航": {
+    "message": "资源导航",
+    "description": "The label of footer link with label=资源导航 linking to docs/resources/resources-intro"
   }
 }

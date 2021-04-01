@@ -74,5 +74,9 @@
   "sidebar.resources.category.UI 设计": {
     "message": "UI 设计",
     "description": "The label for category UI 设计 in sidebar resources"
+  },
+  "sidebar.resources.category.开发工具": {
+    "message": "开发工具",
+    "description": "The label for category 开发工具 in sidebar resources"
   }
 }

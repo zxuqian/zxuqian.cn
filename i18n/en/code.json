@@ -7,10 +7,6 @@
     "message": "Xuqian",
     "description": "my name"
   },
-  "homepage.hero.text": {
-    "message": "I'm a front-end developer. Here you can find the corresponding scripts for my videos on Bilibili. You can also find tutorials, blogs, courses, resources, as well as my thoughts and life hacks. I will help you learn front-end development in the most intuitive and fastest way. Hope my experience will inspire you.",
-    "description": "hero text"
-  },
   "去B站关注": {
     "message": "Follow Me on Twitter",
     "description": "follow me btn text"
@@ -222,5 +218,65 @@
   "homepage.qqgroup2": {
     "message": "",
     "description": "qq group2"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "One document found|{count} documents found",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Search results for \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Search the documentation",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Type your search here",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Search",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Algolia",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "No results were found",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Fetching new results...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "Search",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "homepage.hero.text": {
+    "message": "I'm a front-end developer. Here you can find the corresponding {bilibiliText}You can also find {courses}{blogs}{links}as well as {ideas}. I will help you learn front-end development in the most intuitive and fastest way. Hope my experience will inspire you.",
+    "description": "hero text"
+  },
+  "hompage.hero.text.bilibili": {
+    "message": "scripts for my videos on Bilibili. ",
+    "description": "Bilibili docs link label"
+  },
+  "hompage.hero.text.course": {
+    "message": "courses, ",
+    "description": "Course link label"
+  },
+  "hompage.hero.text.blog": {
+    "message": "blogs, ",
+    "description": "Blog link label"
+  },
+  "hompage.hero.text.link": {
+    "message": "resources, ",
+    "description": "Link link label"
+  },
+  "hompage.hero.text.idea": {
+    "message": "my thoughts and life hacks",
+    "description": "Idea link label"
   }
 }

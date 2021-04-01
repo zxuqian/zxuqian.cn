@@ -114,9 +114,63 @@ function BlogListPage(props) {
               </span>
             </animated.div>
             <animated.p style={animatedTexts[1]}>
-              <Translate id="homepage.hero.text" description="hero text">
-                在这里，有
-                B站视频教程合集和配套文本、系统教程、编程博客、前端资源导航、以及UP主的想法和生活点滴。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。
+              <Translate
+                id="homepage.hero.text"
+                description="hero text"
+                values={{
+                  bilibiliText: (
+                    <Link to="/docs/videos/videos-intro">
+                      <Translate
+                        id="hompage.hero.text.bilibili"
+                        description="Bilibili docs link label"
+                      >
+                        B站视频配套文本、
+                      </Translate>
+                    </Link>
+                  ),
+                  courses: (
+                    <Link to="/docs/course/react-chat-ui/react-chat-ui">
+                      <Translate
+                        id="hompage.hero.text.course"
+                        description="Course link label"
+                      >
+                        系统课程、
+                      </Translate>
+                    </Link>
+                  ),
+                  blogs: (
+                    <Link to="#homepage_blogs">
+                      <Translate
+                        id="hompage.hero.text.blog"
+                        description="Blog link label"
+                      >
+                        技术博客、
+                      </Translate>
+                    </Link>
+                  ),
+                  links: (
+                    <Link to="/docs/resources/resources-intro">
+                      <Translate
+                        id="hompage.hero.text.link"
+                        description="Link link label"
+                      >
+                        前端资源导航、
+                      </Translate>
+                    </Link>
+                  ),
+                  ideas: (
+                    <Link to="/tags/%E7%BB%8F%E9%AA%8C">
+                      <Translate
+                        id="hompage.hero.text.idea"
+                        description="Idea link label"
+                      >
+                        想法和生活点滴
+                      </Translate>
+                    </Link>
+                  ),
+                }}
+              >
+                {`在这里，有{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。`}
               </Translate>
             </animated.p>
             {currentLocale === "zh-CN" && (
@@ -172,7 +226,7 @@ function BlogListPage(props) {
             <div className="col col--12">
               {/* <div className="content__divider"></div> */}
               {!isPaginated && (
-                <h1 className="blog__section_title">
+                <h1 className="blog__section_title" id="homepage_blogs">
                   <Translate description="latest blogs heading">
                     最新博客
                   </Translate>
