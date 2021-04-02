@@ -18,7 +18,7 @@ activityId: "500549825279095997"
 
 在介绍 `font-display` 之前，先了解一下什么是 Web Fonts。在以前使用 CSS 指定字体时只能使用用户电脑本地上现有的字体，而由于每个用户电脑上的字体可能都不一样，所以能用的基本上就是操作系统内置的一些字体，例如微软雅黑，宋体，苹果苹方，这些也叫做安全字体（Web Safe Fonts）。为了使字体显示正常，我们一般会通过 `font-family` 属性同时指定多个字体，如果第一个字体没有在操作系统中找到，就会使用下一个后备字体（ Fallback Font ），以此类推：
 
-```
+```css
 * {
   font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
 }
@@ -26,7 +26,7 @@ activityId: "500549825279095997"
 
 后来，CSS 开始支持 `@font-face` 这个指令，可以加载自定义的字体文件，这个时候可以把字体随网站一起发布，用户在浏览网站的时候，会下载 `@font-face` 中指定的字体。例如下边的代码加载了 fonts 目录下的 Raleway 字体：
 
-```
+```css
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -63,7 +63,7 @@ activityId: "500549825279095997"
 
 现在使用谷歌的 Web Fonts 字体服务已经不需要我们用手动去写 `@font-face` 指令了，而是通过调用它的接口，直接返回一段 `@font-face` 指令 CSS 代码，同时它也支持 `display=swap` 参数，来让返回的 CSS 代码中，设置 `font-display` 为 `swap` ，这个可以从我的网站上看到：
 
-```
+```css
 /* https://fonts.font.im/css?family=Raleway:500,700&display=swap */
 @font-face {
   font-family: 'Raleway';
