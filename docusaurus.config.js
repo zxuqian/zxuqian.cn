@@ -15,7 +15,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/express/express-get-started'>《Express 快速入门指南》</a>配套文本；调整了导航；添加 列表≡ 视图!`,
+      content: `更新文章：<a href='/2021-04-02-interview-failed-recover'>《面试没通过，又一次，我好菜呀...》点击查看</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
