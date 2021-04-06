@@ -64,7 +64,6 @@ module.exports = {
       "videos/ts/04-typescript-oop-inheritance/typescript-oop-inheritance",
       "videos/ts/05-typescript-oop-polymorphism/typescript-oop-polymorphism",
     ],
-
     Express: [
       "videos/express/02-express-get-started/express-get-started",
       "videos/express/01-express-mongo-crud/express-mongo-crud",
@@ -77,5 +76,9 @@ module.exports = {
     开发工具: ["resources/tools/vs-code-themes/vs-code-themes"],
     效率工具: [],
     "UI 设计": [],
+  },
+  tools: {
+    简介: ["tools/tools-intro"],
+    "CSS 工具": ["tools/01-glassmorphism-generator/glassmorphism-generator"],
   },
 };
