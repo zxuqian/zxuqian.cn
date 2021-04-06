@@ -1,5 +1,5 @@
 ---
-slug: 2021-04-02-interview-failed-recover
+slug: interview-failed-recover
 title: 面试没通过，又一次，我好菜呀...
 author: 峰华
 author_title: 前端工程师 / B站UP主

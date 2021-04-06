@@ -1,5 +1,5 @@
 ---
-slug: 2021-03-23-web-performance-optimization-image-lazy-loading
+slug: web-performance-optimization-image-lazy-loading
 title: Web性能优化：使用图片懒加载推迟屏幕外图片的加载
 author: 峰华
 author_title: 前端工程师 / B站UP主

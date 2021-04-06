@@ -1,5 +1,5 @@
 ---
-slug: 2021-03-14-webrtc-avatarify-face-swap-tutorial
+slug: webrtc-avatarify-face-swap-tutorial
 title: 实现前端网页 WebRTC 视频通话以及换脸特效
 author: 峰华
 author_title: 前端工程师 / B站UP主
