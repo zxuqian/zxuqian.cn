@@ -15,7 +15,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新文章：<a href='/2021-04-02-interview-failed-recover'>《面试没通过，又一次，我好菜呀...》点击查看</a>`,
+      content: `发布配套文本：<a href='/docs/videos/vue/vue-echarts-bar-chart'>《Vue 3.0 + Echarts 电影票房数据可视化柱状图展示》点击查看</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },

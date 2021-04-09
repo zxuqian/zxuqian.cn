@@ -49,7 +49,7 @@ export async function askBlogInfo() {
 
   createDoc(yuqueDocInfo.slug, repo, (tmpFileName) => {
     shell.exec(
-      `hygen blog new ${finalBlogName} --title "${yuqueDocInfo.title}" --tmp ${tmpFileName}`
+      `hygen blog new ${finalBlogName} --title "${yuqueDocInfo.title}" --tmp ${tmpFileName} --slug ${blogName}`
     );
   });
 }

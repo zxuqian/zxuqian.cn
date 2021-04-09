@@ -7,9 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: 是不是每次面试没通过都会有这样的感觉？作为一名程序员，每次面试的时候都觉得准备不充分，面试资料多的看不完，实战经验也不够，即使自认为准备的很充分了，最后还是栽了，到底是因为自己菜，还是自己菜，还是自己菜呢？要回答这个问题，我们得先知道面试到底在面什么。
 tags: [职业, 面试, 经验]
-activityId: 相关动态 ID
-bvid: 相关视频 ID（与 activityId 2选一）
-oid: oid
+activityId: "509464691330881917"
+oid: "121812092"
 ---
 
 ![面试](./img/2021-04-02-interview-failed-recover/interview.webp)

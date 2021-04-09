@@ -3,7 +3,7 @@ to: blog/<%= name %>.md
 sh: cat tmp/<%= tmp %> >> blog/<%= name %>.md
 ---
 ---
-slug: <%= name %>
+slug: <%= slug %>
 title: <%= title %>
 author: 峰华
 author_title: 前端工程师 / B站UP主
