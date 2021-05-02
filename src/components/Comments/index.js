@@ -86,8 +86,8 @@ function CommentItem({ isReply = false, member, ctime, content }) {
   return (
     <StyledCommentItem isReply={isReply}>
       <Avatar
-        src={member.avatar.replace("http", "https")}
         referrerPolicy="no-referrer"
+        src={member.avatar.replace("http", "https")}
       />
       <NickName>{member.uname}</NickName>
       <Time>
