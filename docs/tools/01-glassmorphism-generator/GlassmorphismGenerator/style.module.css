@@ -1,0 +1,165 @@
+.backgroundContainer {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.background {
+  width: 100%;
+}
+
+.glass {
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bgRect {
+  composes: glass;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.centerContainer {
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+
+.text {
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+}
+
+.circleLeft {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: -14px;
+  composes: glass;
+}
+
+.circleRight {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  position: absolute;
+  right: 12px;
+  bottom: -100%;
+  composes: glass;
+}
+
+.rectCenter {
+  width: 40%;
+  height: calc(100% + 8px);
+  border-radius: 12px;
+  position: absolute;
+  composes: glass;
+}
+
+.rectLeft {
+  width: 15%;
+  height: 80%;
+  border-radius: 8px;
+  left: 8%;
+  top: 120%;
+  position: absolute;
+  composes: glass;
+}
+
+.rectRight {
+  width: 10%;
+  height: 60%;
+  border-radius: 8px;
+  transform: translate(180%, -100%);
+  position: absolute;
+  composes: glass;
+}
+
+.toolsContainer {
+  margin-top: 24px;
+  padding: 24px;
+  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+
+input[type="range"] {
+  appearance: none;
+  background: #f3f3f3;
+  height: 10px;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #52cd71;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.13);
+}
+
+.controls label {
+  font-weight: 600;
+}
+
+.inputOpacity,
+.inputBlur,
+.inputRadius,
+.inputColor {
+  display: grid;
+
+  row-gap: 8px;
+  margin-bottom: 24px;
+}
+
+.slider {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 40px;
+}
+
+.selected {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  background: #52cd71;
+  font-size: 0.8em;
+  color: white;
+  position: relative;
+}
+
+.selected::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #52cd71;
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    font-size: 1.6em;
+  }
+}
