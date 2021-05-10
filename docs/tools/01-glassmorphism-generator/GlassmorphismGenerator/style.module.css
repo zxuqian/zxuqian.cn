@@ -170,6 +170,12 @@
   }
 }
 
+@media screen and (max-width: 580px) {
+  .toolsContainer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media screen and (max-width: 400px) {
   .text {
     font-size: 1.6em;
