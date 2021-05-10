@@ -91,18 +91,32 @@
   border-radius: 12px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr minmax(0, 1fr);
   column-gap: 12px;
 }
 
-input[type="range"] {
+.inputStyle {
+  display: grid;
+  row-gap: 8px;
+  margin-bottom: 24px;
+}
+
+.progressBar {
+  composes: inputStyle;
+}
+
+.progressBar label {
+  font-weight: 600;
+}
+
+.progressBar input[type="range"] {
   appearance: none;
   background: #f3f3f3;
   height: 10px;
   border-radius: 4px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+.progressBar input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 18px;
   height: 18px;
@@ -111,27 +125,13 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.13);
 }
 
-.controls label {
-  font-weight: 600;
-}
-
-.inputOpacity,
-.inputBlur,
-.inputRadius,
-.inputColor {
-  display: grid;
-
-  row-gap: 8px;
-  margin-bottom: 24px;
-}
-
-.slider {
+.progressBar .slider {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 40px;
+  grid-template-columns: 1fr 52px;
 }
 
-.selected {
+.progressBar .selected {
   margin-left: 8px;
   padding: 2px 8px;
   border-radius: 2px;
@@ -139,9 +139,10 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 0.8em;
   color: white;
   position: relative;
+  text-align: center;
 }
 
-.selected::before {
+.progressBar .selected::before {
   content: "";
   display: block;
   position: absolute;
@@ -150,6 +151,17 @@ input[type="range"]::-webkit-slider-thumb {
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-right: 8px solid #52cd71;
+}
+
+.inputColor {
+  composes: inputStyle;
+}
+
+.inputColor label {
+  font-weight: 600;
+}
+
+.previews .css > div {
 }
 
 @media screen and (max-width: 700px) {
