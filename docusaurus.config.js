@@ -15,7 +15,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `发布配套文本：<a href='/docs/videos/vue/vue-echarts-bar-chart'>《Vue 3.0 + Echarts 电影票房数据可视化柱状图展示》点击查看</a>`,
+      content: `上线小工具栏目，添加<a href='/docs/tools/glassmorphism-generator'>玻璃特效生成器小工具，点击查看</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },

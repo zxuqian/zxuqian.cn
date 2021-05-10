@@ -110,7 +110,7 @@ function GlassmorphismGenerator() {
               className="html"
               metastring='title="HTML"'
             >{`<div class="container">
-  <img src="https://zxuqian.cn/assets/images/interview-e9af2bc5964a2ca04232e1b6a1b42b55.webp" />
+  <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
   <h1>GLASSMORPHISM</h1>
   <div class="glass" />
 </div>`}</CodeBlock>
