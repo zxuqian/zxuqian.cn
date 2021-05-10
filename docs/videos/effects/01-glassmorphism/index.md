@@ -29,7 +29,7 @@ import BVideo from "@site/src/components/BVideo";
 
 `backdrop-filter`里面可以设置多种类型的滤镜，比如说模糊，亮度和对比度，那咱们这次用 `blur` 设置模糊，咱们现在给它的模糊半径设置为8 像素，背景颜色设置为白色带一点透明度，这样呢它就有了一个毛玻璃的效果。是不是很简单呢？这个毛玻璃效果在英文里边又叫glass morphism 玻璃态设计，微软的 fluent design 设计系统，还有苹果最新出的 MacOS Big Sur 都有这种毛玻璃的效果，那么以后未来可能也会成为网页设计的趋势。
 
-另外，网上也有一个毛玻璃效果生成器。可以访问 https://glassmorphism.com/ 他这个网站呢，可以调这个毛玻璃的效果的颜色，还有模糊半径，以及它的背景透明度。之后右边他生成的这个 css 代码就可以直接复制粘贴并使用了。
+另外，网上也有一个毛玻璃效果生成器。可以访问本站的小工具： [Glassmporphism 玻璃特效生成器](/docs/tools/glassmorphism-generator) ，可以调这个毛玻璃的效果的颜色，还有模糊半径，以及它的背景透明度。之后右边他生成的这个 css 代码就可以直接复制粘贴并使用了。
 
 最后这个属性在最新版的 chrome、Edge、safari 都已经支持了，Firefox 则需要在设置中开启 backdrop-filter 的支持，IE11 不支持这个属性。
 

@@ -83,6 +83,12 @@ module.exports = {
         },
 
         {
+          label: "小工具",
+          position: "right",
+          to: "docs/tools/tools-intro",
+        },
+
+        {
           href: "https://www.itnanls.cn",
           label: "IT楠老师",
           position: "right",
@@ -226,6 +232,19 @@ module.exports = {
     path.resolve(__dirname, "./src/plugin/plugin-google-adsense"),
     path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
     "docusaurus2-dotenv",
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "lifestyle-blog",
+        routeBasePath: "lifestyle",
+        path: "./lifestyle",
+        feedOptions: {
+          type: "all",
+          title: "峰华前端工程师",
+          copyright: `Copyright © ${new Date().getFullYear()} 峰华 (张旭乾) Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/">冀ICP备14007097号-3</a></p>`,
+        },
+      },
+    ],
     // [
     //   "@easyops-cn/docusaurus-search-local",
     //   {
