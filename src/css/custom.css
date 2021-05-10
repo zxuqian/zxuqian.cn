@@ -37,6 +37,12 @@
   /* 搜索框 */
   --search-local-modal-background: hsl(0deg, 0%, 100%);
   --search-local-modal-shadow: 0px 0px 48px hsl(0deg, 0%, 0%, 0.12);
+
+  /* 进度条背景 */
+  --progress-bar-background-color: #f3f3f3;
+
+  /* 卡片背景 */
+  --card-background: #ffffff;
 }
 
 html {
@@ -86,6 +92,11 @@ html[data-theme="dark"] {
   /* 搜索框 */
   --search-local-modal-background: var(--ifm-background-color);
   --search-local-modal-shadow: 0px 0px 48px hsl(0deg, 100%, 100%, 0.12);
+
+  /* 进度条背景 */
+  --progress-bar-background-color: #3e3e3e;
+  /* 卡片背景 */
+  --card-background: #0c0c0c;
 }
 
 html[data-theme="dark"] h1,
@@ -349,7 +360,7 @@ html[data-theme="dark"] .bloghome__intro > p {
   row-gap: 1em;
   align-items: center;
   padding: 1em 1.2em;
-  background: white;
+  background: var(--card-background);
   border-radius: 6px;
 }
 
