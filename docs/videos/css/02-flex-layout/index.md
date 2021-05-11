@@ -76,7 +76,7 @@ align-items: flex-end;
 居中对齐：
 
 ```css
-align-items: flex-end;
+align-items: center;
 ```
 
 ### 列模式
