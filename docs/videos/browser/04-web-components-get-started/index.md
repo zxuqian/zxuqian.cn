@@ -11,7 +11,7 @@ keywords:
   - web components
   - dom
   - browser
-  -  组件化
+  - 组件化
   - 前端
   - frontend
 # image: https://i.imgur.com/mErPwqL.png

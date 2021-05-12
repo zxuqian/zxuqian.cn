@@ -2,7 +2,7 @@
 id: css-text-image-wrap
 title: 使用 CSS 实现 word 中的图片文字环绕效果
 slug: ../css-text-image-wrap
-description: 
+description: 都说写网页跟写 word 文档类似，那么 word 文档可以设置图片和文字的环绕方式，CSS 可以吗？
 keywords:
   - css
   - text
