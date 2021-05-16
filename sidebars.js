@@ -49,6 +49,7 @@ module.exports = {
       "videos/react/react-props-buttons/react-props-button",
       "videos/react/gradient-bg-react-state-event/react-state-event-gradient",
       "videos/react/03-5-react-spring-animations/5-react-spring-animations",
+      "videos/react/react-docusaurus-blog-list-view/react-docusaurus-blog-list-view",
     ],
 
     Vue: [
