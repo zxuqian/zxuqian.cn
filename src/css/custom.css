@@ -607,3 +607,8 @@ pagination-nav__item:hover .pagination-nav__link {
     display: initial;
   }
 }
+
+/* google adsense */
+.google-auto-placed {
+  text-align: inherit !important;
+}
