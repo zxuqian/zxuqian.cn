@@ -5,90 +5,54 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useState } from "react";
+import React from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import BlogPostItem from "@theme/BlogPostItem";
 import BlogListPaginator from "@theme/BlogListPaginator";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faWeixin,
-} from "@fortawesome/free-brands-svg-icons";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-// import bilibiliIcon from "@site/static/icons/bilibili.svg";
 
-import useFollowers from "./useFollowers";
 import useViews from "./useViews";
-import { useTrail, animated } from "react-spring";
+
 // import Fade from "react-reveal/Fade";
 
-import BilibiliIcon from "@site/static/icons/bilibili.svg";
-import CSDNIcon from "@site/static/icons/csdn.svg";
-import Button from "../../components/Button";
-
-import Translate, { translate } from "@docusaurus/Translate";
+import Translate from "@docusaurus/Translate";
 import Head from "@docusaurus/Head";
 
-import HeroMain from "./img/hero_main.svg";
 import ListFilter from "./img/list.svg";
 import CardFilter from "./img/card.svg";
 
 import Link from "@docusaurus/Link";
 import { useViewType } from "./useViewType";
-import { faTags } from "@fortawesome/free-solid-svg-icons";
+
+import Hero from "@site/src/components/Hero";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
 
   const {
     siteConfig: { title: siteTitle },
-    // 当前语言
-    i18n: { currentLocale },
   } = useDocusaurusContext();
   const isBlogOnlyMode = metadata.permalink === "/";
   const isPaginated = metadata.page > 1;
-  const title = isBlogOnlyMode ? siteTitle : "Blog";
-  const description = `html, css, javascript, react, vue 前端教程，以及 B站视频教程合集和配套文本、系统教程、编程博客和前端资源导航。致力于帮助你以最直观、最快速的方式学会前端开发。`;
+
+  let title = siteTitle + "";
+  let suffix = "- 让你学会前端开发";
+  let description = `html, css, javascript, react, vue 前端教程，以及 B站视频教程合集和配套文本、系统教程、编程博客和前端资源导航。致力于帮助你以最直观、最快速的方式学会前端开发。`;
+  if (metadata.permalink === "/lifestyle") {
+    title = "随笔";
+    suffix = "- 峰华前端工程师";
+    description = "一个前端 UP 主的生活方式、思想感悟、学习经验等";
+  }
 
   // Get all post views
   const views = useViews(items);
-  // Get followers
-  const followers = useFollowers();
 
   // list or card view
   const { viewType, toggleViewType } = useViewType();
 
   const isCardView = viewType === "card";
   const isListView = viewType === "list";
-
-  // animation
-  const animatedTexts = useTrail(5, {
-    from: { opacity: 0, transform: "translateY(3em)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-    config: {
-      mass: 3,
-      friction: 45,
-      tension: 460,
-    },
-    // delay: 300,
-  });
-  // const animatedHero = useSpring({
-  //   opacity: 1,
-  //   backgroundPositionX: "100%",
-  //   from: { opacity: 0, backgroundPositionX: "200%" },
-  //   config: { mass: 3, tension: 280, friction: 30 },
-  //   // delay: 1200,
-  // });
-
-  // const animatedBackground = useSpring({
-  //   background: "linear-gradient(25deg, #1081ff, #72e1f6, #b185ff)",
-  //   to: {
-  //     background: "linear-gradient(375deg, #1081ff, #72e1f6, #b185ff)",
-  //   },
-  // });
 
   return (
     <Layout
@@ -101,125 +65,9 @@ function BlogListPage(props) {
           name="keywords"
           content="前端, html, css, js, javascript, react, vue, typescript, es6, html5, css3, 性能优化, 兼容性调整"
         />
-        <title>{title} - 让你学会前端开发</title>
+        <title>{title + suffix}</title>
       </Head>
-      {/* 个人简介 */}
-      {!isPaginated && (
-        <animated.div className="hero">
-          <div className="bloghome__intro">
-            <animated.div style={animatedTexts[0]} className="hero_text">
-              <Translate description="hero greet">Hello! 我是</Translate>
-              <span className="intro__name">
-                <Translate description="my name">峰华</Translate>
-              </span>
-            </animated.div>
-            <animated.p style={animatedTexts[1]}>
-              <Translate
-                id="homepage.hero.text"
-                description="hero text"
-                values={{
-                  bilibiliText: (
-                    <Link to="/docs/videos/videos-intro">
-                      <Translate
-                        id="hompage.hero.text.bilibili"
-                        description="Bilibili docs link label"
-                      >
-                        B站视频配套文本、
-                      </Translate>
-                    </Link>
-                  ),
-                  courses: (
-                    <Link to="/docs/course/react-chat-ui/react-chat-ui">
-                      <Translate
-                        id="hompage.hero.text.course"
-                        description="Course link label"
-                      >
-                        系统课程、
-                      </Translate>
-                    </Link>
-                  ),
-                  blogs: (
-                    <Link to="#homepage_blogs">
-                      <Translate
-                        id="hompage.hero.text.blog"
-                        description="Blog link label"
-                      >
-                        技术博客、
-                      </Translate>
-                    </Link>
-                  ),
-                  links: (
-                    <Link to="/docs/resources/resources-intro">
-                      <Translate
-                        id="hompage.hero.text.link"
-                        description="Link link label"
-                      >
-                        前端资源导航、
-                      </Translate>
-                    </Link>
-                  ),
-                  ideas: (
-                    <Link to="/tags/%E7%BB%8F%E9%AA%8C">
-                      <Translate
-                        id="hompage.hero.text.idea"
-                        description="Idea link label"
-                      >
-                        想法和生活点滴
-                      </Translate>
-                    </Link>
-                  ),
-                }}
-              >
-                {`在这里，有{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。`}
-              </Translate>
-            </animated.p>
-            {currentLocale === "zh-CN" && (
-              <animated.p style={animatedTexts[3]}>
-                <Translate id="homepage.qqgroup1" description="qq group1">
-                  QQ 1 群：644722908
-                </Translate>
-                <br />
-                <Translate id="homepage.qqgroup2" description="qq group2">
-                  QQ 2 群：1004912565
-                </Translate>
-              </animated.p>
-            )}
-            <SocialLinks animatedProps={animatedTexts[4]} />
-            <animated.div style={animatedTexts[2]}>
-              <Button
-                isLink
-                href={translate({
-                  id: "homepage.follow.link.href",
-                  message:
-                    "https://space.bilibili.com/302954484?from=search&seid=1788147379248960737",
-                  description: "social link bilibili or twitter",
-                })}
-              >
-                <Translate description="follow me btn text">
-                  去B站关注
-                </Translate>
-                <Translate
-                  id="homepage.followers"
-                  description="followers"
-                  values={{ count: (Math.round(followers) / 10000).toFixed(1) }}
-                >
-                  {" {count} 万"}
-                </Translate>
-              </Button>
-            </animated.div>
-          </div>
-
-          <HeroMainImage />
-          {/* <animated.div
-          className="bloghome__scroll-down"
-          style={animatedBackground}
-        >
-          <button>
-            <ArrowDown />
-          </button>
-        </animated.div> */}
-        </animated.div>
-      )}
+      {!isPaginated && isBlogOnlyMode && <Hero />}
       <div className="container-wrapper">
         <div className="container padding-vert--sm">
           <div className="row">
@@ -282,10 +130,8 @@ function BlogListPage(props) {
                 {isListView && (
                   <div className="bloghome__posts-list">
                     {items.map(({ content: BlogPostContent }, index) => {
-                      const {
-                        metadata: blogMetaData,
-                        frontMatter,
-                      } = BlogPostContent;
+                      const { metadata: blogMetaData, frontMatter } =
+                        BlogPostContent;
                       const { title } = frontMatter;
                       const { permalink, date, tags } = blogMetaData;
 
@@ -345,42 +191,6 @@ function BlogListPage(props) {
         </div>
       </div>
     </Layout>
-  );
-}
-
-function SocialLinks({ animatedProps, ...props }) {
-  // const { isDarkTheme } = useThemeContext();
-  return (
-    <animated.div className="social__links" style={animatedProps}>
-      <a href="https://space.bilibili.com/302954484">
-        <BilibiliIcon />
-      </a>
-      <a href="https://www.linkedin.com/in/zxuqian/">
-        <FontAwesomeIcon icon={faLinkedin} size="lg" />
-      </a>
-      <a href="https://github.com/zxuqian">
-        <FontAwesomeIcon icon={faGithub} size="lg" />
-      </a>
-      <a href="https://blog.csdn.net/fengqiuzhihua">
-        <CSDNIcon />
-      </a>
-      <div className="dropdown dropdown--hoverable">
-        <FontAwesomeIcon icon={faWeixin} size="lg" />
-        <img
-          width="50%"
-          className="dropdown__menu"
-          src={useBaseUrl("/img/publicQR.webp")}
-        />
-      </div>
-    </animated.div>
-  );
-}
-
-function HeroMainImage() {
-  return (
-    <div className="bloghome__image">
-      <HeroMain />
-    </div>
   );
 }
 

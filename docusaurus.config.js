@@ -36,20 +36,20 @@ module.exports = {
           to: "/",
           label: "首页",
           position: "right",
-          // items: [
-          //   {
-          //     label: "前端",
-          //     to: "tags/前端",
-          //   },
-          //   {
-          //     label: "职业",
-          //     to: "tags/职业",
-          //   },
-          //   {
-          //     label: "健康",
-          //     to: "tags/健康",
-          //   },
-          // ],
+          items: [
+            {
+              label: "随笔",
+              to: "lifestyle",
+            },
+            // {
+            //   label: "职业",
+            //   to: "tags/职业",
+            // },
+            // {
+            //   label: "健康",
+            //   to: "tags/健康",
+            // },
+          ],
         },
         {
           label: "学习",
@@ -234,7 +234,7 @@ module.exports = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        id: "lifestyle-blog",
+        id: "secret-garden",
         routeBasePath: "lifestyle",
         path: "./lifestyle",
         feedOptions: {
