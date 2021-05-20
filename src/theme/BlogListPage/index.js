@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -26,6 +26,7 @@ import Link from "@docusaurus/Link";
 import { useViewType } from "./useViewType";
 
 import Hero from "@site/src/components/Hero";
+import Adsense from "@site/src/components/Adsense";
 
 function BlogListPage(props) {
   const { metadata, items } = props;
@@ -109,25 +110,14 @@ function BlogListPage(props) {
                   <div className="bloghome__posts-card">
                     {items.map(({ content: BlogPostContent }, index) => (
                       // <Fade key={BlogPostContent.metadata.permalink}>
-                      <>
+                      <React.Fragment key={BlogPostContent.metadata.permalink}>
                         {(index + 1) % 3 === 0 && (
-                          <div key={index}>
-                            <script
-                              async
-                              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-                            ></script>
-                            <ins
-                              className="adsbygoogle"
-                              style={{ display: "block" }}
-                              data-ad-format="fluid"
-                              data-ad-layout-key="-em-35+j4-rj-3c"
-                              data-ad-client="ca-pub-3487507367729662"
-                              data-ad-slot="9557780226"
-                            ></ins>
-                            <script>
-                              (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                          </div>
+                          <Adsense
+                            key={index}
+                            layoutKey="-em-35+j4-rj-3c"
+                            format="fluid"
+                            slot="9557780226"
+                          />
                         )}
                         <BlogPostItem
                           key={BlogPostContent.metadata.permalink}
@@ -142,12 +132,21 @@ function BlogListPage(props) {
                         >
                           <BlogPostContent />
                         </BlogPostItem>
-                      </>
+                      </React.Fragment>
                       // </Fade>
                     ))}
                   </div>
                 )}
-
+                {/* <div>
+                  <ins
+                    className="adsbygoogle"
+                    style={{ display: "block" }}
+                    data-ad-format="fluid"
+                    data-ad-layout-key="-em-35+j4-rj-3c"
+                    data-ad-client="ca-pub-3487507367729662"
+                    data-ad-slot="9557780226"
+                  ></ins>
+                </div> */}
                 {isListView && (
                   <div className="bloghome__posts-list">
                     {items.map(({ content: BlogPostContent }, index) => {
@@ -211,6 +210,7 @@ function BlogListPage(props) {
           </div>
         </div>
       </div>
+      <Adsense responsive="true" format="auto" slot="9797738783" />
     </Layout>
   );
 }

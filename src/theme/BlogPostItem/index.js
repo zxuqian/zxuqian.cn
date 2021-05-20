@@ -28,6 +28,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import Comments from "@site/src/components/Comments";
 import Ad from "@site/src/components/Ad";
 import adConfig from "@site/src/components/Ad/config";
+import Adsense from "@site/src/components/Adsense";
 
 import Translate from "@docusaurus/Translate";
 
@@ -221,9 +222,12 @@ function BlogPostItem(props) {
             )}
             {/* 标签 */}
             {isBlogPostPage && (
-              <div className="text--center margin-bottom--xs padding-bottom--xs">
-                {renderTags()}
-              </div>
+              <>
+                <div className="text--center margin-bottom--xs padding-bottom--xs">
+                  {renderTags()}
+                </div>
+                <Adsense responsive="true" format="auto" slot="2800800187" />
+              </>
             )}
 
             {/* 正文 */}
@@ -241,6 +245,9 @@ function BlogPostItem(props) {
                 ))}
               </div>
             )} */}
+            {isBlogPostPage && (
+              <Adsense responsive="true" format="auto" slot="4590671808" />
+            )}
           </article>
           <footer className="article__footer padding-top--md margin-top--lg margin-bottom--lg">
             {!isBlogPostPage && (

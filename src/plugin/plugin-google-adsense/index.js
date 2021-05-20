@@ -9,8 +9,7 @@ module.exports = function (context, options) {
             attributes: {
               "data-ad-client": "ca-pub-3487507367729662",
               defer: true,
-              src:
-                "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+              src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
             },
           },
         ],
