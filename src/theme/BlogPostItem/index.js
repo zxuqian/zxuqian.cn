@@ -255,7 +255,7 @@ function BlogPostItem(props) {
             {truncated && (
               <Link to={metadata.permalink} aria-label={`阅读 ${title} 的全文`}>
                 <strong className={styles.readMore}>
-                  <Translate description="read full text">阅读原文</Translate>
+                  <Translate description="read full text">阅读全文</Translate>
                 </strong>
               </Link>
             )}

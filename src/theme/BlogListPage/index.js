@@ -107,21 +107,42 @@ function BlogListPage(props) {
               <div className="bloghome__posts">
                 {isCardView && (
                   <div className="bloghome__posts-card">
-                    {items.map(({ content: BlogPostContent }) => (
+                    {items.map(({ content: BlogPostContent }, index) => (
                       // <Fade key={BlogPostContent.metadata.permalink}>
-                      <BlogPostItem
-                        key={BlogPostContent.metadata.permalink}
-                        frontMatter={BlogPostContent.frontMatter}
-                        metadata={BlogPostContent.metadata}
-                        truncated={BlogPostContent.metadata.truncated}
-                        views={
-                          views.find(
-                            (v) => v.slug == BlogPostContent.frontMatter.slug
-                          )?.views
-                        }
-                      >
-                        <BlogPostContent />
-                      </BlogPostItem>
+                      <>
+                        {index % 3 === 0 && (
+                          <div key={index}>
+                            <script
+                              async
+                              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                            ></script>
+                            <ins
+                              className="adsbygoogle"
+                              style={{ display: "block" }}
+                              data-ad-format="fluid"
+                              data-ad-layout-key="-em-35+j4-rj-3c"
+                              data-ad-client="ca-pub-3487507367729662"
+                              data-ad-slot="9557780226"
+                            ></ins>
+                            <script>
+                              (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                          </div>
+                        )}
+                        <BlogPostItem
+                          key={BlogPostContent.metadata.permalink}
+                          frontMatter={BlogPostContent.frontMatter}
+                          metadata={BlogPostContent.metadata}
+                          truncated={BlogPostContent.metadata.truncated}
+                          views={
+                            views.find(
+                              (v) => v.slug == BlogPostContent.frontMatter.slug
+                            )?.views
+                          }
+                        >
+                          <BlogPostContent />
+                        </BlogPostItem>
+                      </>
                       // </Fade>
                     ))}
                   </div>
