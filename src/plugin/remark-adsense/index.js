@@ -46,7 +46,10 @@ module.exports = () => (tree, file) => {
   visit(tree, "root", (node, index) => {
     if (node.children && node.children.length > 10) {
       node.children.splice(10, 0, adsense("3539166782"));
-      node.children.splice(node.children.length - 2, 0, adsense("1964508460"));
+      node.children.splice(node.children.length - 1, 0, adsense("1964508460"));
+      return visit.SKIP;
+    } else if (node.children) {
+      node.children.splice(node.children.length - 1, 0, adsense("1964508460"));
       return visit.SKIP;
     }
     // if (index === 5) {

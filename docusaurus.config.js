@@ -206,8 +206,6 @@ module.exports = {
           path: "./blog",
           routeBasePath: "/",
           blogSidebarTitle: "近期文章",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
           feedOptions: {
             type: "all",
             title: "峰华前端工程师",
