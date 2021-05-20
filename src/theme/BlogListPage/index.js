@@ -110,7 +110,7 @@ function BlogListPage(props) {
                     {items.map(({ content: BlogPostContent }, index) => (
                       // <Fade key={BlogPostContent.metadata.permalink}>
                       <>
-                        {index % 3 === 0 && (
+                        {(index + 1) % 3 === 0 && (
                           <div key={index}>
                             <script
                               async
