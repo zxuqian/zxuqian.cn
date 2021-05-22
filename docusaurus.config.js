@@ -16,7 +16,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/react/react-docusaurus-blog-list-view'>《React + Docusaurus 博客列表视图实现》配套文本</a>`,
+      content: `更新<a href='/docs/videos/html/html-css-full-website-idustrial'>《创建一个工业风的网站 | HTML & CSS 入门教程》配套文本</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },

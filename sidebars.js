@@ -26,7 +26,11 @@ module.exports = {
       "videos/css/css-grid-place-items/css-grid-place-items",
       "videos/css/css-text-image-wrap/css-text-image-wrap",
     ],
-    HTML: ["videos/html/html-basics/html-basics"],
+
+    HTML: [
+      "videos/html/html-basics/html-basics",
+      "videos/html/html-css-full-website-idustrial/html-css-full-website-idustrial",
+    ],
     特效: [
       "videos/effects/glassmorphism/effects-glassmorphism",
       "videos/effects/cyberpunk/effects-glitch",

@@ -49,7 +49,7 @@ module.exports = () => (tree, file) => {
       node.children.splice(node.children.length - 1, 0, adsense("1964508460"));
       return visit.SKIP;
     } else if (node.children) {
-      node.children.splice(node.children.length - 1, 0, adsense("1964508460"));
+      node.children.push(adsense("1964508460"));
       return visit.SKIP;
     }
     // if (index === 5) {

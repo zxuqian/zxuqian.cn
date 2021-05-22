@@ -111,7 +111,7 @@ function BlogListPage(props) {
                     {items.map(({ content: BlogPostContent }, index) => (
                       // <Fade key={BlogPostContent.metadata.permalink}>
                       <React.Fragment key={BlogPostContent.metadata.permalink}>
-                        {(index + 1) % 3 === 0 && (
+                        {index % 2 === 0 && (
                           <Adsense
                             key={index}
                             layoutKey="-em-35+j4-rj-3c"
@@ -137,16 +137,7 @@ function BlogListPage(props) {
                     ))}
                   </div>
                 )}
-                {/* <div>
-                  <ins
-                    className="adsbygoogle"
-                    style={{ display: "block" }}
-                    data-ad-format="fluid"
-                    data-ad-layout-key="-em-35+j4-rj-3c"
-                    data-ad-client="ca-pub-3487507367729662"
-                    data-ad-slot="9557780226"
-                  ></ins>
-                </div> */}
+                <Adsense responsive="true" auto="fluid" slot="6767147116" />
                 {isListView && (
                   <div className="bloghome__posts-list">
                     {items.map(({ content: BlogPostContent }, index) => {
