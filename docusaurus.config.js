@@ -171,6 +171,10 @@ module.exports = {
               label: "lookroot的个人空间",
               to: "https://www.lookroot.cn/",
             },
+            {
+              label: "潜心专研的小张同学",
+              to: "https://zhangqiang.vercel.app/",
+            },
           ],
         },
       ],
