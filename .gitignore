@@ -25,3 +25,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
+docs/**/*
+blog/**/*
+lifestyle/**/*
+i18n/

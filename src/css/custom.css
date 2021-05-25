@@ -612,3 +612,7 @@ pagination-nav__item:hover .pagination-nav__link {
 .google-auto-placed {
   text-align: inherit !important;
 }
+
+ins {
+  max-height: 100% !important;
+}
