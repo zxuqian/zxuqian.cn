@@ -29,10 +29,10 @@ module.exports = {
         srcDark: "img/logo.webp",
       },
       items: [
-        {
-          type: "localeDropdown",
-          position: "left",
-        },
+        // {
+        //   type: "localeDropdown",
+        //   position: "left",
+        // },
         {
           to: "/",
           label: "首页",
@@ -283,14 +283,15 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: "zh-CN",
-    locales: ["zh-CN", "en"],
-    localeConfigs: {
-      "zh-CN": {
-        label: "中文",
-      },
-      en: {
-        label: "English",
-      },
-    },
+    locales: ["zh-CN"],
+    // locales: ["zh-CN", "en"],
+    // localeConfigs: {
+    //   "zh-CN": {
+    //     label: "中文",
+    //   },
+    //   en: {
+    //     label: "English",
+    //   },
+    // },
   },
 };
