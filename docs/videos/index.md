@@ -1,6 +1,7 @@
 ---
 id: videos-intro
 title: B 站配套文本简介
+slug: /videos
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)

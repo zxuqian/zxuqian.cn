@@ -58,7 +58,7 @@ module.exports = {
           items: [
             {
               label: "B 站配套文本",
-              to: "docs/videos/videos-intro",
+              to: "docs/videos/",
             },
             {
               label: "CSS 教程",
@@ -67,7 +67,7 @@ module.exports = {
             {
               label: "资源导航",
               // position: "right",
-              to: "docs/resources/resources-intro",
+              to: "docs/resources/",
             },
           ],
         },
@@ -78,7 +78,7 @@ module.exports = {
           items: [
             {
               label: "React 即时通信 UI 开发实战",
-              to: "docs/course/react-chat-ui/react-chat-ui",
+              to: "docs/course/react-chat-ui",
             },
           ],
         },

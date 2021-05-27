@@ -1,6 +1,7 @@
 ---
 id: tools-intro
 title: 小工具介绍
+slug: /tools
 # hide_title: false
 # hide_table_of_contents: false
 # sidebar_label: Markdown :)
