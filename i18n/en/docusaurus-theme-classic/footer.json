@@ -41,11 +41,11 @@
   },
   "link.item.label.React 即时通信 UI 开发实战": {
     "message": "React IM Course",
-    "description": "The label of footer link with label=React 即时通信 UI 开发实战 linking to docs/course/react-chat-ui/react-chat-ui"
+    "description": "The label of footer link with label=React 即时通信 UI 开发实战 linking to docs/course/react-chat-ui"
   },
   "link.item.label.B 站配套文本": {
     "message": "Videos",
-    "description": "The label of footer link with label=B 站配套文本 linking to docs/videos/videos-intro"
+    "description": "The label of footer link with label=B 站配套文本 linking to docs/videos"
   },
   "link.item.label.CSS 教程": {
     "message": "CSS Tutorial",
@@ -53,6 +53,6 @@
   },
   "link.item.label.资源导航": {
     "message": "Resources",
-    "description": "The label of footer link with label=资源导航 linking to docs/resources/resources-intro"
+    "description": "The label of footer link with label=资源导航 linking to docs/resources"
   }
 }

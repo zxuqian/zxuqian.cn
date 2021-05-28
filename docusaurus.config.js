@@ -86,13 +86,7 @@ module.exports = {
         {
           label: "小工具",
           position: "right",
-          to: "docs/tools/tools-intro",
-        },
-
-        {
-          href: "https://www.itnanls.cn",
-          label: "IT楠老师",
-          position: "right",
+          to: "docs/tools/",
         },
         {
           href: "https://github.com/zxuqian/zxuqian.cn",
@@ -119,11 +113,11 @@ module.exports = {
           items: [
             {
               label: "React 即时通信 UI 开发实战",
-              to: "docs/course/react-chat-ui/react-chat-ui",
+              to: "docs/course/react-chat-ui",
             },
             {
               label: "B 站配套文本",
-              to: "docs/videos/videos-intro",
+              to: "docs/videos",
             },
             {
               label: "CSS 教程",
@@ -131,7 +125,7 @@ module.exports = {
             },
             {
               label: "资源导航",
-              to: "docs/resources/resources-intro",
+              to: "docs/resources",
             },
           ],
         },

@@ -57,7 +57,7 @@ function Hero() {
             description="hero text"
             values={{
               bilibiliText: (
-                <Link to="/docs/videos/videos-intro">
+                <Link to="/docs/videos">
                   <Translate
                     id="hompage.hero.text.bilibili"
                     description="Bilibili docs link label"
@@ -67,7 +67,7 @@ function Hero() {
                 </Link>
               ),
               courses: (
-                <Link to="/docs/course/react-chat-ui/react-chat-ui">
+                <Link to="/docs/course/react-chat-ui">
                   <Translate
                     id="hompage.hero.text.course"
                     description="Course link label"
@@ -87,7 +87,7 @@ function Hero() {
                 </Link>
               ),
               links: (
-                <Link to="/docs/resources/resources-intro">
+                <Link to="/docs/resources">
                   <Translate
                     id="hompage.hero.text.link"
                     description="Link link label"
