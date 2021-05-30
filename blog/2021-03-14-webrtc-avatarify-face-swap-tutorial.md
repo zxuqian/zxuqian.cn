@@ -5,7 +5,7 @@ author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
-description: 请输入描述
+description: 因为疫情的原因，线上视频会议软件异军突起，成为了在家办公的主要沟通渠道。而最近抖音上“蚂蚁呀嘿”恶搞换脸的小视频也突然火了起来，那我就想了想能不能在视频会议的时候换张脸活跃下气氛？
 tags: [前端, WebRTC, avatarify]
 activityId: "501899252469610680"
 ---
