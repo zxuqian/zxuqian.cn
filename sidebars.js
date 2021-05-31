@@ -25,11 +25,12 @@ module.exports = {
       "videos/css/css-hsl-color/css-hsl-color",
       "videos/css/css-grid-place-items/css-grid-place-items",
       "videos/css/css-text-image-wrap/css-text-image-wrap",
+      "videos/css/css-flex-gap-tutorial/css-flex-gap-tutorial",
     ],
 
-    HTML: [
-      "videos/html/html-basics/html-basics",
-      "videos/html/html-css-full-website-idustrial/html-css-full-website-idustrial",
+    HTML: ["videos/html/html-basics/html-basics"],
+    实战项目: [
+      "videos/projects/html-css-full-website-idustrial/html-css-full-website-idustrial",
     ],
     特效: [
       "videos/effects/glassmorphism/effects-glassmorphism",

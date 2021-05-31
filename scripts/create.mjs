@@ -36,6 +36,7 @@ const videoDocCategoryToSidebar = {
   ts: "TypeScript",
   express: "Express",
   mongo: '"Mongo DB"',
+  projects: "实战项目",
 };
 
 (async () => {
