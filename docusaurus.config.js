@@ -16,7 +16,7 @@ module.exports = {
   themeConfig: {
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/css/css-flex-gap-tutorial'>《使用 Gap 属性给 CSS Flex 布局设置间距》配套文本</a>`,
+      content: `更新<a href='/docs/videos/css/css-counter-state-management'>《利用 CSS Counter 计数器添加章节序号》配套文本</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
