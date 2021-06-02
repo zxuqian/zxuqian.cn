@@ -14,6 +14,7 @@ module.exports = {
   organizationName: "zxuqian", // Usually your GitHub org/user name.
   projectName: "zxuqian.cn", // Usually your repo name.
   themeConfig: {
+    image: "img/fenghua.jpg",
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
       content: `更新<a href='/docs/videos/css/css-counter-state-management'>《利用 CSS Counter 计数器添加章节序号》配套文本</a>`,
