@@ -27,6 +27,7 @@ module.exports = {
       "videos/css/css-text-image-wrap/css-text-image-wrap",
       "videos/css/css-flex-gap-tutorial/css-flex-gap-tutorial",
       "videos/css/css-counter-state-management/css-counter-state-management",
+      "videos/css/css-conic-gradient-tutorial/css-conic-gradient-tutorial",
     ],
 
     HTML: ["videos/html/html-basics/html-basics"],
