@@ -455,7 +455,7 @@ pagination-nav__item:hover .pagination-nav__link {
   grid-template-areas:
     "detail recent"
     "detail outline";
-  grid-template-rows: max-content min-content;
+  grid-template-rows: auto 1fr;
   grid-template-columns: minmax(0, 1fr) 250px;
 }
 
