@@ -17,7 +17,7 @@ module.exports = {
     image: "img/fenghua.jpg",
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/css/css-conic-gradient-tutorial'>《利用 CSS conic-gradient 制作饼图和色盘》配套文本</a>`,
+      content: `更新<a href='/css-is-pseudo-class-selector'>《CSS :is() 伪类选择器使用指南》博客</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
