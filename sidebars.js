@@ -28,6 +28,7 @@ module.exports = {
       "videos/css/css-flex-gap-tutorial/css-flex-gap-tutorial",
       "videos/css/css-counter-state-management/css-counter-state-management",
       "videos/css/css-conic-gradient-tutorial/css-conic-gradient-tutorial",
+      "videos/css/css-container-queries-intro/css-container-queries-intro",
     ],
 
     HTML: ["videos/html/html-basics/html-basics"],

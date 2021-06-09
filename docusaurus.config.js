@@ -17,7 +17,7 @@ module.exports = {
     image: "img/fenghua.jpg",
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/css-is-pseudo-class-selector'>《CSS :is() 伪类选择器使用指南》博客</a>`,
+      content: `更新<a href='/docs/videos/css/css-container-queries-intro'>《最新：CSS Container Queries，响应式布局利器》配套文本</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
