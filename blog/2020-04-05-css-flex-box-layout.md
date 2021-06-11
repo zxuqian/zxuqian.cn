@@ -18,7 +18,7 @@ import styled from "styled-components";
 
 <!-- truncate -->
 
-2 分钟视频入门版：[2 分钟掌握 CSS Grid 布局](https://www.bilibili.com/video/BV1P7411m7Nu/)
+2 分钟视频入门版：[2 分钟掌握 CSS Flex 布局](https://www.bilibili.com/video/BV1P7411m7Nu/)
 
 ## 开启 Flexbox 布局
 
