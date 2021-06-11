@@ -5,7 +5,7 @@ author: 峰华
 author_title: 前端工程师 / B站UP主
 author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
-description: 请输入描述
+description: 本篇文章给即将要去 Stevens Institute of Technoloy，SIT，史蒂文斯理工学院留学的同学，租房上的一点点建议，仅供参考。
 tags: [留学, sit, 租房]
 ---
 

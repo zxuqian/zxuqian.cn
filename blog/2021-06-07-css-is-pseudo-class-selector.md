@@ -7,6 +7,8 @@ author_url: https://github.com/zxuqian
 author_image_url: https://tvax3.sinaimg.cn/crop.0.0.1080.1080.180/b2745d44ly8g8s4muqeggj20u00u0n0k.jpg?KID=imgbed,tva&Expires=1582389585&ssig=EvXmyu%2FXsX
 description: css :is() 伪类选择器还是一个正在逐步规范化的新特性，所以在使用上也需要注意一下变动，总之，它可以让我们减少编写重复选择器的次数，实现像 SASS/Less 等 CSS 预处理编译器类似的嵌套语法。
 tags: [css, selectors, is, css选择器, is选择器]
+activityId: "533932840843140885"
+oid: "138305326"
 ---
 
 在使用 CSS 编写页面样式的时候，你是不是写过类似的代码：

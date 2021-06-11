@@ -193,12 +193,6 @@ img {
   contain: layout inline-size;
 }
 
- {
-  width: 80vw;
-  margin: 0 auto;
-  contain: layout inline-size;
-}
-
 @container (max-width: 850px) {
   .card {
     grid-template-columns: 1fr;

@@ -153,44 +153,55 @@ function BlogListPage(props) {
                       const day = ("0" + dateObj.getDate()).slice(-2);
 
                       return (
-                        <div
-                          className="post__list-item"
-                          key={blogMetaData.permalink}
-                        >
-                          <Link to={permalink} className="post__list-title">
-                            {title}
-                          </Link>
-                          <div className="post__list-tags">
-                            {tags.length > 0 &&
-                              tags
-                                .slice(0, 2)
-                                .map(
-                                  (
-                                    { label, permalink: tagPermalink },
-                                    index
-                                  ) => (
-                                    <Link
-                                      key={tagPermalink}
-                                      className={`post__tags ${
-                                        index < tags.length
-                                          ? "margin-right--sm"
-                                          : ""
-                                      }`}
-                                      to={tagPermalink}
-                                      style={{
-                                        fontSize: "0.75em",
-                                        fontWeight: 500,
-                                      }}
-                                    >
-                                      {label}
-                                    </Link>
-                                  )
-                                )}
+                        <React.Fragment key={blogMetaData.permalink}>
+                          {(index + 1) % 4 === 3 && (
+                            <div className="post__list-style-ad">
+                              <Adsense
+                                layoutKey="-em-35+j4-rj-3c"
+                                format="fluid"
+                                slot="9557780226"
+                              />
+                            </div>
+                          )}
+                          <div
+                            className="post__list-item"
+                            key={blogMetaData.permalink}
+                          >
+                            <Link to={permalink} className="post__list-title">
+                              {title}
+                            </Link>
+                            <div className="post__list-tags">
+                              {tags.length > 0 &&
+                                tags
+                                  .slice(0, 2)
+                                  .map(
+                                    (
+                                      { label, permalink: tagPermalink },
+                                      index
+                                    ) => (
+                                      <Link
+                                        key={tagPermalink}
+                                        className={`post__tags ${
+                                          index < tags.length
+                                            ? "margin-right--sm"
+                                            : ""
+                                        }`}
+                                        to={tagPermalink}
+                                        style={{
+                                          fontSize: "0.75em",
+                                          fontWeight: 500,
+                                        }}
+                                      >
+                                        {label}
+                                      </Link>
+                                    )
+                                  )}
+                            </div>
+                            <div className="post__list-date">
+                              {year}-{month}-{day}
+                            </div>
                           </div>
-                          <div className="post__list-date">
-                            {year}-{month}-{day}
-                          </div>
-                        </div>
+                        </React.Fragment>
                       );
                     })}
                   </div>
