@@ -59,7 +59,6 @@ module.exports = {
       "videos/react/03-5-react-spring-animations/5-react-spring-animations",
       "videos/react/react-docusaurus-blog-list-view/react-docusaurus-blog-list-view",
     ],
-
     Vue: [
       "videos/vue/vue-todo-app/vue-todo-app",
       "videos/vue/vite-get-started/vite-get-started",
@@ -80,10 +79,12 @@ module.exports = {
       "videos/express/express-mongo-crud/express-mongo-crud",
     ],
     "Mongo DB": ["videos/mongo/mongodb-get-started/mongodb-get-started"],
+    工具: ["videos/tools/tools-vs-code-codesandbox/tools-vs-code-codesandbox"],
   },
   resources: {
     简介: ["resources/resources-intro"],
     前端开发: ["resources/ui/css-frameworks/css-frameworks"],
+
     开发工具: ["resources/tools/vs-code-themes/vs-code-themes"],
     效率工具: [],
     "UI 设计": [],

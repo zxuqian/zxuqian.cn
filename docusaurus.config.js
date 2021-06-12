@@ -17,7 +17,7 @@ module.exports = {
     image: "img/fenghua.jpg",
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/css/css-container-queries-intro'>《最新：CSS Container Queries，响应式布局利器》配套文本</a>`,
+      content: `更新<a href='/docs/videos/tools/tools-vs-code-codesandbox'>《开发工具：CodeSandBox 和 VS Code》(2020-01-02发布)配套文本</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },
