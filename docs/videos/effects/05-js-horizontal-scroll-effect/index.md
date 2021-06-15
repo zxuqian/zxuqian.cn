@@ -96,6 +96,10 @@ wheel 事件的兼容性可以参考 caniuse 提供的数据：
 
 ## 总结
 
-这样就实现横向滚动了，重点是利用了 "wheel" 事件监听鼠标滚轮滚动，然后获取滚动距离差值，把它加到可以滚动的容器的 scrollLeft 属性中，你学会了吗？如果有帮助三连，想学更多有用的前端开发知识，请关注峰华前端工程师，感谢观看！
+这样就实现横向滚动了，重点是利用了 "wheel" 事件监听鼠标滚轮滚动，然后获取滚动距离差值，把它加到可以滚动的容器的 scrollLeft 属性中，你学会了吗？如果有帮助请三连，想学更多有用的前端开发知识，请关注峰华前端工程师，感谢观看！
+
+## 源码
+
+Github: [https://github.com/zxuqian/html-css-examples/tree/master/38-horizontal-scrolling](https://github.com/zxuqian/html-css-examples/tree/master/38-horizontal-scrolling)
 
 import Codepen from "@site/src/components/Codepen";
