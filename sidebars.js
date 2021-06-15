@@ -40,6 +40,7 @@ module.exports = {
       "videos/effects/cyberpunk/effects-glitch",
       "videos/effects/resize/effects-resizable",
       "videos/effects/gradient-animation/gradient-animation",
+      "videos/effects/js-horizontal-scroll-effect/js-horizontal-scroll-effect",
     ],
     浏览器: [
       "videos/browser/dom/what-is-dom",

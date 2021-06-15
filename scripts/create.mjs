@@ -152,7 +152,7 @@ async function getVideos() {
 
   // 获取视频列表 API
   const res = await fetch(
-    `https://api.bilibili.com/x/space/arc/search?mid=302954484&ps=100&tid=0&pn=2&keyword=&order=pubdate&jsonp=jsonp`
+    `https://api.bilibili.com/x/space/arc/search?mid=302954484&ps=100&tid=0&pn=1&keyword=&order=pubdate&jsonp=jsonp`
   );
   const resData = await res.json();
   const {
