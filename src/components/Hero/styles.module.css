@@ -114,10 +114,12 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 .social__links > *,
-.social__links svg {
+.social__links svg,
+.social__links svg path {
   width: 24px;
   height: 24px;
-  color: #4093f6;
+  color: var(--ifm-color-primary);
+  fill: var(--ifm-color-primary);
 }
 
 .social__links .dropdown {

@@ -18,7 +18,7 @@ const StyledButton = styled.button`
   background: linear-gradient(
     90deg,
     var(--ifm-color-primary) 11.3%,
-    #20b7d9 161.54%
+    var(--ifm-color-primary-light) 161.54%
   );
   box-shadow: 0px 0px 32px rgba(0, 105, 165, 0.35);
   border-radius: 7px;

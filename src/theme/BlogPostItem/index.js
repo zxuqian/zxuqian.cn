@@ -57,6 +57,7 @@ function BlogPostItem(props) {
     views,
   } = props;
   const { date, permalink, tags, readingTime } = metadata;
+
   // activityId, oid 为 B 站评论相关
   const {
     slug: postId,
@@ -253,7 +254,8 @@ function BlogPostItem(props) {
             {!isBlogPostPage && (
               <span className="footer__read_count">
                 <Eye
-                  color={isDarkTheme ? "#76baff" : "#006dfe"}
+                  // color={isDarkTheme ? "#76baff" : "#006dfe"}
+                  className="footer__eye"
                   style={{ verticalAlign: "middle" }}
                 />{" "}
                 {views}

@@ -71,7 +71,7 @@ export const StyledBlogItem = styled.div`
 
   article {
     .single-post--date {
-      color: var(--post-title-color);
+      color: var(--ifm-color-primary);
       font-size: 0.9em;
     }
 

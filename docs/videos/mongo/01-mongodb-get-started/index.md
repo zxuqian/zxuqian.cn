@@ -248,5 +248,3 @@ db.postCollection.find({});
 好了，这就是今天的 MongoDB 快速入门教程，如果有帮助请三连并关注，我是峰华，感谢观看！
 
 MongoDB 是与 JavaScript 结合最好的 NoSQL 数据库，存储类似于 JSON 的文档数据结构，有着高性能、高可用、可伸缩的特点，适合构建实时的、高性能的 web 应用。如果用 JS 开发 web 应用，那么使用 MongoDB 作为存储数据库再适合不过了。这个视频就教大家快速入门 MongoDB，喜欢记得三连！
-
-##
