@@ -17,7 +17,7 @@ module.exports = {
     image: "img/fenghua.jpg",
     announcementBar: {
       id: "feature_release", // Any value that will identify this message.
-      content: `更新<a href='/docs/videos/effects/js-horizontal-scroll-effect'>《 2行代码实现页面横向滚动》配套文本</a>`,
+      content: `更新<a href='/docs/videos/browser/js-web-animations-api'>《与 CSS Keyframes 媲美的原生 JS 高性能动画 API 教程》配套文本</a>`,
       backgroundColor: "#fafbfc", // Defaults to `#fff`.
       textColor: "#091E42", // Defaults to `#000`.
     },

@@ -48,6 +48,7 @@ module.exports = {
       "videos/browser/js-dom/js-dom-operation",
       "videos/browser/native-drag-drop/native-drag-drop",
       "videos/browser/web-components-get-started/web-components-get-started",
+      "videos/browser/js-web-animations-api/js-web-animations-api",
     ],
     Web: [],
     网络: [

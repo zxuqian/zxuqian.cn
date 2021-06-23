@@ -36,6 +36,8 @@
   --text-color: #2b333e;
   /* --ifm-heading-color: hsl(200deg, 20%, 20%); */
 
+  --ifm-menu-color: #0d203a;
+
   /* 搜索框 */
   --search-local-modal-background: hsl(0deg, 0%, 100%);
   --search-local-modal-shadow: 0px 0px 48px hsl(0deg, 0%, 0%, 0.12);
@@ -93,6 +95,9 @@ html[data-theme="dark"] {
   --blog-item-background-color: linear-gradient(145deg, #041a31, #000000);
   --blog-item-shadow: 20px 20px 60px #253748, -20px -20px 60px #253748;
   --ifm-heading-color: #ffffff;
+
+  --ifm-menu-color: #eceef1;
+
   color: hsl(214deg, 15%, 85%);
 
   /* 搜索 */
@@ -546,6 +551,10 @@ pagination-nav__item:hover .pagination-nav__link {
 /* 文档侧栏字体大小 */
 .menu__list-item > .menu__link[tabindex] {
   font-size: 0.875rem;
+  font-weight: normal;
+  font-family: serif;
+  letter-spacing: 1.2px;
+  line-height: 1.8em;
 }
 
 /* 搜索 */
