@@ -256,15 +256,15 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "hompage.hero.text.bilibili": {
-    "message": "B站视频配套文本、",
+    "message": "技术视频教程、",
     "description": "Bilibili docs link label"
   },
   "homepage.hero.text": {
-    "message": "在这里，有{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。",
+    "message": "点击查看最新{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。",
     "description": "hero text"
   },
   "hompage.hero.text.course": {
-    "message": "系统课程、",
+    "message": "实战课程、",
     "description": "Course link label"
   },
   "hompage.hero.text.blog": {

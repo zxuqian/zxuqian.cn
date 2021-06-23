@@ -29,6 +29,8 @@ module.exports = {
       "videos/css/css-counter-state-management/css-counter-state-management",
       "videos/css/css-conic-gradient-tutorial/css-conic-gradient-tutorial",
       "videos/css/css-container-queries-intro/css-container-queries-intro",
+      "videos/css/css-common-properties/css-common-properties",
+      "videos/css/css-transition-keyframes-intro/css-transition-keyframes-intro",
     ],
 
     HTML: ["videos/html/html-basics/html-basics"],

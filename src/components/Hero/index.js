@@ -62,7 +62,7 @@ function Hero() {
                     id="hompage.hero.text.bilibili"
                     description="Bilibili docs link label"
                   >
-                    B站视频配套文本、
+                    技术视频教程、
                   </Translate>
                 </Link>
               ),
@@ -72,7 +72,7 @@ function Hero() {
                     id="hompage.hero.text.course"
                     description="Course link label"
                   >
-                    系统课程、
+                    实战课程、
                   </Translate>
                 </Link>
               ),
@@ -108,7 +108,7 @@ function Hero() {
               ),
             }}
           >
-            {`在这里，有{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。`}
+            {`点击查看最新{bilibiliText}{courses}{blogs}{links}以及UP主的{ideas}。致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。`}
           </Translate>
         </animated.p>
         {currentLocale === "zh-CN" && (

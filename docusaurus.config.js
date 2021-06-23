@@ -58,7 +58,7 @@ module.exports = {
           position: "right",
           items: [
             {
-              label: "B 站配套文本",
+              label: "技术视频",
               to: "docs/videos/",
             },
             {
@@ -117,7 +117,7 @@ module.exports = {
               to: "docs/course/react-chat-ui",
             },
             {
-              label: "B 站配套文本",
+              label: "技术视频",
               to: "docs/videos",
             },
             {
