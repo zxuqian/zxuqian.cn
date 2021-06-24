@@ -86,7 +86,7 @@ font-family: "webfont";
 
 **设置背景颜色**
 
-设置背景颜色使用 `background-color`  属性，可以设置 16 进制颜色，也可以使用颜色函数 rgb、rbga(带透明度的)、linear-gradient (渐变色) 设置颜色。
+设置背景颜色使用 `background-color`  属性，可以设置 16 进制颜色，也可以使用颜色函数 rgb、rbga(带透明度的)、linear-gradient (渐变色) 设置颜色（应该在 `backgound-image` 或 `background` 缩略形式中设置）。
 
 **加载背景图片**
 
