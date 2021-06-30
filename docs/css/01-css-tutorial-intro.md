@@ -1,7 +1,7 @@
 ---
 id: css-tutorial-intro
 title: CSS 完全指南简介
-description: CSS 盒子模型的概念、显示类型、box-sizing、替换元素、边距塌陷等详细解答
+description: CSS 完全指南教程用于学习 CSS 的语法、常见的布局实现（例如 Grid、Flex 布局）、以及进阶的样式实现（例如响应式布局、动画、3D变换和绘图相关)
 keywords:
   - css
   - css 完全指南
@@ -11,6 +11,10 @@ keywords:
 ---
 
 CSS 完全指南教程用于学习 CSS 的语法、常见的布局实现（例如 Grid、Flex 布局）、以及进阶的样式实现（例如响应式布局、动画、3D变换和绘图相关)。
+
+:::caution 注意
+本教程会持续更新，前期先把内容更新完成，后期会进行校对、补充和修改，使得教程更加完善，请持续关注！
+:::
 
 ## 目标读者
 
