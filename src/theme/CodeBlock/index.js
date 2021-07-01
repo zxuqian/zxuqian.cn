@@ -2,7 +2,6 @@ import React from "react";
 import InitialCodeBlock from "@theme-original/CodeBlock";
 
 function CodeBlock(props) {
-  console.log(props);
   return props.preview ? (
     <>
       <InitialCodeBlock {...props} />

@@ -49,7 +49,7 @@
   },
   "link.item.label.CSS 教程": {
     "message": "CSS Tutorial",
-    "description": "The label of footer link with label=CSS 教程 linking to docs/css/box-model/box-model"
+    "description": "The label of footer link with label=CSS 教程 linking to docs/docs/css/css-tutorial-intro"
   },
   "link.item.label.资源导航": {
     "message": "Resources",

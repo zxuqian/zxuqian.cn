@@ -121,8 +121,8 @@ module.exports = {
               to: "docs/videos",
             },
             {
-              label: "CSS 教程",
-              to: "docs/css/box-model/box-model",
+              label: "CSS 完全指南",
+              to: "docs/css/css-tutorial-intro",
             },
             {
               label: "资源导航",
