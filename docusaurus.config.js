@@ -159,8 +159,8 @@ module.exports = {
           title: "友情链接",
           items: [
             {
-              label: "yuqing521のblog",
-              to: "https://yuqing521.github.io/",
+              label: "hec9527的博客",
+              to: "https://hec9527.top",
             },
             {
               label: "lookroot的个人空间",
