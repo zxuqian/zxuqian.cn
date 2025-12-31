@@ -30,10 +30,6 @@ module.exports = {
         srcDark: "img/logo.webp",
       },
       items: [
-        // {
-        //   type: "localeDropdown",
-        //   position: "left",
-        // },
         {
           to: "/",
           label: "首页",
@@ -43,14 +39,6 @@ module.exports = {
               label: "随笔",
               to: "lifestyle",
             },
-            // {
-            //   label: "职业",
-            //   to: "tags/职业",
-            // },
-            // {
-            //   label: "健康",
-            //   to: "tags/健康",
-            // },
           ],
         },
         {
@@ -100,11 +88,6 @@ module.exports = {
         //   position: "right",
         // },
       ],
-    },
-    algolia: {
-      apiKey: "fabfb0e9997e101154ed85d64b7b6a3c",
-      indexName: "ZXUQIANCN",
-      appId: "LIJMO3C9C4",
     },
     footer: {
       style: "dark",
@@ -180,15 +163,6 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/oceanicNext"),
       defaultLanguage: "javascript",
     },
-    // googleAnalytics: {
-    //   trackingID: "UA-118572241-1",
-    //   anonymizeIP: true, // Should IPs be anonymized?
-    // },
-    gtag: {
-      trackingID: "G-6PSESJX0BM",
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
   },
   presets: [
     [
@@ -196,7 +170,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/zxuqian/zxuqian.cn/tree/master",
           remarkPlugins: [math, adsense],
           rehypePlugins: [katex],
           showLastUpdateTime: true,
@@ -225,10 +198,6 @@ module.exports = {
   ],
   // themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
-    path.resolve(__dirname, "./src/plugin/plugin-baidu-analytics"),
-    path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
-    // "@docusaurus/plugin-ideal-image",
-    path.resolve(__dirname, "./src/plugin/plugin-onesignal-push"),
     path.resolve(__dirname, "./src/plugin/plugin-latest-docs"),
     "docusaurus2-dotenv",
     [
@@ -244,15 +213,6 @@ module.exports = {
         },
       },
     ],
-    // [
-    //   "@easyops-cn/docusaurus-search-local",
-    //   {
-    //     hashed: true,
-    //     // indexPages: true,
-    //     blogRouteBasePath: "/",
-    //     language: ["en", "zh"],
-    //   },
-    // ],
   ],
   stylesheets: [
     {
@@ -272,23 +232,9 @@ module.exports = {
       type: "text/css",
       rel: "stylesheet",
     },
-    // {
-    //   href: "https://fonts.googleapis.com/css2?family=Fira+Code&display=swap",
-    //   type: "text/css",
-    //   rel: "stylesheet",
-    // },
   ],
   i18n: {
     defaultLocale: "zh-CN",
     locales: ["zh-CN"],
-    // locales: ["zh-CN", "en"],
-    // localeConfigs: {
-    //   "zh-CN": {
-    //     label: "中文",
-    //   },
-    //   en: {
-    //     label: "English",
-    //   },
-    // },
   },
 };
