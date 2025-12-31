@@ -1,7 +1,6 @@
 const path = require("path");
 const math = require("remark-math");
 const katex = require("rehype-katex");
-const adsense = require("./src/plugin/remark-adsense");
 
 module.exports = {
   title: "峰华前端工程师",
@@ -170,7 +169,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          remarkPlugins: [math, adsense],
+          remarkPlugins: [math],
           rehypePlugins: [katex],
           showLastUpdateTime: true,
         },
